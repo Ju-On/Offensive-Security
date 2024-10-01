@@ -78,3 +78,18 @@ nmap --script vuln --top-ports 1000 192.168.64.131
       
       Nmap done: 1 IP address (1 host up) scanned in 126.35 seconds
 
+
+##### TBC here onwards.
+
+Research all ports, along with the critical finding in scan number 2.
+
+Searchsploit 
+    ms17-010 confirms a number of related exploits available in Exploit Database by Offensive Security.
+
+metasploit 
+    search eternalblue confirms a number of packaged exploits ready to be used against target machine.
+
+use 3
+setpayload
+rhost
+run
