@@ -90,6 +90,6 @@ metasploit
     search eternalblue confirms a number of packaged exploits ready to be used against target machine.
 
 use 3
-setpayload
+set payload
 rhost
 run
