@@ -1,4 +1,4 @@
-# **EternalBlue Exploitation | MS17-010**
+# **EternalBlue Exploitation | MS17-010 | AL**
 
 The SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via crafted packets, aka "Windows SMB Remote Code Execution Vulnerability." This vulnerability is different from those described in CVE-2017-0144, CVE-2017-0145, CVE-2017-0146, and CVE-2017-0148.
 
@@ -92,7 +92,7 @@ nmap --script vuln --top-ports 1000 192.168.64.131
       Nmap done: 1 IP address (1 host up) scanned in 126.35 seconds
 
 
-##### TBC here onwards. #####
+# **TBC here onwards.** 
 
 Research all ports, along with the critical finding in scan number 2.
 
