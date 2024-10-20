@@ -1,14 +1,14 @@
-EternalBlue Exploitation | MS17-010 
+**EternalBlue Exploitation | MS17-010**
 
 The SMBv1 server in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via crafted packets, aka "Windows SMB Remote Code Execution Vulnerability." This vulnerability is different from those described in CVE-2017-0144, CVE-2017-0145, CVE-2017-0146, and CVE-2017-0148.
 
-Identifying target
+**Identifying target**
 
-Target machine:
+**Target machine:**
     windows cmd confirmation with ipconfig 192.168.64.131
     kali cli confirmation with sudo arp-scan -l presented 192.168.64.131
 
-Confirming the target machine on local network using arp-scan -l:
+**Confirming the target machine on local network using arp-scan -l:**
     arp-scan -l
 
     root@kali:/home/kali# arp-scan -l
@@ -20,10 +20,10 @@ Confirming the target machine on local network using arp-scan -l:
     192.168.64.254  00:50:56:e1:67:05       VMware, Inc.
 
 
-Test target connecitvity:
+**Test target connecitvity:**
     ping 192.168.64.131. 29 packets transmitted 29 received, 0% packet loss.
 
-Target scanning using nmap:
+**Target scanning using nmap:**
 nmap -sC -sV -T4 --top-ports 1000 192.168.64.131 
       
       kali@kali:~$ nmap -sC -sV -T4 --top-ports 1000 192.168.64.131
@@ -67,7 +67,7 @@ nmap -sC -sV -T4 --top-ports 1000 192.168.64.131
       Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
       Nmap done: 1 IP address (1 host up) scanned in 65.81 seconds
 
-Vulnerability scanning using nmap:
+**Vulnerability scanning using nmap:**
 nmap --script vuln --top-ports 1000 192.168.64.131 
   
       Host script results:
@@ -95,8 +95,7 @@ nmap --script vuln --top-ports 1000 192.168.64.131
 
 Research all ports, along with the critical finding in scan number 2.
 
-port 135
-Exploits for Port 135/tcp (Microsoft Windows RPC)
+**Exploits for Port 135/tcp (Microsoft Windows RPC)**
 Port 135 is used by the RPC Endpoint Mapper. Historically, there have been vulnerabilities associated with RPC services, notably:
 
 MS03-026 (CVE-2003-0352): A buffer overflow in the RPC DCOM interface allowing remote code execution.
@@ -104,8 +103,7 @@ MS03-039 (CVE-2003-0715): Similar to MS03-026 with additional fixes.
 
 However, these vulnerabilities affect older Windows versions like Windows XP and Windows 2000. Windows 7 SP1 is not affected by these specific vulnerabilities, and they were patched long ago.
 
-139
-Exploits for Port 139/tcp (NetBIOS Session Service)
+**Exploits for Port 139/tcp (NetBIOS Session Service)**
 Port 139 is used for NetBIOS Session Service, which facilitates file and printer sharing over NetBIOS.
 
 Historical Vulnerabilities:
