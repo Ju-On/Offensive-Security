@@ -112,20 +112,21 @@ Information Disclosure: Null session attacks could allow an attacker to enumerat
 SMB Relay Attacks: Exploiting SMB to relay authentication and gain unauthorized access.
 However, these are typically not direct remote code execution vulnerabilities and often require additional conditions or misconfigurations.
 
-look for auxiliary verison
-check if target ip is vulnerable
+    look for auxiliary verison
+    check if target ip is vulnerable
 
-use 3
-set payload to win7/tcp/meterpreter version
-rhost target ip
-run
+    use 3
+    set payload to win7/tcp/meterpreter version
+    rhost target ip
+    run
+    
+    meterpreter shell access
+    sysinfo
+    hashdump
+    
+    crack ntml password
+    conduct screenshot
+    
+    gain nt authority access
 
-meterpreter shell access
-sysinfo
-hashdump
-
-crack ntml password
-conduct screenshot
-
-gain nt authority access
-
+#**Manual Exploitation With Reverse TCP Shell**
