@@ -146,7 +146,7 @@ nmap -A -P- -T4 192.168.63.134
 
 ## Using DIRB to run directory enumeration
     dirb 196.168.63.134
-    Located http://192.168.64.134/phpmyadmin if interest
+    Located http://192.168.64.134/phpmyadmin of interest
 ![image](https://github.com/user-attachments/assets/44cfa779-03b7-4920-9119-f2f288b7856b)
 
     Attempt to login to PHP admin panel.
