@@ -129,4 +129,25 @@ nmap -A -P- -T4 192.168.63.134
     |_http-server-header: Apache/2.4.38 (Debian)
     |_http-title: Apache2 Debian Default Page: It works
 
+## Finding: http on port 80 is open.
+    Target is running on Apache2 server
+![image](https://github.com/user-attachments/assets/1af7ed07-91b4-4b82-8873-e1949cb1abb5)# 
 
+## FTP on port 21 is open.
+    ftp 192.168.64.134
+    user: anonymous
+    password: blank
+    ls -al
+![image](https://github.com/user-attachments/assets/0eb7e780-b9c5-4a24-8d05-25448c041b7a)
+
+    on ftp server: get note.txt
+    on attacking machine: more note.txt
+![image](https://github.com/user-attachments/assets/069f6d4a-3035-4157-8246-89711bdcd326)
+
+## Using DIRB to run directory enumeration
+    dirb 196.168.63.134
+    Located http://192.168.64.134/phpmyadmin if interest
+![image](https://github.com/user-attachments/assets/44cfa779-03b7-4920-9119-f2f288b7856b)
+
+    Attempt to login to PHP admin panel.
+    
