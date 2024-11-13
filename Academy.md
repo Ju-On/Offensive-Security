@@ -145,9 +145,60 @@ nmap -A -P- -T4 192.168.63.134
 ![image](https://github.com/user-attachments/assets/069f6d4a-3035-4157-8246-89711bdcd326)
 
 ## Using DIRB to run directory enumeration
-    dirb 196.168.63.134
+    dirb http://196.168.63.134
     Located http://192.168.64.134/phpmyadmin of interest
 ![image](https://github.com/user-attachments/assets/44cfa779-03b7-4920-9119-f2f288b7856b)
 
     Attempt to login to PHP admin panel.
+    Fail with provided credentials and cracked hash from FTP server.
+
+## Install Gobuster - GoLang based tool used for enemuration of Web and server based directories and files.
+gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
     
+    Found: http://192.168.64.134/academy/
+    
+    kali@kali:/usr/share/wordlists$ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
+    ===============================================================
+    Gobuster v3.6
+    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+    ===============================================================
+    [+] Url:                     http://192.168.64.134
+    [+] Method:                  GET
+    [+] Threads:                 10
+    [+] Wordlist:                /usr/share/wordlists/rockyou.txt
+    [+] Negative Status codes:   404
+    [+] User Agent:              gobuster/3.6
+    [+] Timeout:                 10s
+    ===============================================================
+    Starting gobuster in directory enumeration mode
+    ===============================================================
+    Progress: 3461 / 14344393 (0.02%)[ERROR] parse "http://192.168.64.134/!@#$%^": invalid URL escape "%^"
+    /academy              (Status: 301) [Size: 318] [--> http://192.168.64.134/academy/]
+    Progress: 16548 / 14344393 (0.12%)[ERROR] parse "http://192.168.64.134/!\"£$%^": invalid URL escape "%^"
+    Progress: 23296 / 14344393 (0.16%)[ERROR] parse "http://192.168.64.134/!@#$%^&*()": invalid URL escape "%^&"
+    /??????               (Status: 200) [Size: 10701]
+    Progress: 29810 / 14344393 (0.21%)^C
+    [!] Keyboard interrupt detected, terminating.
+    Progress: 35668 / 14344393 (0.25%)
+    ===============================================================
+    Finished
+    ===============================================================
+    kali@kali:/usr/share/wordlists$
+
+## Finding on http://192.168.64.134/academy/ student web portal.
+
+![image](https://github.com/user-attachments/assets/e3aaeed5-89f9-42cc-b596-3ccf861ed33d)
+
+    Tried Hashcat to crack cd73502828457d15655bbd7a63fb0bc8 however, dependencies on machine not available.
+    Crackstation.com was used instead.
+## U: 10201321  P: student login success
+![image](https://github.com/user-attachments/assets/bd59fcfc-c641-4bce-ac16-ee16bd1c2893)
+
+    Changed new password to password
+    
+## Has ability to upload files | look at hosted version and any exploitable vulnerabilities
+80/tcp open  http    Apache httpd 2.4.38
+
+![image](https://github.com/user-attachments/assets/e3734890-d762-4de9-bcc6-69aa59aa7a4b)
+
+
