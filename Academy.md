@@ -201,4 +201,11 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
 
 ![image](https://github.com/user-attachments/assets/e3734890-d762-4de9-bcc6-69aa59aa7a4b)
 
+# TBC here
+    1 tested file upload of .sh file type succesfull
+    2 upload .php file containing reverse shell script 
+    3 cnnection succesful via nc on attacker machine
+    4 upgraded shell access to more stable version - python -c 'import pty; pty.spawn("/bin/sh")'
+    5 on separate terminal set stty raw -echo | to allow reverse shell to behave more like a normal terminal | stty sane on normal terminal to break out and reset.
+    6 
 
