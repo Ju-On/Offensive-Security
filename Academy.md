@@ -255,6 +255,9 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
 ![image](https://github.com/user-attachments/assets/bc5eef7d-cec5-4d27-8b9f-ee206e1ad29f)
       
     nc -nlvp 3333 on attacker machine
-     15 connection succesful, cat flag.txt. 
+    15 connection succesful, cat flag.txt. 
 
 ## We have now captured the flag.
+
+# Areas to imrprovde on and learn more
+    Post exploitation phase: Download and use pspy during post exploitation within Linux machines to examine cron jobs for shceduled tasks and running proccesses. a Linux tool that does not require root priviliges to run, meaning it can be executed during any phases of this engagement. as user www-data and user grimmie.
