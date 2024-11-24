@@ -204,9 +204,11 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
 # TBC here
     1 tested file upload of .sh file type succesfull
     2 upload .php file containing reverse shell script 
-    3 cnnection succesful via nc on attacker machine
+    3 connection succesful via nc on attacker machine
     4 upgraded shell access to more stable version - python -c 'import pty; pty.spawn("/bin/sh")'
     5 on separate terminal set stty raw -echo | to allow reverse shell to behave more like a normal terminal | stty sane on normal terminal to break out and reset.
     6 cat /etc/passwd file to view the users on server to enumerate if we can possbily access any. Noted Grimmie had an executable script.
-    7 
+    7 cat grimmie:x:1000:1000:administrator,,,:/home/grimmie:/bin/bash - Provided what seemed to be a backups file that removed itself
+    8 in this step we should attempt to look at cronjobs [need to work on this part more]
+    9 
 
