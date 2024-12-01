@@ -272,3 +272,18 @@ Detect cron jobs, scheduled tasks, or automated scripts running on the system.
 Identify privilege escalation opportunities by observing processes or commands executed by other users, such as root.
 Monitor runtime activity like environment variable changes or binary execution.
 It works by scanning /proc and other Linux process-related resources
+
+# gaining Root through different method
+
+instead of creating a secondary reverse TCP shell back to the attacker machine via compromised grimmies account.
+we could potentially create a simple script which initiates /bin/bash in the backup.sh file with permissions changed to (chmod +s) placed within the /tmp director. 
+
+    grimmie@academy:~$ echo 'cp /bin/bash /tmp/bash;chmod +s /tmp/bash' > backup.sh
+
++s option sets the SetUID (Set User ID) permission bit on the file (/tmp/bash).
+
+What SetUID Does:
+
+When the SetUID bit is set on an executable file, it allows the file to run with the privileges of its owner, regardless of the user who executes it.
+
+Any user running /tmp/bash gains the privileges of the file's owner (e.g., root privileges).
