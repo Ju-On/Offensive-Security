@@ -263,3 +263,6 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
     Post exploitation phase: Download and use pspy during post exploitation within Linux machines to examine cron jobs for shceduled tasks
     and running proccesses. a Linux tool that does not require root priviliges to run, meaning it can be executed during any phases of this
     engagement. as user www-data and user grimmie.
+
+# pspy.sh
+
