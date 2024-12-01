@@ -278,7 +278,7 @@ It works by scanning /proc and other Linux process-related resources
 instead of creating a secondary reverse TCP shell back to the attacker machine via compromised grimmies account.
 we could potentially create a simple script which initiates /bin/bash in the backup.sh file with permissions changed to (chmod +s) placed within the /tmp director. 
 
-    grimmie@academy:~$ echo 'cp /bin/bash /tmp/bash;chmod +s /tmp/bash' > backup.sh
+    grimmie@academy:~$ echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' > backup.sh
 
 +s option sets the SetUID (Set User ID) permission bit on the file (/tmp/bash).
 
@@ -287,3 +287,7 @@ What SetUID Does:
 When the SetUID bit is set on an executable file, it allows the file to run with the privileges of its owner, regardless of the user who executes it.
 
 Any user running /tmp/bash gains the privileges of the file's owner (e.g., root privileges).
+
++t Adds the sticky bit, which is usually intended for directories to restrict deletion. However, applying it to a file ensures only the owner, root, or system processes can delete or rename it, adding another layer of control.
+
+    grimmie@academy:~$ echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash ; chmod +t /tmp/bash' > backup.sh
