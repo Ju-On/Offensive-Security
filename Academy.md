@@ -266,3 +266,9 @@ gobuster dir -u http://192.168.64.134 -w /usr/share/wordlists/rockyou.txt
 
 # pspy.sh
 
+a Linux post-exploitation tool used for process monitoring without requiring elevated privileges. It is commonly used by penetration testers or attackers to:
+
+Detect cron jobs, scheduled tasks, or automated scripts running on the system.
+Identify privilege escalation opportunities by observing processes or commands executed by other users, such as root.
+Monitor runtime activity like environment variable changes or binary execution.
+It works by scanning /proc and other Linux process-related resources
