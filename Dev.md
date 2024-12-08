@@ -82,8 +82,8 @@
     
     Network Distance: 1 hop
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Findings: 
+    
+## Findings: 
 
     22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
     80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
@@ -94,3 +94,11 @@ Findings:
     8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
     | http-open-proxy: Potentially OPEN proxy.
     |_Methods supported:CONNECTION
+
+## Port 80 http webpage - Bolt installation error page
+![image](https://github.com/user-attachments/assets/3ae0bf0f-8ac5-417e-a362-29b70d60f376)
+
+## Port 8080 PHP version and Debian system - suggesting this is a Linux operating system
+![image](https://github.com/user-attachments/assets/dd7f8629-cbd4-4c1e-b831-5f9ba92750a1)
+
+
