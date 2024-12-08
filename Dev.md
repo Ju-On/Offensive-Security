@@ -101,4 +101,30 @@
 ## Port 8080 PHP version and Debian system - suggesting this is a Linux operating system
 ![image](https://github.com/user-attachments/assets/dd7f8629-cbd4-4c1e-b831-5f9ba92750a1)
 
+## 2049 NFS
 
+    install:
+    sudo apt update && sudo apt install nfs-common -y
+
+    Check Available NFS Shares:
+    showmount -e 192.168.64.135
+![image](https://github.com/user-attachments/assets/011c86b2-a08a-4777-8d3f-83599e942acd)
+
+    Create a Mount Point: Create a directory where you will mount the NFS share:
+    mkdir -p /home/kali/nfs_mount
+
+    mount -t nfs 192.168.64.135:<nfs_share> /home/kali/nfs_mount
+![image](https://github.com/user-attachments/assets/43fd4e7e-49ad-4775-8b07-e55c0acbed11)
+
+#TBC here. Now that we have managed to get into the NFS and found a save.zip file, we need to crack it.
+    
+## Download fcrackzip - a lightweight .zip file type cracking tool.
+
+    root@kali:/home/kali/nfs_mount# apt update && apt install fcrackzip -y
+
+    install dirbuster word lists
+    sudo apt update
+    sudo apt install dirbuster -y
+
+
+    
