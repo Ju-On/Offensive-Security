@@ -1,5 +1,7 @@
 # Dev
 
+## target 192.168.64.135
+
 ## Reconnaissance
 ### arp-scan -l
 
@@ -82,12 +84,13 @@
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Findings: 
-22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
-80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
-|_http-server-header: Apache/2.4.38 (Debian)
-|_http-title: Bolt - Installation error
-111/tcp   open  rpcbind  2-4 (RPC #100000)
-2049/tcp  open  nfs_acl  3 (RPC #100227)
-8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
-| http-open-proxy: Potentially OPEN proxy.
-|_Methods supported:CONNECTION
+
+    22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+    80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
+    |_http-server-header: Apache/2.4.38 (Debian)
+    |_http-title: Bolt - Installation error
+    111/tcp   open  rpcbind  2-4 (RPC #100000)
+    2049/tcp  open  nfs_acl  3 (RPC #100227)
+    8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
+    | http-open-proxy: Potentially OPEN proxy.
+    |_Methods supported:CONNECTION
