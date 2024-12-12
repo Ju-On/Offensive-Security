@@ -184,7 +184,59 @@
 ## todo.txt | potential user JP
 ![image](https://github.com/user-attachments/assets/642b0a63-6713-4df4-9b8c-6aa9e24cf825)
 
-## TBC here - try to SSH using JP initials
+## Try to SSH using JP initials
 
+Try using java101 as password - Failed
+    
+    root@kali:/home/kali/nfs_mount# ssh jp@192.168.64.135
+    The authenticity of host '192.168.64.135 (192.168.64.135)' can't be established.
+    ED25519 key fingerprint is SHA256:NHMY4yX3pvvY0+B19v9tKZ+FdH9JOewJJKnKy2B0tW8.
+    This key is not known by any other names.
+    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+    Warning: Permanently added '192.168.64.135' (ED25519) to the list of known hosts.
+    jp@192.168.64.135's password: 
+    Permission denied, please try again.
+
+Try using ida_rsa file with SSH login / firstly change permissions on id_rsa for it to become executable
+
+    root@kali:/home/kali/nfs_mount# ls -al id_rsa
+    -rwxr--r-- 1 nobody nogroup 1876 Jun  2  2021 id_rsa
+
+    root@kali:/home/kali/nfs_mount# chmod +x id_rsa
+    root@kali:/home/kali/nfs_mount# ls -al id_rsa
+    -rwxr-xr-x 1 nobody nogroup 1876 Jun  2  2021 id_rsa
+
+Now use id_rsa private key file in an attempt to login via ssh
+
+    root@kali:/home/kali/nfs_mount# chmod +x id_rsa
+    root@kali:/home/kali/nfs_mount# ls -al id_rsa
+    -rwxr-xr-x 1 nobody nogroup 1876 Jun  2  2021 id_rsa
+
+Seems like this attempt failed / according to some research, i will try restricting permissions as sometimes ssh may refuse connection if permissions are too open. (chmod 600)
+
+    root@kali:/home/kali/nfs_mount# chmod 600 id_rsa
+    root@kali:/home/kali/nfs_mount# ls -al id_rsa
+    -rw------- 1 nobody nogroup 1876 Jun  2  2021 id_rsa
+    root@kali:/home/kali/nfs_mount# 
+
+Attempt to login with id_rsa and jp@192.168.64.135 
+
+    root@kali:/home/kali/nfs_mount# ssh -i id_rsa jp@192.168.64.135
+    jp@192.168.64.135's password: 
+    Permission denied, please try again.
+
+No success. When having a deeper look, it seems as though the file ownership is set to nobody:nogroup, meaning it is not owned by the current user root.
+
+Attempting to change ownership
+
+    root@kali:/home/kali/nfs_mount# chown root:root id_rsa
+    chown: changing ownership of 'id_rsa': Operation not permitted
+    root@kali:/home/kali/nfs_mount# 
+
+No kudos :(
+
+## TBC here - We know port 80 and 8080 is open, perhaps do some more digging here.
+
+    
 
 
