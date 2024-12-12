@@ -197,7 +197,7 @@ Try using java101 as password - Failed
     jp@192.168.64.135's password: 
     Permission denied, please try again.
 
-Try using ida_rsa file with SSH login / firstly change permissions on id_rsa for it to become executable
+Try using id_rsa file with SSH login / firstly change permissions on id_rsa for it to become executable
 
     root@kali:/home/kali/nfs_mount# ls -al id_rsa
     -rwxr--r-- 1 nobody nogroup 1876 Jun  2  2021 id_rsa
@@ -208,9 +208,10 @@ Try using ida_rsa file with SSH login / firstly change permissions on id_rsa for
 
 Now use id_rsa private key file in an attempt to login via ssh
 
-    root@kali:/home/kali/nfs_mount# chmod +x id_rsa
-    root@kali:/home/kali/nfs_mount# ls -al id_rsa
-    -rwxr-xr-x 1 nobody nogroup 1876 Jun  2  2021 id_rsa
+    root@kali:/home/kali/nfs_mount# ssh -i id_rsa jp@192.168.64.135
+    jp@192.168.64.135's password: 
+    Permission denied, please try again.
+
 
 Seems like this attempt failed / according to some research, i will try restricting permissions as sometimes ssh may refuse connection if permissions are too open. (chmod 600)
 
@@ -237,6 +238,7 @@ No kudos :(
 
 ## TBC here - We know port 80 and 8080 is open, perhaps do some more digging here.
 
+Use gobuster and also use ffuf as practice.
     
 
 
