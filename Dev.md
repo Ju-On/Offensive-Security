@@ -304,3 +304,21 @@ No kudos :(
 ![image](https://github.com/user-attachments/assets/2908eca0-7970-462c-a460-98cbfee82bb5)
 
 After traversing through some of the directories. 192.168.64.135:8080/dev on port 8080 stands out the most. Here it looks like we are able to register an account on the BoltWire PHP Content Management System.
+
+    account: 1
+    password: 1
+
+## Trying to find version of BoltWire. nmap --script http-enum -p 8080 192.168.64.135
+    kali@kali:/usr/share/nmap/scripts$ nmap --script http-enum -p 8080 192.168.64.135
+    Starting Nmap 7.80 ( https://nmap.org ) at 2024-12-13 09:01 EST
+    Nmap scan report for 192.168.64.135
+    Host is up (0.00042s latency).
+    
+    PORT     STATE SERVICE
+    8080/tcp open  http-proxy
+    | http-enum: 
+    |_  /dev/: Potentially interesting folder
+    
+    Nmap done: 1 IP address (1 host up) scanned in 0.61 seconds
+
+
