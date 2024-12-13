@@ -238,7 +238,57 @@ No kudos :(
 
 ## TBC here - We know port 80 and 8080 is open, perhaps do some more digging here.
 
-Use gobuster and also use ffuf as practice.
+## Gobuster for directory enumeration on port 80
     
+    root@kali:/home/kali# gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://192.168.64.135/
+    ===============================================================
+    Gobuster v3.6
+    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+    ===============================================================
+    [+] Url:                     http://192.168.64.135/
+    [+] Method:                  GET
+    [+] Threads:                 10
+    [+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+    [+] Negative Status codes:   404
+    [+] User Agent:              gobuster/3.6
+    [+] Timeout:                 10s
+    ===============================================================
+    Starting gobuster in directory enumeration mode
+    ===============================================================
+    /public               (Status: 301) [Size: 317] [--> http://192.168.64.135/public/]
+    /src                  (Status: 301) [Size: 314] [--> http://192.168.64.135/src/]
+    /app                  (Status: 301) [Size: 314] [--> http://192.168.64.135/app/]
+    /vendor               (Status: 301) [Size: 317] [--> http://192.168.64.135/vendor/]
+    /extensions           (Status: 301) [Size: 321] [--> http://192.168.64.135/extensions/]
+    /server-status        (Status: 403) [Size: 279]
+    Progress: 220560 / 220561 (100.00%)
+    ===============================================================
+    Finished
+    ===============================================================
+    root@kali:/home/kali# 
 
+## Gobuster for directory enumeration on port 8080
+
+    root@kali:/home/kali# gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://192.168.64.135:8080/
+    ===============================================================
+    Gobuster v3.6
+    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+    ===============================================================
+    [+] Url:                     http://192.168.64.135:8080/
+    [+] Method:                  GET
+    [+] Threads:                 10
+    [+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+    [+] Negative Status codes:   404
+    [+] User Agent:              gobuster/3.6
+    [+] Timeout:                 10s
+    ===============================================================
+    Starting gobuster in directory enumeration mode
+    ===============================================================
+    /dev                  (Status: 301) [Size: 321] [--> http://192.168.64.135:8080/dev/]
+    /server-status        (Status: 403) [Size: 281]
+    Progress: 220560 / 220561 (100.00%)
+    ===============================================================
+    Finished
+    ===============================================================
+    root@kali:/home/kali#
 
