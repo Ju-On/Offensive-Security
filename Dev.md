@@ -321,4 +321,9 @@ After traversing through some of the directories. 192.168.64.135:8080/dev on por
     
     Nmap done: 1 IP address (1 host up) scanned in 0.61 seconds
 
+## Moving on.. when playing around with the /dev website, i noticed when clicking on the Search tab, it inputs the action within the url. Leading me to search for known potential exploits that may contain search.action vulnerabilities.
+![image](https://github.com/user-attachments/assets/92edf81e-0647-4668-85f5-698d0aaebd1f)
+
+
+
 
