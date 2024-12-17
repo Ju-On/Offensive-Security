@@ -321,9 +321,20 @@ After traversing through some of the directories. 192.168.64.135:8080/dev on por
     
     Nmap done: 1 IP address (1 host up) scanned in 0.61 seconds
 
-## Moving on.. when playing around with the /dev website, i noticed when clicking on the Search tab, it inputs the action within the url. Leading me to search for known potential exploits that may contain search.action vulnerabilities.
+## Moving on.. 
+when playing around with the /dev website, i noticed when clicking on the Search tab, it inputs the action within the url. Leading me to search for known potential exploits that may contain search.action vulnerabilities.
+
 ![image](https://github.com/user-attachments/assets/92edf81e-0647-4668-85f5-698d0aaebd1f)
 
+When conducting a simple Google search of Boltwire, a Boltwire 6.03 exploit immediately shows up exploiting a Local File Inclusion.
+https://www.exploit-db.com/exploits/48411
 
+![image](https://github.com/user-attachments/assets/bb7c0d68-3bfc-45c4-8cc7-ee87cd631030)
 
+Exploit attempt:
 
+    http://192.168.64.135:8080/dev/index.php?p=action.search&action=../../../../../../../etc/passwd
+
+Exploit divulged the /etc/passwd details, in which we can see JP is infact jeanpaul with /bin/bash privileges.
+
+![image](https://github.com/user-attachments/assets/ffebd003-6d13-4b7c-aa23-bb8675c28fe4)
