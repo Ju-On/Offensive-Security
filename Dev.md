@@ -338,3 +338,5 @@ Exploit attempt:
 Exploit divulged the /etc/passwd details, in which we can see JP is infact jeanpaul with /bin/bash privileges.
 
 ![image](https://github.com/user-attachments/assets/ffebd003-6d13-4b7c-aa23-bb8675c28fe4)
+
+## Attempting to SSH with ilovejava
