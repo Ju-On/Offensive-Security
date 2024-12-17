@@ -339,4 +339,15 @@ Exploit divulged the /etc/passwd details, in which we can see JP is infact jeanp
 
 ![image](https://github.com/user-attachments/assets/ffebd003-6d13-4b7c-aa23-bb8675c28fe4)
 
-## Attempting to SSH with ilovejava
+## Attempting to SSH with jeanpaul and the previously cracked password of ilovejava
+
+![image](https://github.com/user-attachments/assets/e5537346-9fd5-4b76-912f-16e7f1e42c21)
+No kudos.
+
+# Continue searching through other find directories from GoBuster results - http://192.168.64.135:/
+    /public
+    /src
+    /app
+    /vendor
+    /extensions
+
