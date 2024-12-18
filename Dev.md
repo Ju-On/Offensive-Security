@@ -344,7 +344,7 @@ Exploit divulged the /etc/passwd details, in which we can see JP is infact jeanp
 ![image](https://github.com/user-attachments/assets/e5537346-9fd5-4b76-912f-16e7f1e42c21)
 No kudos.
 
-# Continue searching through other find directories from GoBuster results - http://192.168.64.135/dir
+# Continue searching through other found directories from GoBuster results - http://192.168.64.135/dir
     /public
     /src
     /app
