@@ -368,10 +368,40 @@ Ran nikto to try quickly identify any obvious vulnerabilities with the exposed .
 ![image](https://github.com/user-attachments/assets/a63146b3-b81a-4710-a30b-9fdca2414866)
 Found additional passwords "I_love_java"
 
+## Lets try using the newly found password in the SSH attempt with:
+    root@kali:/home/kali/nfs_mount# ssh -i id_rsa jeanpaul@192.168.64.135
 
+    root@kali:/home/kali/nfs_mount# ssh -i id_rsa jeanpaul@192.168.64.135
+    Enter passphrase for key 'id_rsa': 
+    Linux dev 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64
     
+    The programs included with the Debian GNU/Linux system are free software;
+    the exact distribution terms for each program are described in the
+    individual files in /usr/share/doc/*/copyright.
+    
+    Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+    permitted by applicable law.
+    Last login: Wed Jun  2 05:25:21 2021 from 192.168.10.31
+    jeanpaul@dev:~$ ^C
 
+succesful login.
 
+Tried to sudo su into root failed with the two passwords gathered previously.
+Tried to list history, nothing great found as it seems like previous history was deleted.
+Tried to log into 
+Tried to sudo -l to look at what the jeanpauls account priviliges are. 
+    
+    jeanpaul@dev:/$ sudo -l
+    Matching Defaults entries for jeanpaul on dev:
+        env_reset, mail_badpass,
+        secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+    User jeanpaul may run the following commands on dev:
+        (root) NOPASSWD: /usr/bin/zip
+    jeanpaul@dev:/$ 
+
+## Use tool GTFOBINs
+Can see that jeanpaul could use /usr/bin/zip as root privilige. Going to GTFOBINs
+Search for +sudo and then look for the zip binary. 
 
 
 
