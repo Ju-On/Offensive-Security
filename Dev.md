@@ -351,3 +351,11 @@ No kudos.
     /vendor
     /extensions
 
+## Finding; Exposed .json endpoint in /app/cache/
+![image](https://github.com/user-attachments/assets/4ccd95e9-0cf6-4745-85e2-d7a019278edb)
+
+
+
+
+
+
