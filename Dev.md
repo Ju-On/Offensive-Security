@@ -363,6 +363,10 @@ Ran nikto to try quickly identify any obvious vulnerabilities with the exposed .
 ![image](https://github.com/user-attachments/assets/8de8a68c-c7c5-4e2c-a5c3-08ff15f3123c)
 
 ## Findings 3: Applicaiton Configurations file exposed
+![image](https://github.com/user-attachments/assets/65ddc1e1-0998-49ab-ad32-82c5cb70628b)
+
+![image](https://github.com/user-attachments/assets/a63146b3-b81a-4710-a30b-9fdca2414866)
+Found additional passwords "I_love_java"
 
 
     
