@@ -351,13 +351,18 @@ No kudos.
     /vendor
     /extensions
 
-## Finding; Exposed .json endpoint in /app/cache/
+## Findings 1: Exposed .json endpoint in /app/cache/
 ![image](https://github.com/user-attachments/assets/4ccd95e9-0cf6-4745-85e2-d7a019278edb)
     
     nikto -h http://192.168.64.135/app/cache/config-cache.json
 
 Ran nikto to try quickly identify any obvious vulnerabilities with the exposed .json file. With no results
 ![image](https://github.com/user-attachments/assets/9833b36a-8d65-4331-b166-939b8227dfeb)
+
+## Findings 2: Information disclosure of PHP version and file dislosure (source code)
+![image](https://github.com/user-attachments/assets/8de8a68c-c7c5-4e2c-a5c3-08ff15f3123c)
+
+## Findings 3: Applicaiton Configurations file exposed
 
 
     
