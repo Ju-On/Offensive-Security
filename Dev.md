@@ -401,7 +401,11 @@ Tried to sudo -l to look at what the jeanpauls account priviliges are.
 
 ## Use tool GTFOBINs
 Can see that jeanpaul could use /usr/bin/zip as root privilige. Going to GTFOBINs
-Search for +sudo and then look for the zip binary. 
+[screenshot here of sudo -l]
+
+Search for +sudo and then look for zip binary. In this instance we are looking for LOLBins to help us utilise the existing privileges that are associated with jeanpauls account. 
+
+
 
 
 
