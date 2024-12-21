@@ -405,7 +405,11 @@ Can see that jeanpaul could use /usr/bin/zip as root privilige. Going to GTFOBIN
 
 Search for +sudo and then look for zip binary. In this instance we are looking for LOLBins to help us utilise the existing privileges that are associated with jeanpauls account. 
 
+![image](https://github.com/user-attachments/assets/eb5cc4d7-dac5-4e0e-9c1e-b30a7affcdce)
 
+![image](https://github.com/user-attachments/assets/ff9fcc41-6fdd-4886-9497-22ccf82be979)
+
+Proceeded to utilise LoLbin exploit to bypass restrictions and elevate access as a Root user.
 
 
 
