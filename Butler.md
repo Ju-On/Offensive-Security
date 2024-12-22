@@ -107,3 +107,11 @@ Target: 192.168.64.136
     
     Nmap done: 1 IP address (1 host up) scanned in 57.23 seconds
 
+## Jett9 looks to be interesting given there is an active Jenkins website om 8080
+Through Googling, we have disocvered a Medium potential vulnerability that may provide some information disclosure.
+
+### Jetty 9.4.41.v20210516 / Debian: CVE-2021-28169: jetty9 -- security update
+    NVD: https://nvd.nist.gov/vuln/detail/CVE-2021-28169
+    Rapid7: https://www.rapid7.com/db/vulnerabilities/debian-cve-2021-28169/
+
+Exploit: /concat?/%2557EB-INF/web.xml
