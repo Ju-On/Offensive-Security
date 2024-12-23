@@ -123,8 +123,18 @@ After some attempts of the above exploit and further research, no vulnerabilitie
 **CVE-2021-34429** 'The vulnerability allows a remote attacker to gain unauthorized access to otherwise restricted functionality.
 tried installing docker compose to see if i can download and replicate the Jetty infra. No success in downloading Docker Compose at all.
 
+## GoBuster for website enumeration.
+    gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -u http://192.168.64.136:8080/ --exclude-length 620 -v | grep "Status: 200"    
+    
+    Explanation:
+    --no-error: Suppresses error messages.
+    --exclude-length 620: Excludes responses with a length of 620 (likely irrelevant results).
+    -v: Enables verbose mode to show more detailed output.
+    | grep "Status: 200": Filters the output to show only positive hits where the status code is 200.
 
+## Fuff for website enumeration.
 
+## Try found out more details on Jenkins.
 
 ## Tried to connect to the SMB port with no access.
         root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
