@@ -147,11 +147,30 @@ tried installing docker compose to see if i can download and replicate the Jetty
     Excludes responses with an HTTP status code of 404 (Not Found) to reduce noise.
     http://192.168.64.136:8080/FUZZ:
 
+Seems like Wfuzz does not like the target machine. 
+
+root@kali:/home/kali# wfuzz -c -z file,/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404 http://192.168.64.136:8080/FUZZ
+
+Warning: Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+
+********************************************************
+* Wfuzz 2.4 - The Web Fuzzer                           *
+********************************************************
+
+Target: http://192.168.64.136:8080/FUZZ
+Total requests: 220560
+
+===================================================================
+ID           Response   Lines    Word     Chars       Payload                           
+===================================================================
+
+Fatal exception: Pycurl error 7: Failed to connect to 192.168.64.136 port 8080: Connection refused
+
 ## Try found out more details on Jenkins.
 
 ## Tried to connect to the SMB port with no access.
-        root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
-        Enter WORKGROUP\root's password: 
-        session setup failed: NT_STATUS_ACCESS_DENIED
-        root@kali:/home/kali# 
+    root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
+    Enter WORKGROUP\root's password: 
+    session setup failed: NT_STATUS_ACCESS_DENIED
+    root@kali:/home/kali# 
 
