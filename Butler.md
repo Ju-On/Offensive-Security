@@ -198,8 +198,6 @@ tried installing docker compose to see if i can download and replicate the Jetty
 
 **CVE-2024-43044** High The exploit will use the vulnerability to read files to forge a remember-me cookie for an admin account and gain access to Jenkins scripting engine. 
 
-**POC:** https://github.com/convisolabs/CVE-2024-43044-jenkins
-
 **CVE-2024-43044** Checker Python script. https://github.com/HwMex0/CVE-2024-43044?tab=readme-ov-file
 Downloaded the custom script to identify if the current Jenkins version is vulnerable to CVE-2024-43044
     
@@ -207,6 +205,7 @@ Downloaded the custom script to identify if the current Jenkins version is vulne
     [+] http://192.168.64.136:8080 (Jenkins Version: 2.289.3) is potentially vulnerable.
     root@kali:/home/kali# 
 
+**POC:** https://github.com/convisolabs/CVE-2024-43044-jenkins
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
