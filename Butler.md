@@ -132,7 +132,20 @@ tried installing docker compose to see if i can download and replicate the Jetty
     -v: Enables verbose mode to show more detailed output.
     | grep "Status: 200": Filters the output to show only positive hits where the status code is 200.
 
-## Fuff for website enumeration.
+## Wfuzz for website enumeration.
+    wfuzz -c -z file,/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404 http://192.168.64.136:8080/FUZZ
+
+    Explanation:
+    -c:
+    
+    Enables colored output for better visibility.
+    -z file,<path_to_wordlist>:
+    
+    Specifies the input method (a file-based wordlist in this case).
+    Replace <path_to_wordlist> with the location of your wordlist (e.g., /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt). --hc 404:
+    
+    Excludes responses with an HTTP status code of 404 (Not Found) to reduce noise.
+    http://192.168.64.136:8080/FUZZ:
 
 ## Try found out more details on Jenkins.
 
