@@ -118,6 +118,14 @@ Exploit: /concat?/%2557EB-INF/web.xml
 
 After some attempts of the above exploit and further research, no vulnerabilities can be found associated with the Jetty 9.4.41 version yet.
 
+**CVE-2023-26049** Cookie Parser may leak information. 'There is a vulnerability in Eclipse Jetty that could allow a remote authenticated attacker to obtain sensitive information on the system.'  We are no an authenticated attacker.
+
+**CVE-2021-34429** 'The vulnerability allows a remote attacker to gain unauthorized access to otherwise restricted functionality.
+tried installing docker compose to see if i can download and replicate the Jetty infra. No success in downloading Docker Compose at all.
+
+
+
+
 ## Tried to connect to the SMB port with no access.
         root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
         Enter WORKGROUP\root's password: 
