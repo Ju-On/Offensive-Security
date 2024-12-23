@@ -115,3 +115,12 @@ Through Googling, we have disocvered a Medium potential vulnerability that may p
     Rapid7: https://www.rapid7.com/db/vulnerabilities/debian-cve-2021-28169/
 
 Exploit: /concat?/%2557EB-INF/web.xml
+
+After some attempts of the above exploit and further research, no vulnerabilities can be found associated with the Jetty 9.4.41 version yet.
+
+## Tried to connect to the SMB port with no access.
+        root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
+        Enter WORKGROUP\root's password: 
+        session setup failed: NT_STATUS_ACCESS_DENIED
+        root@kali:/home/kali# 
+
