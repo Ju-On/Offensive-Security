@@ -193,7 +193,12 @@ tried installing docker compose to see if i can download and replicate the Jetty
 
 </body></html>
 
-    
+## List of Jenkin vulnerabilities:
+    https://www.cvedetails.com/vulnerability-list/vendor_id-15865/product_id-34004/version_id-1127237/Jenkins-Jenkins-2.289.3.html?page=2&order=1
+
+**CVE-2024-43044** High The exploit will use the vulnerability to read files to forge a remember-me cookie for an admin account and gain access to Jenkins scripting engine. 
+
+**POC:** https://github.com/convisolabs/CVE-2024-43044-jenkins
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
