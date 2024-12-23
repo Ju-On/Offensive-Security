@@ -125,7 +125,11 @@ tried installing docker compose to see if i can download and replicate the Jetty
 
 ## GoBuster for website enumeration.
     gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -u http://192.168.64.136:8080/ --exclude-length 620 -v | grep "Status: 200"    
-    
+
+    root@kali:/home/kali# gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -u http://192.168.64.136:8080/ --exclude-length 620 -v | grep "Status: 200"
+    Found: /login                (Status: 200) [Size: 2028]
+    Found: /oops                 (Status: 200) [Size: 6503]
+
     Explanation:
     --no-error: Suppresses error messages.
     --exclude-length 620: Excludes responses with a length of 620 (likely irrelevant results).
@@ -166,7 +170,30 @@ tried installing docker compose to see if i can download and replicate the Jetty
     
     Fatal exception: Pycurl error 7: Failed to connect to 192.168.64.136 port 8080: Connection refused
 
-## Try found out more details on Jenkins.
+## Try found out more details on 192.168.64.136:8080 | curl -I http://192.168.64.136:8080
+    root@kali:/home/kali# curl -i http://192.168.64.136:8080
+    HTTP/1.1 403 Forbidden
+    Date: Mon, 23 Dec 2024 14:18:13 GMT
+    X-Content-Type-Options: nosniff
+    Set-Cookie: JSESSIONID.6dd96482=node016xz31g05zqmvnn516yomsoak2.node0; Path=/; HttpOnly
+    Expires: Thu, 01 Jan 1970 00:00:00 GMT
+    Content-Type: text/html;charset=utf-8
+    X-Hudson: 1.395
+    X-Jenkins: 2.289.3
+    X-Jenkins-Session: 19bdc77b
+    Content-Length: 548
+    Server: Jetty(9.4.41.v20210516)
+    
+    <html><head><meta http-equiv='refresh' content='1;url=/login?from=%2F'/><script>window.location.replace('/login?from=%2F');</script></head><body style='background-color:white; color:white;'>
+    
+    
+    Authentication required
+    <!--
+    -->
+
+</body></html>
+
+    
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
