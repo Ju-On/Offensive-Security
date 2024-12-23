@@ -200,6 +200,14 @@ tried installing docker compose to see if i can download and replicate the Jetty
 
 **POC:** https://github.com/convisolabs/CVE-2024-43044-jenkins
 
+**CVE-2024-43044** Checker Python script. https://github.com/HwMex0/CVE-2024-43044?tab=readme-ov-file
+Downloaded the custom script to identify if the current Jenkins version is vulnerable to CVE-2024-43044
+    
+    root@kali:/home/kali# python3 CVE-2024-43044.py http://192.168.64.136:8080
+    [+] http://192.168.64.136:8080 (Jenkins Version: 2.289.3) is potentially vulnerable.
+    root@kali:/home/kali# 
+
+
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
     Enter WORKGROUP\root's password: 
