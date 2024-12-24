@@ -255,6 +255,8 @@ None of these command lines worked, making this slightly more diffuclt. In this 
 
 Besides finding the public key usd in the x-instance-identity, no other direct findings can be found here. The base64 public key is normal information that is typically left disclosed and does not normally provide any direct attack opportunities.
 
+## Look to try exploiting the website directly next
+
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
     Enter WORKGROUP\root's password: 
