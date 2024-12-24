@@ -207,6 +207,54 @@ Downloaded the custom script to identify if the current Jenkins version is vulne
 
 **POC:** https://github.com/convisolabs/CVE-2024-43044-jenkins
 
+To firstly exploit Jenkins in this case we need to figure the 'Agent Node' if it is allowed on the endpoint without authentication.
+
+Common Jenkins Endpoints to Test:
+
+    Script Console:
+    curl -i http://192.168.64.136:8080/computer/
+
+    Manage Jenkins:
+    curl -i http://192.168.64.136:8080/manage
+
+    Jenkins API:
+    curl -i http://192.168.64.136:8080/api/json
+
+Test for Anonymous Access:
+
+    Node Listings:
+    curl -i http://192.168.64.136:8080/computer/
+
+None of these command lines worked, making this slightly more diffuclt. In this instance, we could take it a step further and exploit another vulnerability against Jenkins or Jetty and attempt for it to disclose the Agent Header information to potential get one step further into exploiting CVE-2024-43044. In a real life scenario, this would probably be attempted but at this point it is clear for this box alone. It is beyond the scope and the design intentions.
+
+## Furhter enumeration using Nikto web vulnerability scanner | nikto -h http://192.168.64.136:8080
+    root@kali:/home/kali# nikto -h http://192.168.64.136:8080
+    - Nikto v2.1.6
+    ---------------------------------------------------------------------------
+    + Target IP:          192.168.64.136
+    + Target Hostname:    192.168.64.136
+    + Target Port:        8080
+    + Start Time:         2024-12-24 01:36:01 (GMT-5)
+    ---------------------------------------------------------------------------
+    + Server: Jetty(9.4.41.v20210516)
+    + The anti-clickjacking X-Frame-Options header is not present.
+    + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
+    + Uncommon header 'x-jenkins' found, with contents: 2.289.3
+    + Uncommon header 'x-jenkins-session' found, with contents: d22a90da
+    + Uncommon header 'x-hudson' found, with contents: 1.395
+    + All CGI directories 'found', use '-C none' to test none
+    + Uncommon header 'x-hudson-theme' found, with contents: default
+    + Uncommon header 'x-instance-identity' found, with contents: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw43hS+kkhDV0LAwc2YVGFglH5IN1zZfBknSOOnM8uzQe2KSrC0PdLp+bTTNiK80Ill04oLGN5LBVAxwJ0koN0X2FPwGLqM6lJQlw9sESCUK0r6SfyTJJMZbsMaUKgwSFePnEbbheH4tPmNxGtI71812KggjsT22Oi5jKHv3rt2OM3dTa4Ma6jwLwke1Iz/rIYmRuW2pUanPVvyg7V2ZiWfqkMkWWs0WN9Y1MnGfyDrIGMYlDIFDZ1w2J25tBTzCR/tWMXOzyZh34hsbZX8a1bzFa7q+DsfL0D/hdDIG6pOuBO8JhffUsKe7qr4Xp2HQ1z/3AQLo4xYq8ojWOq7xX6wIDAQAB
+    + Uncommon header 'cross-origin-opener-policy' found, with contents: same-origin
+    + 26546 requests: 0 error(s) and 8 item(s) reported on remote host
+    + End Time:           2024-12-24 01:36:57 (GMT-5) (56 seconds)
+    ---------------------------------------------------------------------------
+    + 1 host(s) tested
+
+      *********************************************************************
+
+Besides finding the public key usd in the x-instance-identity, no other direct findings can be found here. The base64 public key is normal information that is typically left disclosed and does not normally provide any direct attack opportunities.
+
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
     Enter WORKGROUP\root's password: 
