@@ -257,6 +257,11 @@ Besides finding the public key usd in the x-instance-identity, no other direct f
 
 ## Look to try exploiting the website directly next
 
+![image](https://github.com/user-attachments/assets/8a6b42d3-5e28-4166-8d58-a408a55639ca)
+
+First attempt at traffic interception with proxy.
+
+
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
     Enter WORKGROUP\root's password: 
