@@ -261,6 +261,9 @@ Besides finding the public key usd in the x-instance-identity, no other direct f
 
 First attempt at traffic interception with proxy.
 
+Tried to modify the session cookie with the one found in previous curl -I findings with no success.
+
+Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
