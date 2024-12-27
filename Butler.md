@@ -271,16 +271,15 @@ First attempt at traffic interception with proxy.
 
 Change test1 with username and test1 to password. Attack type: Cluster bomb to make attempts against username and password spraying.
 
-![image](https://github.com/user-attachments/assets/d2c5bb79-1aea-47ce-b79a-a222cfc3422b)
+![image](https://github.com/user-attachments/assets/7ec2cb57-179c-4cc3-96b9-056c8d56c49e)
 
 Payload Sets 1 (username)
 
-![image](https://github.com/user-attachments/assets/842c60fd-806b-419d-a293-6fc669d1ebbe)
+![image](https://github.com/user-attachments/assets/bb46e8a2-fa16-473d-8cd7-f87e17e4e71e)
 
 Payload sets 2 (password)
 
 ## Changed burpe Payload Sets 1 and 2 to Smalllist.txt
-
 
 Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
 
