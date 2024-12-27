@@ -284,7 +284,9 @@ Bruteforce attempts was too slow, therefore proceeded to input my own smaller li
 
 ![image](https://github.com/user-attachments/assets/a878b9dc-6472-44df-8046-05d16e994718)
 
+![image](https://github.com/user-attachments/assets/7636917f-86fc-41ca-8c6d-d70423a205f7)
 
+Through scan results, we have found an interesting shorter length result on jenkins / jenkins
 
 Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
 
