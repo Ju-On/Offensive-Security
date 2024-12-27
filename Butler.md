@@ -261,7 +261,12 @@ Besides finding the public key usd in the x-instance-identity, no other direct f
 
 First attempt at traffic interception with proxy.
 
-Tried to modify the session cookie with the one found in previous curl -I findings with no success.
+![image](https://github.com/user-attachments/assets/b03352d6-ed03-4cc8-a539-756a0923df46)
+
+Tried to modify the session cookie with the one found in previous curl -I and Repat it back towards 192.168.64.136:8080 login page findings with no success.
+
+
+
 
 Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
 
