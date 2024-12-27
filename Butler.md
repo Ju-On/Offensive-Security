@@ -267,7 +267,7 @@ First attempt at traffic interception with proxy.
 
 ![image](https://github.com/user-attachments/assets/990194ae-931a-4621-b04a-0266003dca65) 
 
-![image](https://github.com/user-attachments/assets/90cab5d4-9f70-4dad-85f3-906bd7b8b556)
+![image](https://github.com/user-attachments/assets/ab057963-51ff-4ed0-8eed-2b74114819fb)
 
 Change test1 with username and test1 to password. Attack type: Cluster bomb to make attempts against username and password spraying.
 
