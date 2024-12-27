@@ -263,8 +263,21 @@ First attempt at traffic interception with proxy.
 
 ![image](https://github.com/user-attachments/assets/b03352d6-ed03-4cc8-a539-756a0923df46)
 
-Tried to modify the session cookie with the one found in previous curl -I and Repat it back towards 192.168.64.136:8080 login page findings with no success.
+## Tried to modify the session cookie with the one found in previous curl -I and Repat it back towards 192.168.64.136:8080 login page findings with no success.
 
+![image](https://github.com/user-attachments/assets/990194ae-931a-4621-b04a-0266003dca65) 
+
+![image](https://github.com/user-attachments/assets/90cab5d4-9f70-4dad-85f3-906bd7b8b556)
+
+Change test1 with username and test1 to password. Attack type: Cluster bomb to make attempts against username and password spraying.
+
+![image](https://github.com/user-attachments/assets/d2c5bb79-1aea-47ce-b79a-a222cfc3422b)
+
+Payload Sets 1 (username)
+
+![image](https://github.com/user-attachments/assets/842c60fd-806b-419d-a293-6fc669d1ebbe)
+
+Payload sets 2 (password)
 
 
 
