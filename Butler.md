@@ -288,7 +288,10 @@ Bruteforce attempts was too slow, therefore proceeded to input my own smaller li
 
 Through scan results, we have found an interesting shorter length result on jenkins / jenkins
 
-Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
+Through right clicking and Requesting the url in browser, an attempt to input http://burp/repeat/2/qjlrtbat1ed0a8u5suxc90asqkxcqbhy takes us directly to a login page of user:jenkins with passwword: jenkins
+
+![image](https://github.com/user-attachments/assets/6f069252-52f6-4b84-8990-bf827b616e1a)
+
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
