@@ -279,7 +279,12 @@ Payload Sets 1 (username)
 
 Payload sets 2 (password)
 
-## Changed burpe Payload Sets 1 and 2 to Smalllist.txt
+## Changed burpe Payload Sets 1 and 2 to a Small list
+Bruteforce attempts was too slow, therefore proceeded to input my own smaller list 
+
+![image](https://github.com/user-attachments/assets/a878b9dc-6472-44df-8046-05d16e994718)
+
+
 
 Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
 
