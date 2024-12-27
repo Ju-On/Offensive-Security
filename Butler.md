@@ -292,6 +292,7 @@ Through right clicking and Requesting the url in browser, an attempt to input ht
 
 ![image](https://github.com/user-attachments/assets/6f069252-52f6-4b84-8990-bf827b616e1a)
 
+## Now sucessful login has been made, Further enumeration is now required.
 
 ## Tried to connect to the SMB port with no access.
     root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
