@@ -279,6 +279,7 @@ Payload Sets 1 (username)
 
 Payload sets 2 (password)
 
+## Changed burpe Payload Sets 1 and 2 to Smalllist.txt
 
 
 Try to perform password spraying against target on 8080 with a common list of user names and passwords next in Burpe Suite.
