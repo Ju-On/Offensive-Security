@@ -291,3 +291,5 @@ Any user running /tmp/bash gains the privileges of the file's owner (e.g., root 
 +t Adds the sticky bit, which is usually intended for directories to restrict deletion. However, applying it to a file ensures only the owner, root, or system processes can delete or rename it, adding another layer of control.
 
     grimmie@academy:~$ echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash ; chmod +t /tmp/bash' > backup.sh
+
+<https://medium.com/@coot33/tcm-academy-writeup-d7ef122633b1> 
