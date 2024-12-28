@@ -300,3 +300,4 @@ Through right clicking and Requesting the url in browser, an attempt to input ht
     session setup failed: NT_STATUS_ACCESS_DENIED
     root@kali:/home/kali# 
 
+### Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
