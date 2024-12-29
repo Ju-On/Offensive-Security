@@ -300,5 +300,19 @@ Through right clicking and Requesting the url in browser, an attempt to input ht
 
 ![image](https://github.com/user-attachments/assets/6f069252-52f6-4b84-8990-bf827b616e1a)
 
+## Got into Jenkins and added 'unrestricted' user:2 password:2 - To create an alternate login.
+
+![image](https://github.com/user-attachments/assets/7b70ada5-c692-40cd-9c4f-23db8b56e424)
+
+## Findings:
+    Noted in the notificaiton centre, Jenkin has a ton of alerts detailing issues with the current build.
+    System Info: http://192.168.64.136:8080/systemInfo
+    Config Info: http://192.168.64.136:8080/configure
+    Log Info: http://192.168.64.136:8080/log/all
+    CLI Info: http://192.168.64.136:8080/cli/
+
+![image](https://github.com/user-attachments/assets/7ad81ed6-0368-40a7-8065-73b071948f1b)
+
+
 
 ### Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
