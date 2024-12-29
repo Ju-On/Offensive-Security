@@ -381,6 +381,12 @@ Above systeminfo shows us that the victim machine is operating on win10. To make
 ![image](https://github.com/user-attachments/assets/2ab7f09f-dc17-44e6-9375-2a6334e9e124)
 Succesful.
 
+Tried to telnet -a 192.168.64.129 5555 presented no yield. Other options that come to mind is to pivot and either use Powershell or get NC.exe downloaded on victim machine or have victim machine execute a malicious .ps script that will need to be currated for a reverse shell attempt.
 
 
-### Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
+
+
+
+
+
+### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
