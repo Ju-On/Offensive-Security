@@ -255,6 +255,14 @@ None of these command lines worked, making this slightly more diffuclt. In this 
 
 Besides finding the public key usd in the x-instance-identity, no other direct findings can be found here. The base64 public key is normal information that is typically left disclosed and does not normally provide any direct attack opportunities.
 
+## Now sucessful login has been made, Further enumeration is now required.
+
+## Tried to connect to the SMB port with no access.
+    root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
+    Enter WORKGROUP\root's password: 
+    session setup failed: NT_STATUS_ACCESS_DENIED
+    root@kali:/home/kali# 
+
 ## Look to try exploiting the website directly next
 
 ![image](https://github.com/user-attachments/assets/8a6b42d3-5e28-4166-8d58-a408a55639ca)
@@ -292,12 +300,5 @@ Through right clicking and Requesting the url in browser, an attempt to input ht
 
 ![image](https://github.com/user-attachments/assets/6f069252-52f6-4b84-8990-bf827b616e1a)
 
-## Now sucessful login has been made, Further enumeration is now required.
-
-## Tried to connect to the SMB port with no access.
-    root@kali:/home/kali# smbclient -L //192.168.64.136 -p 445
-    Enter WORKGROUP\root's password: 
-    session setup failed: NT_STATUS_ACCESS_DENIED
-    root@kali:/home/kali# 
 
 ### Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
