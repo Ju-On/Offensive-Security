@@ -416,6 +416,4 @@ nukedefender.ps1 is likely just a powershell script created to allow the current
 
 ## Run winpease.exe on butler and analyse results.
 
-
-
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
