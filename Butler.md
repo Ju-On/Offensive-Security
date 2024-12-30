@@ -416,4 +416,19 @@ nukedefender.ps1 is likely just a powershell script created to allow the current
 
 ## Run winpease.exe on butler and analyse results.
 
+After enabling unlimited history in terminal, we are now able to view large output files rather than try goof around and have it outputed into a text file and sent back to attacking machine to view...
+
+## winPEAS system info and other found results
+![image](https://github.com/user-attachments/assets/509a351e-71d4-474f-8144-e808d6ac03cf)
+
+Auto and Running - No quotes and space detected allows for attackers to add malicious files in this path and the program Winwise will automatically run the malicious file (DLL Hijacking attack). **No quotes and spaces is a vulnerability.**
+
+![image](https://github.com/user-attachments/assets/f46723e0-fd4c-4256-8fb2-a2090d492df6)
+
+Other very intersting findings from winPEAS log. All pertain to DLL hijacking issues.
+
+## From the first screenshot. WE CAN MODIFY THIS SERVICE: allaccess
+
+proceed to create and drop a new reverse shell for win10, a misconfiguration seems to allow us to implant malicious files which will then be executed with administration rights once service is restarted.
+
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
