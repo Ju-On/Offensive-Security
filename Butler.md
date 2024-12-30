@@ -394,6 +394,12 @@ A POC exists at https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76
 
 ![image](https://github.com/user-attachments/assets/8c416491-60b3-4e4f-b3dd-12969672f6ee)
 
-Reverse shell established.
+Reverse shell established. We are not NT authority system yet! 
+
+Now that we have established a reverse shell back to our Linux machine, there is a multitude of methodes to attempt privilige escalation tactics. We have already conducted a cursory enumeration of the target via systeminfo.
+
+## To help us in the second stages of post exploitation, we can use a tool called winPEAS. 
+
+
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
