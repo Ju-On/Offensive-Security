@@ -398,8 +398,9 @@ Reverse shell established. We are not NT authority system yet!
 
 Now that we have established a reverse shell back to our Linux machine, there is a multitude of methodes to attempt privilige escalation tactics. We have already conducted a cursory enumeration of the target via systeminfo.
 
-## To help us in the second stages of post exploitation, we can use a tool called winPEAS. 
-
+## To help us in the second stages of post exploitation - enumeraiton phase, we can use a tool called winPEAS. 
+    Once downloaded on Kali, and hosted in 'fire' (our dedicated transfer folder) 
+    Execute file hosting on attacker machine via python3 -m http.<server> 8000
 
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
