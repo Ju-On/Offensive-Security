@@ -431,4 +431,14 @@ Other very intersting findings from winPEAS log. All pertain to DLL hijacking is
 
 proceed to create and drop a new reverse shell for win10, a misconfiguration seems to allow us to implant malicious files which will then be executed with administration rights once service is restarted.
 
+Navigate to target location that presents this vulnerability:
+
+    c:\Program Files (x86)\Wise>
+
+Create windows reverse shell TCP via MSFVENOM
+
+Prepare reverse shell suitable on attacker machine and have it dropped in file location using certutil.
+
+    
+
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
