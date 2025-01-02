@@ -447,7 +447,7 @@ Prepare reverse shell suitable on attacker machine and have it dropped in file l
 
 ![image](https://github.com/user-attachments/assets/5ca87ffd-1b92-4674-be2e-ccace41385a9)
 
-## Begin a new listener and Force restart of Wise services.
+## Begin a new listener and force restart of Wise services.
 
 Looks like it did not work, therefore renaming the wisebad.exe to simply wise.exe might be required.
 
