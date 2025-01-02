@@ -481,6 +481,12 @@ Success:
 
 ![image](https://github.com/user-attachments/assets/18fa1831-c531-4934-a24e-1d042338753d)
 
+    C:\Windows\system32>whoami
+    whoami
+    nt authority\system
+    
+    C:\Windows\system32>
+
 *******
 
 ### RED TEAM - Jenkins exploitation study: https://blog.orange.tw/posts/2019-01-hacking-jenkins-part-1-play-with-dynamic-routing/
