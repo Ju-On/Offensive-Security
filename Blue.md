@@ -162,4 +162,4 @@ However, these are typically not direct remote code execution vulnerabilities an
 ### **Setting Netcat alternative**
     netcat -nlvp 9999
     
-<https://medium.com/@coot33/tcm-blue-writeup-2474fc32cca3>
+### Blue Walkthrough - <https://medium.com/@coot33/tcm-blue-writeup-2474fc32cca3>
