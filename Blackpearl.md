@@ -152,3 +152,6 @@ nothing interesting.
     
 No success
 
+# Try brute forcing SSH with username alek
+
+
