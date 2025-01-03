@@ -26,6 +26,9 @@ nikto -h http://[IPaddress:8080]
 ## Cracking
 Zip files: fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt [target.zip]
 
+## Brute forcing
+Hydra
+
 ## Linux Post Exploitation
 history
 
