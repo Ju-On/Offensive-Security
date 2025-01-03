@@ -14,3 +14,14 @@ Attacker 192.168.64.129
     192.168.64.254  00:50:56:f7:1b:8f       VMware, Inc.
 
 ## Nmap Enumeration
+
+nmap -sV -A -T4 -p- 192.168.64.137
+General Scan
+
+![image](https://github.com/user-attachments/assets/42947c0a-610f-4839-a618-bac014163784)
+
+nmap -sV -A -T4 --top-ports 500 192.168.64.137
+Top ports only
+
+![image](https://github.com/user-attachments/assets/50505bab-9370-42c2-9ac2-407e46354818)
+
