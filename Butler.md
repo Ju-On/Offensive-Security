@@ -227,7 +227,7 @@ Test for Anonymous Access:
 
 None of these command lines worked, making this slightly more diffuclt. In this instance, we could take it a step further and exploit another vulnerability against Jenkins or Jetty and attempt for it to disclose the Agent Header information to potential get one step further into exploiting CVE-2024-43044. In a real life scenario, this would probably be attempted but at this point it is clear for this box alone. It is beyond the scope and the design intentions.
 
-## Furhter enumeration using Nikto web vulnerability scanner | nikto -h http://192.168.64.136:8080
+## Further enumeration using Nikto web vulnerability scanner | nikto -h http://192.168.64.136:8080
     root@kali:/home/kali# nikto -h http://192.168.64.136:8080
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
