@@ -74,8 +74,26 @@ Findings from above scan:
 
 ## SSH Random Attempt
 Username combos: admin, administrator
-passworrd combos: admin, administrator, [enter]
+password combos: admin, administrator, [enter]
 
 ![image](https://github.com/user-attachments/assets/c9a9133e-78e5-459b-9556-3efce0474f84)
+
 No success.
+
+## Webpage Inspection
+
+![image](https://github.com/user-attachments/assets/5e4dc761-707c-42db-93d3-61bb19452815)
+
+![image](https://github.com/user-attachments/assets/b56d0fec-0f7b-4f3a-9684-f713529bb2ec)
+
+#### Potential finding in web inspection:
+    Webmaster: alek@blackpearl.tcm 
+
+#### What we know:
+    Webserver: nginx 1.14.2
+    OS: linux 4.15 - 5.8
+    7.8 HIGH [DOS] CVE-2011-3192: The Apache web server is vulnerable to a denial of service attack when numerous overlapping byte ranges are requested.
+
+
+
 
