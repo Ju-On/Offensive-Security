@@ -103,9 +103,22 @@ dirbuster medium list
 ![image](https://github.com/user-attachments/assets/706cd5fd-fda6-4ecc-879a-0dff612e27fc)
 secrets file
 
-3333333333Image}
+![image](https://github.com/user-attachments/assets/9998b1ea-9fe4-4f97-baeb-bd38d71722dc)
 gobuster dir -w /usr/share/wordlists/rockyou.txt --no-error -u http://192.168.64.137/ -v | grep "Status: 200" 
 [image]
 rockyou.txt
 
-## 
+no success.
+
+## Nikto scan
+
+nikto -h http://192.168.64.137
+![image](https://github.com/user-attachments/assets/d4e0a204-8b79-4fee-99fc-5f85e9795f1b)
+No results
+
+nikto -h http://192.168.64.137 -C all
+![image](https://github.com/user-attachments/assets/0f95940e-f4ec-4ab6-b246-47d090a29e27)
+
+nothing interesting.
+
+
