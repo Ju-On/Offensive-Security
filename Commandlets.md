@@ -7,6 +7,8 @@ mount -t nfs [server ip]:[remote path shown from showmount] [to local mount poin
 
 nmap -sV -A -T4 -p- 
 
+nmap -sV -A -T4 --top-ports 500 [IpAddress]
+
 nmap --sC ? 
 
 gobuster ######
