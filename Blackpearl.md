@@ -77,6 +77,5 @@ Username combos: admin, administrator
 passworrd combos: admin, administrator, [enter]
 
 ![image](https://github.com/user-attachments/assets/c9a9133e-78e5-459b-9556-3efce0474f84)
-
 No success.
 
