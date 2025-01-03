@@ -121,4 +121,21 @@ nikto -h http://192.168.64.137 -C all
 
 nothing interesting.
 
+## curl -I 192.168.64.137
+    root@kali:/home/kali# curl -I 192.168.64.137
+    HTTP/1.1 200 OK
+    Server: nginx/1.14.2
+    Date: Fri, 03 Jan 2025 14:01:20 GMT
+    Content-Type: text/html
+    Content-Length: 652
+    Last-Modified: Mon, 31 May 2021 09:28:59 GMT
+    Connection: keep-alive
+    ETag: "60b4ac5b-28c"
+    Accept-Ranges: bytes
+    
+    root@kali:/home/kali# 
+
+nothing interesting.
+
+
 
