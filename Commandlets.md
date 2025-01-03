@@ -15,7 +15,7 @@ nmap -p- --script vuln [target]
 
 nmap --top-ports 500 --script vuln [target]
 
-gobuster ######
+gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/rockyou.txt
 
 ## Web Enumeration
 
