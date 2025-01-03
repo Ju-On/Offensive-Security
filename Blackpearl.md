@@ -100,6 +100,12 @@ gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --n
 ![image](https://github.com/user-attachments/assets/13d436f2-30ac-41ee-85d4-9ae62b6def33)
 dirbuster medium list
 
+![image](https://github.com/user-attachments/assets/706cd5fd-fda6-4ecc-879a-0dff612e27fc)
+secrets file
+
+3333333333Image}
 gobuster dir -w /usr/share/wordlists/rockyou.txt --no-error -u http://192.168.64.137/ -v | grep "Status: 200" 
 [image]
 rockyou.txt
+
+## 
