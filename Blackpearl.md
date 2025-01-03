@@ -96,6 +96,7 @@ No success.
 
 ## IP Directory Enumeration with Gobuster
 
-
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -u http://192.168.64.137/ -v | grep "Status: 200" 
+![image](https://github.com/user-attachments/assets/13d436f2-30ac-41ee-85d4-9ae62b6def33)
 
 
