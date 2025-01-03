@@ -15,6 +15,8 @@ gobuster ######
 
 Curl -I http://[WebsiteORip]
 
+nikto -h http://[IPaddress:8080]
+
 ## Cracking
 Zip files: fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt [target.zip]
 
