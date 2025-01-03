@@ -29,6 +29,9 @@ Zip files: fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt [target.zip]
 ## Brute forcing
 Hydra
 
+nmap -p 22 --script ssh-brute --script-args="userdb=/path/to/username_wordlist.txt,passdb=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt" 192.168.64.137
+
+
 ## Linux Post Exploitation
 history
 
