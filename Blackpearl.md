@@ -137,5 +137,18 @@ nothing interesting.
 
 nothing interesting.
 
-
+## CVE-2013-4547 URI Processing Security Bypass attempt
+    source: https://www.securityfocus.com/bid/63814/info
+    
+    nginx is prone to a remote security-bypass vulnerability.
+    
+    An attacker can exploit this issue to bypass certain security restrictions and perform unauthorized actions.
+    
+    nginx 0.8.41 through 1.5.6 are vulnerable. 
+    
+    The following example data is available:
+    
+    /file \0.php 
+    
+No success
 
