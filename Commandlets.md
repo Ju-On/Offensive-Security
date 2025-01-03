@@ -19,7 +19,7 @@ gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-l
 
 ## Web Enumeration
 
-Curl -I http://[WebsiteORip]
+Curl -I http://[target]
 
 nikto -h http://[IPaddress:8080]
 
