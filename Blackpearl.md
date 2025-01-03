@@ -94,6 +94,8 @@ No success.
     OS: linux 4.15 - 5.8
     7.8 HIGH [DOS] CVE-2011-3192: The Apache web server is vulnerable to a denial of service attack when numerous overlapping byte ranges are requested.
 
+## IP Directory Enumeration with Gobuster
+
 
 
 
