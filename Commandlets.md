@@ -23,6 +23,16 @@ Curl -I http://[target]
 
 nikto -h http://[IPaddress:8080]
 
+## DNS enumeration (workflow)
+
+dig -x [IP]
+
+nslookup [IP]
+
+dnsrecon -r [IP range/24]
+
+dnsrecon -r [IP range/24] -n 192.168.102.1
+
 ## Cracking
 Zip files: fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt [target.zip]
 
