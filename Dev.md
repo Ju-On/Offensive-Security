@@ -411,4 +411,4 @@ Search for +sudo and then look for zip binary. In this instance we are looking f
 
 Proceeded to utilise LoLbin exploit to bypass restrictions and elevate access as a Root user.
 
-<https://abdhamza.medium.com/tcm-security-dev-box-writeup-479ba6afb8f7>
+## Dev Walkthrough <https://abdhamza.medium.com/tcm-security-dev-box-writeup-479ba6afb8f7> / https://medium.com/@coot33/tcm-dev-walkthrough-6eadd0d89f06
