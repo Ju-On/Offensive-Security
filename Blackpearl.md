@@ -168,7 +168,9 @@ dnsrecon -r 127.0.0.0/24 -n 192.168.64.137
 ![image](https://github.com/user-attachments/assets/cef093c3-8e6c-4666-8437-aa006c53f4d3)
 Finding: PTR blackpearl.tcm 127.0.0.1
 
+A 'Pointer' from the reverse DNS lookup shows us the record for IP address 127.0.0.1 pointing to blackpearl.tcm. **[A PTR record is used for reverse DNS lookups, associating an IP address with a domain name.]**
 
+## Allocating target IP with newly found domain.
 
-
+Lets allocate the target IP with the blackpearl.tcm domain under /etc/hosts
 
