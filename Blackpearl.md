@@ -160,5 +160,15 @@ No success
 
 Ran multiple itereations on SSH brute forcing with no success on any.
 
-##
+## Moved on to dns enumeration
+
+We try to find any DNS records against the target IP 192.168.64.137. The current network ranges it is operating on is 127.0.0.0/24 **[this is due to all virtual machines currently being hosted on a singular machine. In a real life example, this would be totally different, and we would need to distinguish the IP ranges the target IP is currently operating on.]**
+
+dnsrecon -r 127.0.0.0/24 -n 192.168.64.137 
+![image](https://github.com/user-attachments/assets/cef093c3-8e6c-4666-8437-aa006c53f4d3)
+Finding: PTR blackpearl.tcm 127.0.0.1
+
+
+
+
 
