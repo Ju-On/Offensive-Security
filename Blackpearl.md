@@ -234,4 +234,17 @@ Turns out there was findings when grep "Status: 200" was removed
 
 directory /navigate
 
-    
+![image](https://github.com/user-attachments/assets/3c08872e-809e-494d-a028-3e6592e54dc0)
+
+![image](https://github.com/user-attachments/assets/770fad3d-5f78-47bb-af66-a405f96c7c59)
+
+session cookie.
+
+![image](https://github.com/user-attachments/assets/b5e46528-2047-48e4-9708-71f0c58af445)
+
+seems like user 'alek' may potentially be an active user based on the error handling message.
+
+## Either attempt brute forcing of login page or potentially try cookie session hijacking.
+
+
+
