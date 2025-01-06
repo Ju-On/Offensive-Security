@@ -174,3 +174,20 @@ A 'Pointer' from the reverse DNS lookup shows us the record for IP address 127.0
 
 Lets allocate the target IP with the blackpearl.tcm domain under /etc/hosts
 
+    root@kali:/etc# nano hosts
+    root@kali:/etc# cat hosts
+    127.0.0.1       localhost
+    127.0.1.1       kali
+    
+    # The following lines are desirable for IPv6 capable hosts
+    ::1     localhost ip6-localhost ip6-loopback
+    ff02::1 ip6-allnodes
+    ff02::2 ip6-allrouters
+    192.168.64.137 blackpearl.tcm
+    root@kali:/etc# 
+
+## Check blackpearl.tcm/ in browser
+
+![image](https://github.com/user-attachments/assets/db061ee2-e2d0-4d83-bf8a-36c092a121b2)
+Blackpearl.tcm/ has now been allocated with the target IP, which now shows us more details.
+
