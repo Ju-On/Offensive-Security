@@ -17,6 +17,8 @@ nmap --top-ports 500 --script vuln [target]
 
 gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -v | grep "Status: 200"
 
+gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error
+
 ## Web Enumeration
 
 Curl -I http://[target]
