@@ -244,7 +244,11 @@ session cookie.
 
 seems like user 'alek' may potentially be an active user based on the error handling message.
 
-## Either attempt brute forcing of login page or potentially try cookie session hijacking.
+## Options currently: attempt brute forcing of login page, try cookie session hijacking or search for vulnerabilities of NavigateCMS.
+
+In a real world scenario, I should aim to run all three cocurrently. I will require some more knowledge on setting up interception proxies. 
+
+
 
 
 
