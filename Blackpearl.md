@@ -191,3 +191,47 @@ Lets allocate the target IP with the blackpearl.tcm domain under /etc/hosts
 ![image](https://github.com/user-attachments/assets/db061ee2-e2d0-4d83-bf8a-36c092a121b2)
 Blackpearl.tcm/ has now been allocated with the target IP, which now shows us more details.
 
+**Findings:**
+
+    System 	Linux blackpearl 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 
+    Configuration File (php.ini) Path: 	/etc/php/7.3/fpm
+    Loaded Configuration File: 	/etc/php/7.3/fpm/php.ini
+    Scan this dir for additional .ini files: 	/etc/php/7.3/fpm/conf.d 
+
+![image](https://github.com/user-attachments/assets/719572fd-5d5c-475f-a9cf-7426514f456d)
+
+## Attempted gobuster to search for directories on blackpearl.tcm/ with dirbuster medium and rockyou
+No findings.
+
+    gobuster dir -u blackpearl.tcm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -v | grep "status: 200"
+
+    gobuster dir -u http://blackpearl.tcm/ -w /usr/share/wordlists/rockyou.txt --no-error -v | grep "Status: 200"
+
+Turns out there was findings when grep "Status: 200" was removed
+    
+    gobuster dir -u blackpearl.tcm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error
+
+    root@kali:/home/kali# gobuster dir -u blackpearl.tcm/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error
+    ===============================================================
+    Gobuster v3.6
+    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+    ===============================================================
+    [+] Url:                     http://blackpearl.tcm/
+    [+] Method:                  GET
+    [+] Threads:                 10
+    [+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+    [+] Negative Status codes:   404
+    [+] User Agent:              gobuster/3.6
+    [+] Timeout:                 10s
+    ===============================================================
+    Starting gobuster in directory enumeration mode
+    ===============================================================
+    /navigate             (Status: 301) [Size: 185] [--> http://blackpearl.tcm/navigate/]
+    Progress: 220560 / 220561 (100.00%)
+    ===============================================================
+    Finished
+    ===============================================================
+
+directory /navigate
+
+    
