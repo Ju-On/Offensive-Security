@@ -248,6 +248,7 @@ seems like user 'alek' may potentially be an active user based on the error hand
 
 In a real world scenario, I should aim to run all three cocurrently. I will require some more knowledge on setting up interception proxies. 
 
+## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
 
 
