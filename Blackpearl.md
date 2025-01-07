@@ -273,7 +273,7 @@ Upgrading shell with further instructions provided in PoC
 
 Success.
 
-## Now that we have exploited a combination of vulnerabile file upload and authentication bypass.
+## Now that we have exploited a combination of vulnerabilities, #1 file upload and #2 authentication bypass.
 We have managed to get into navigate instance and start a reverse shell, with upgraded shell. At this stage we will need to conduct further enumeration of the new environment we are in.
 
 
