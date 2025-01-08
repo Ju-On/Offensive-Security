@@ -329,5 +329,15 @@ cat /etc/passwd
 finding:
 alek is a user with /bin/bash
 
+![image](https://github.com/user-attachments/assets/ca8045e0-bece-4471-9b43-cf4c0f96856b)
+
+interesting files found in /var/backups: shadow.bak and passwd.bak. Going to attempt to download these files onto attacker machine.
+
+![image](https://github.com/user-attachments/assets/566e4038-1930-4d07-9d3e-09b0a39c3b4d)
+
+![image](https://github.com/user-attachments/assets/83f8a0a1-a6c2-47d5-a2fa-99b1f18b41ec)
+
+Denied.
+
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
