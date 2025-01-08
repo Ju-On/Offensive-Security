@@ -339,5 +339,7 @@ interesting files found in /var/backups: shadow.bak and passwd.bak. Going to att
 
 Denied.
 
+## After takinga hint, the problem here is that we are not working with an 'interactive shell', thus we need to work on gaining an 'interactive shell' firstly.
+
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
