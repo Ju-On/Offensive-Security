@@ -351,5 +351,9 @@ We have identified the environment containing python 2.7.16, using python -c 'im
 ![image](https://github.com/user-attachments/assets/a6986cb0-42d3-4208-a9ef-c574d51730f3)  
 interactive shell achieved.
 
+## Now that we have achieved interactive shell, our focus is now set on identifying SETUIDs.
+
+--- Do some research on what setuids are ---
+
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
