@@ -339,7 +339,17 @@ interesting files found in /var/backups: shadow.bak and passwd.bak. Going to att
 
 Denied.
 
-## After takinga hint, the problem here is that we are not working with an 'interactive shell', thus we need to work on gaining an 'interactive shell' firstly.
+## After taking a hint, the problem here is that we are not working with an 'interactive shell', thus we need to work on gaining an 'interactive shell' firstly.
+
+We have identified the environment containing python 2.7.16, using python -c 'import pty; pty.spawn("/bin/bash")' we can spawn an interactive shell.
+    
+    python -V
+    Python 2.7.16
+    python -c 'import pty; pty.spawn("/bin/bash")'
+    www-data@blackpearl:~/blackpearl.tcm/navigate$
+
+![image](https://github.com/user-attachments/assets/a6986cb0-42d3-4208-a9ef-c574d51730f3)  
+interactive shell achieved.
 
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
