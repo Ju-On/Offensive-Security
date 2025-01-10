@@ -351,16 +351,30 @@ We have identified the environment containing python 2.7.16, using python -c 'im
 ![image](https://github.com/user-attachments/assets/a6986cb0-42d3-4208-a9ef-c574d51730f3)  
 interactive shell achieved.
 
-## Now that we have achieved interactive shell, our focus is now set on identifying SETUIDs.
+## Now that we have achieved interactive shell, our focus is now set on identifying SETUIDs. In the privilege escalation part.
 
---- Do some research on what setuids are ---
+⬆️ **--- Do some research on what setuids are --- ⬆️**  
 
 A command we could use to research SETUID info is find / -perm -4000 -type f 2>/dev/null  
 
+**what this means:**  
 /: Search the entire filesystem.  
 -perm -4000: Look for files with the setuid bit enabled.  
 -type f: Search only for files.  
 2>/dev/null: Suppress error messages (e.g., for inaccessible directories).
+
+![image](https://github.com/user-attachments/assets/b6a72c99-1d3d-4478-aa48-fed784609fe6)
+
+A more refined command we can use when searching for SETUID is: find / -perm -4000 -type f -exec ls -l {} \; 2>/dev/null
+
+![image](https://github.com/user-attachments/assets/6bc02f65-daa3-4e6f-b975-9cc6846ed1c8)
+
+The s in -rwsr-xr-x indicates that the setuid bit is enabled for these files.
+When a file with the setuid bit is executed, it runs with the privileges of the file's owner, not the user who executed it.
+
+These files are owned by root. When executed, they run with root privileges, regardless of who runs them.
+
+The fact 'groups' or 'users' contain 'x' it means that they are able to execute the file... when executed it will execute with the owner privileges, in this case is root.
 
 
 
