@@ -356,10 +356,11 @@ interactive shell achieved.
 --- Do some research on what setuids are ---
 
 A command we could use to research SETUID info is find / -perm -4000 -type f 2>/dev/null  
-    /: Search the entire filesystem.
-    -perm -4000: Look for files with the setuid bit enabled.
-    -type f: Search only for files.
-    2>/dev/null: Suppress error messages (e.g., for inaccessible directories).
+
+/: Search the entire filesystem.  
+-perm -4000: Look for files with the setuid bit enabled.  
+-type f: Search only for files.  
+2>/dev/null: Suppress error messages (e.g., for inaccessible directories).
 
 
 
