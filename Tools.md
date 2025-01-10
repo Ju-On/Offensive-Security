@@ -69,3 +69,6 @@ Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-se
 
 ***********************
 
+**Linux/Unix Privilege Escalation**
+GTFOBins <https://gtfobins.github.io/>
+
