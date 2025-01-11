@@ -14,14 +14,20 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 ## Key Concept
 
-**Domain Servces**: AD DS stores directory data, manages communication between users and domains. These include user logon processes, authentication and directory searchers.
+**Domain Servces:** AD DS stores directory data, manages communication between users and domains. These include user logon processes, authentication and directory searchers.
 
-**Objects and Attributes**: Everything in AD is considered an object, each object represents a single entity. This can be a user, printer or group. Each object has attributes which are the associations attached to it.
+**Objects and Attributes:** Everything in AD is considered an object, each object represents a single entity. This can be a user, printer or group. Each object has attributes which are the associations attached to it.
 
-**Organisational Units**: OUs are containers within a domain, OUs can contain users, groups, computers and other OUs. They help create a hierarchical structure within a domain and facilitate the delegation of administrative control.
+**Organisational Units:** OUs are containers within a domain, OUs can contain users, groups, computers and other OUs. They help create a hierarchical structure within a domain and facilitate the delegation of administrative control.
 
-**Groups**: Groups are a collection of objects, these can include users, computers and other groups. Groups help manage permissions and access to other resources in a simplified way.
+**Groups:** Groups are a collection of objects, these can include users, computers and other groups. Groups help manage permissions and access to other resources in a simplified way.
 
-**Trusts**: 
+**Trusts:** Trusts are established between domains to allow users in one domain to access resources in another. 
+
+**Group Policy:**
+
+**NTLM:** 
+
+**NetNTLM authentication:**
 
 Reference <https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>
