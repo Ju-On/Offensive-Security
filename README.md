@@ -1,6 +1,6 @@
 keep going noob. Always more to break.
 
-I try to own these boxes through manual exploitation only (as much as possible).  
+I try to own these boxes through **manual** exploitation only (as much as possible). 
 Limited GPT assistance.  
 Walkthrough usage only when all brain cells have ceased to exists or only learning a new technique. 
 
