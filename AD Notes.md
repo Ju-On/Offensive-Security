@@ -12,6 +12,8 @@
 
 Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.
 
+-------
+
 ## Key Concept
 
 **Domain Servces:** AD DS stores directory data, manages communication between users and domains. These include user logon processes, authentication and directory searchers.
