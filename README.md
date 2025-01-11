@@ -1,4 +1,4 @@
-keep going noob.
+keep going noob. Always more to break.
 
 I try to own these boxes through manual exploitation only (as much as possible).  
 Limited GPT assistance.  
