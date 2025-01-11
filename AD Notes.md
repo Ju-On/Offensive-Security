@@ -24,10 +24,16 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 **Trusts:** Trusts are established between domains to allow users in one domain to access resources in another. 
 
-**Group Policy:**
+**Group Policy:** Group Policy provides centralized management and configuration of operating systems, applications, and users’ settings in an Active Directory environment.
 
-**NTLM:** 
+**NTLM:**  (New Technology LAN Manager)hashes are cryptographic representations of user passwords used for authentication in Windows environments. used for network authentication and remote access, especially in legacy systems or as a fallback for Kerberos.
 
-**NetNTLM authentication:**
+**NetNTLM authentication:** NetNTLM works using a challenge-response mechanism.
+
+-------
+
+## AD Pentesting Methodology
+
+**LLMNR Attack:** Link Local Multicast Resolution previously called NBT-NS 
 
 Reference <https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>
