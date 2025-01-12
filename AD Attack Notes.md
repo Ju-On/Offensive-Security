@@ -94,5 +94,8 @@ When network traffic is generated, we will get hashes corresponding to the victi
 
 
   
+------- 
+**Reference:**  
+<https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>  
 
-Reference <https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>
+<https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-2-f2630b836e73>
