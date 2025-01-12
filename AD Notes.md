@@ -36,6 +36,28 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 ## AD Pentesting Methodology
 
-**LLMNR Attack:** Link Local Multicast Resolution previously called NBT-NS 
+**Obtaining initiall credentials**
+
+**LLMNR Attack:** 
+
+Link Local Multicast Resolution previously called NBT-NS is a network protocol that is still in use for Windows environments for name    resolution. Operating on port 137 it is used as a fallback mechanism when DNS is not available or fails to resolve names.
+
+The requirements to perform this attack requires LLMNR/NBT-NS protocol enabled and the attacker has to be on the samee network as the target.
+
+In order to perform this attack you need to use the Responder tool which is is used to capture credentials and other sensitive information. It works by responding to certain network protocol requests, such as LLMNR/NBT-NS, and MDNS, which are typically broadcasted by devices on a local network. From the attacker machine run the below command and wait for traffic to be captured by Responder:
+
+    sudo responder -I eth0 -dwPV
+    #d:enable answer for DHCP broadcast
+    #w:Start the WPAD rogue proxy server
+    #P: force the NTLM authentication for the the proxy  
+
+You will then get username ad hash as shown below :
+
+  ![image](https://github.com/user-attachments/assets/aa31c708-a469-4ac7-a851-b9a8fde40a81)
+
+Once the NTLM hashes are acquired, you can now use multiple ways to crack the hash.
+
+    hashcat -m 5600 llmnr_hash.txt /usr/share/wordlists/rockyou.txt 
+
 
 Reference <https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>
