@@ -38,7 +38,7 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 **Obtaining initiall credentials**
 
-**LLMNR Attack:** 
+🔴 **LLMNR Attack:** 
 
 Link Local Multicast Resolution previously called NBT-NS is a network protocol that is still in use for Windows environments for name    resolution. Operating on port 137 it is used as a fallback mechanism when DNS is not available or fails to resolve names.
 
@@ -59,5 +59,40 @@ Once the NTLM hashes are acquired, you can now use multiple ways to crack the ha
 
     hashcat -m 5600 llmnr_hash.txt /usr/share/wordlists/rockyou.txt 
 
+🔴**SMBRelay Attack:**
+
+A type of network attack where authentication requests and responses are intercepted between client and a server.  
+It can act as a secondary attempt fall back when hash cracking has failed, as the intercepted hash can be directly relayed to authenticate with a server, removing the requirement for hash cracking.
+
+Requirements:
+
+* SMB signing is disabled or not enforced.
+
+* The relayed user credentials have administrative privileges on the target machine.
+
+* The attacker’s machine must be on the same network as the victim’s machine.
+
+To perform this, the attacker must identify the list of machines that meet the requirements above and have it saved in a file e.g victims.txt.
+
+Using Responder, disable SMB and HTTP in the configs file.
+
+    sudo responder -I eth0 -dwPv
+
+launch “Impacket-ntlmrelayx.py,” which will take the hashes captured by Responder and relay them to the list of victims specified in the victims.txt file:
+
+    impacket-ntlmrelayx -tf victims.txt -smb2support
+
+When network traffic is generated, we will get hashes corresponding to the victims where the relay process has succeeded:
+
+![image](https://github.com/user-attachments/assets/092903a7-6f48-4b9e-a9b0-ca82570b4759)
+
+🔴 **IPV6 DNS Takeover ATTACK**  
+
+
+
+
+
+
+  
 
 Reference <https://medium.com/@RootRouteway/hacking-active-directory-from-reconnaissance-to-exploitation-part-1-0ec218c4d533>
