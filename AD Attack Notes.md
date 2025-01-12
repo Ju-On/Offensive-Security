@@ -86,7 +86,7 @@ When network traffic is generated, we will get hashes corresponding to the victi
 
 ![image](https://github.com/user-attachments/assets/092903a7-6f48-4b9e-a9b0-ca82570b4759)
 
-🔴 **IPV6 DNS Takeover ATTACK**  
+🔴 **IPV6 DNS Takeover Attack**  
 
 
 
