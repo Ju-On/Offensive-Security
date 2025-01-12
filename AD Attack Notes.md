@@ -44,7 +44,7 @@ Link Local Multicast Resolution previously called NBT-NS is a network protocol t
 
 The requirements to perform this attack requires LLMNR/NBT-NS protocol enabled and the attacker has to be on the samee network as the target.
 
-In order to perform this attack you need to use the Responder tool which is is used to capture credentials and other sensitive information. It works by responding to certain network protocol requests, such as LLMNR/NBT-NS, and MDNS, which are typically broadcasted by devices on a local network. From the attacker machine run the below command and wait for traffic to be captured by Responder:
+In order to perform this attack you need to use the Responder tool which is used to capture credentials and other sensitive information. It works by responding to certain network protocol requests, such as LLMNR/NBT-NS, and MDNS, which are typically broadcasted by devices on a local network. From the attacker machine run the below command and wait for traffic to be captured by Responder:
 
     sudo responder -I eth0 -dwPV
     #d:enable answer for DHCP broadcast
