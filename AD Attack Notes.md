@@ -88,11 +88,17 @@ When network traffic is generated, we will get hashes corresponding to the victi
 
 🔴 **IPV6 DNS Takeover Attack**  
 
+An IPv6 DNS takeover attack involves an attacker exploiting vulnerabilities in a network’s IPv6 configuration to intercept and manipulate DNS queries. By introducing a rogue IPv6 address, the attacker can redirect DNS requests to malicious servers, enabling them to eavesdrop on, alter, or redirect network traffic.
 
+Requirements:
 
-
-
-
+* IPV6 enabled : it is enabled by default in all Windows versions starting from Windows Vista.
+  
+  
+  
+  
+  
+  
   
 ------- 
 **Reference:**  
