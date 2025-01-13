@@ -42,7 +42,7 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 Link Local Multicast Resolution previously called NBT-NS is a network protocol that is still in use for Windows environments for name    resolution. Operating on port 137 it is used as a fallback mechanism when DNS is not available or fails to resolve names.
 
-The requirements to perform this attack requires LLMNR/NBT-NS protocol enabled and the attacker has to be on the samee network as the target.
+The requirements to perform this attack requires LLMNR/NBT-NS protocol enabled and the attacker has to be on the same network as the target.
 
 In order to perform this attack you need to use the Responder tool which is used to capture credentials and other sensitive information. It works by responding to certain network protocol requests, such as LLMNR/NBT-NS, and MDNS, which are typically broadcasted by devices on a local network. From the attacker machine run the below command and wait for traffic to be captured by Responder:
 
@@ -51,7 +51,7 @@ In order to perform this attack you need to use the Responder tool which is used
     #w:Start the WPAD rogue proxy server
     #P: force the NTLM authentication for the the proxy  
 
-You will then get username ad hash as shown below :
+You will then get username and hash as shown below :
 
   ![image](https://github.com/user-attachments/assets/aa31c708-a469-4ac7-a851-b9a8fde40a81)
 
