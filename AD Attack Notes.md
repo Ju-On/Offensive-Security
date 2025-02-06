@@ -101,11 +101,21 @@ An IPv6 DNS takeover attack involves an attacker exploiting vulnerabilities in a
 Requirements:
 
 * IPV6 enabled : it is enabled by default in all Windows versions starting from Windows Vista.
-  
-  
-  
-  
-  
+
+In order to perform this attack, mitm6 and impacket-ntlmrelax can be used.  
+mitm6 operates as an IPv6 DHCP server, actively monitoring the primary interface of the attacker’s machine for incoming DHCPv6 configuration requests.  
+
+By default, Windows systems prioritize IPv6, leading them to frequently seek DHCPv6 configuration. When such requests are detected, mitm6 responds by assigning IPv6 addresses to targets within the designated domain. Additionally, it configures the attacker’s machine as the primary DNS server, thereby redirecting DNS queries through the attacker’s server.  
+
+At this stage, we can capture the domain traffic. However, to extract credentials, we require an authentication mechanism. This is where WPAD (Web Proxy Auto-Discovery) abuse comes into play.  
+
+WPAD is used to automatically detect the proxy configuration URL, which will be stored in a Proxy Auto-Configuration (PAC) file. By default, the clients query the DNS server for the URL of the PAC file. If a PAC file is found, all the web requests will be routed through the proxy configured in the PAC file.  
+
+We will host a deceptive WPAD (Web Proxy Auto-Discovery Protocol) service for the victim, configuring it to assign the attacker’s IP address as the web proxy when queried. Once the connection is established, the proxy will compel the target machine to provide the NTLM challenge/response.  
+
+Once the NTLM challenge/response pair is captured, it will be relayed to the LDAPS authentication service using impacket-ntlmrelayx. This allows us to create a new user within the Active Directory (AD), leveraging the LDAPS service installed on the AD server for authentication and user management.  
+
+
   
   
 ------- 
