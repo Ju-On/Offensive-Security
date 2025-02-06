@@ -116,7 +116,7 @@ We will host a deceptive WPAD (Web Proxy Auto-Discovery Protocol) service for th
 Once the NTLM challenge/response pair is captured, it will be relayed to the LDAPS authentication service using impacket-ntlmrelayx. This allows us to create a new user within the Active Directory (AD), leveraging the LDAPS service installed on the AD server for authentication and user management.  
 
 ## Step 2: Enumerating Active Directory  
-Once initila credentials have been obtained, enumeration of AD can begin. Numerous tools available for this puropose include Bloodhound, Microsoft Management Consol (MMC), PowerShell, PingCastle and more.
+Once initial credentials have been obtained, enumeration of AD can begin. Numerous tools available for this puropose include Bloodhound, Microsoft Management Consol (MMC), PowerShell, PingCastle and more.
 
 **Bloodhound:**
 
