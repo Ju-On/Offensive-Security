@@ -30,7 +30,15 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 **NTLM:**  (New Technology LAN Manager) hashes are cryptographic representations of user passwords used for authentication in Windows environments. Used for network authentication and remote access, especially in legacy systems or as a fallback for Kerberos.
 
-**NetNTLM authentication:** NetNTLM works using a challenge-response mechanism.
+**NetNTLM authentication:** NetNTLM works using a challenge-response mechanism.  
+
+**Kerberos:** A network authentication protocol designed to provide secure authentication for users and services over an insecure network. It was developed at MIT and is widely used in environments, especially in Active Directory (AD) implementations.  
+
+* Ticket-Based Authentication
+* Prevents Credential Reuse & Replay Attacks
+* Ticket Granting Ticket (TGT) Issued
+* Requesting Service Ticket
+* Accessing the Service
 
 -------
 
