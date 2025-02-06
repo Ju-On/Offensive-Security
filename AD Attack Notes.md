@@ -28,7 +28,7 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 **Group Policy:** Group Policy provides centralized management and configuration of operating systems, applications, and users’ settings in an Active Directory environment.
 
-**NTLM:**  (New Technology LAN Manager)hashes are cryptographic representations of user passwords used for authentication in Windows environments. used for network authentication and remote access, especially in legacy systems or as a fallback for Kerberos.
+**NTLM:**  (New Technology LAN Manager) hashes are cryptographic representations of user passwords used for authentication in Windows environments. Used for network authentication and remote access, especially in legacy systems or as a fallback for Kerberos.
 
 **NetNTLM authentication:** NetNTLM works using a challenge-response mechanism.
 
