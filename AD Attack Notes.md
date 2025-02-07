@@ -118,7 +118,7 @@ Once the NTLM challenge/response pair is captured, it will be relayed to the LDA
 ## Step 2: Enumerating Active Directory  
 Once initial credentials have been obtained, enumeration of AD can begin. Numerous tools available for this puropose include Bloodhound, Microsoft Management Consol (MMC), PowerShell, PingCastle and more.
 
-**Bloodhound:** A security tool used to map and analyze Active Directory environments. It helps identify relationships, permissions, and potential attack paths within an AD domain by visually displaying how users, groups, and computers are interconnected.  
+🔵 **Bloodhound:** A security tool used to map and analyze Active Directory environments. It helps identify relationships, permissions, and potential attack paths within an AD domain by visually displaying how users, groups, and computers are interconnected.  
 
 To gather data from AD, BloodHound requires the use of a collector. Several tools are available for this purpose, including SharpHound and bloodhound-python.  
 
