@@ -123,7 +123,13 @@ Once initial credentials have been obtained, enumeration of AD can begin. Numero
 To gather data from AD, BloodHound requires the use of a collector. Several tools are available for this purpose, including SharpHound and bloodhound-python.  
 
 Bloodhound uses Neo4j’s graph-based data structure a to efficiently store, query, and visualize AD relationships, making it easier to identify potential attack paths and security weaknesses within an AD domain.  
-  
+
+🔵 **Microsoft Management Console (MMC):** MMC is is a framework that provides a graphical user interface and a programming interface for managing and configuring Windows-based systems. It hosts various administrative tools, called snap-ins, which are used to manage hardware, software, and network components on a Windows operating system.
+
+To use MMC for AD enumeration, we first need to install the Remote Server Administration Tools (RSAT) AD Snap-Ins.
+
+
+
   
 ------- 
 **Reference:**  
