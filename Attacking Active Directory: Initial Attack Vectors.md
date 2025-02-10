@@ -10,3 +10,5 @@ LLMNR attacks use the Responder tool which captures credentials that are broadca
 
 ![image](https://github.com/user-attachments/assets/fc6902c4-acf7-4787-b2c8-607a7cd2900b)
 
+Commonly used tooling for LLMNR Poisoning attacks:  
+Responder, Impacket, MITM6
