@@ -75,5 +75,12 @@ GTFOBins <https://gtfobins.github.io/>
 ***********************
 
 **Active Directory**  
-Responder - LLMNR Poisoning attacks / Capturing Hashes.
+Responder - LLMNR Poisoning attacks / Capturing Hashes.  
+
+MITM6 for IPv6 environments
+
+Impacket  
+
+Metasplout Auxilliary modules
+
 
