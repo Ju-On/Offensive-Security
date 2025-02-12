@@ -1,4 +1,7 @@
-## Enumeration 
+## Enumeration  
+
+ip a  
+
 arp-scan -l
 
 showmount -e [server ip]
