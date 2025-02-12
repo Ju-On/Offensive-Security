@@ -14,3 +14,5 @@ Commonly used tooling for LLMNR Poisoning attacks:
 Responder, Impacket, MITM6
 
 ### Capturing Hashes with Responder
+
+Kali responder IP: 192.168.64.129/24
