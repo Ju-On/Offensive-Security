@@ -1,6 +1,7 @@
 Setup win2022 server  
 Setup Peterparker account  
 Setup Frankcastle account  
+Kali: 192.168.64.129/24
 
 ## LLMNR Poisoning
 Link Local Multicast resolution  
@@ -24,5 +25,12 @@ Ensure details such as nic, responder ip, is all correct. Once responder is on t
 
 ![image](https://github.com/user-attachments/assets/f4e41ca4-5d90-4b66-b181-399742def06f)
 
+### Cracking NTLM hashes  
 
+root@kali:/home/kali# hashcat -m 5600 ntlm.txt /usr/share/wordlists/rockyou.txt --force
 
+![image](https://github.com/user-attachments/assets/7d5a47ce-1ef8-4cb6-9e7d-b8785a930da5)
+
+Hash cracked.
+
+## LLMNR Poisoning Mitigation
