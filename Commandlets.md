@@ -88,6 +88,10 @@ nc -nlvp [port]
 ## Directory hosting
 python -m SimpleHTTPServer
 
+## Active Directory Attacks  
+
+sudo responder -I eth0 -dwPv
+
 
 
 
