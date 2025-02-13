@@ -33,4 +33,15 @@ root@kali:/home/kali# hashcat -m 5600 ntlm.txt /usr/share/wordlists/rockyou.txt 
 
 Hash cracked.
 
-## LLMNR Poisoning Mitigation
+## LLMNR Poisoning Mitigation  
+
+1. Disable LLMNR / NBT-NS (NetBIOS) Broadcasts.  
+2. Implement NAC on the internal network.
+3. Have strong password requirements for end users espicially admin or service accounts. This will also add to defense in depth.
+
+## SMB Relay Attack
+
+SMB (Server Message Block) is a protocol computers use to share files, printers, and other resources on a network. This common protocol can be abused when an attacker on the same internal network (domain and or subdomain) is actively attempting to capture the NTLM hashes transmitted over the network. Which is then maliciously relayed to a service / server, granting access since the hash is authenticated.
+
+
+
