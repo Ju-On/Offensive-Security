@@ -46,4 +46,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 **Requirements:**  
 * SMB signing must be disabled or not enforced on the target machine.  
 * Target machine should be admin, domain admin or service accounts for maximum effect.
+* Responder config files /etc/responsder/Responder.conf must have smb and https turned off, so that captured hashes are not stored but are instead 'relayed'.
+
+[insert picture here]
 
