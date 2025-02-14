@@ -62,7 +62,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 3. Start responsder with the new edited config files.
 
-            responder -I eth0 dwPv
+            responder -I eth0 -dwPv
 
 5. Start ntlmrelayx.py or impacket-ntlmrelax
 
