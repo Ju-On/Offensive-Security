@@ -1,6 +1,6 @@
 Setup win2022 server  
-Setup Peterparker account  
-Setup Frankcastle account  
+Setup Peterparker: 192.168.64.140  
+Setup Frankcastle: 192.168.64.139
 Kali: 192.168.64.129/24
 
 ## LLMNR Poisoning - Link Local Multicast resolution  
