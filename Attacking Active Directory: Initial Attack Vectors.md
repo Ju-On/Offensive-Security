@@ -50,11 +50,13 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 [insert picture here]
 
-Firstly identify hosts without SMB signing, 
+1. Firstly identify hosts without SMB signing, 
 
       nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn 
       
 ![image](https://github.com/user-attachments/assets/52f6904d-f256-467c-9b40-414b011f57c2)
 
+2. Once we have discovered our targets (have SMB signing disabled and not required). Create a targets.txt detailing the targets.
 
+      nano target.txt 
 
