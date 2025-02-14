@@ -50,3 +50,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 [insert picture here]
 
+Firstly identify hosts without SMB signing, 
+
+      nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24
+
