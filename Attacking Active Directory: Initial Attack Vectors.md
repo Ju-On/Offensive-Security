@@ -1,4 +1,4 @@
-Setup win2022 server  
+Setup win2022 server: 192.168.64.138   
 Setup Peterparker: 192.168.64.140  
 Setup Frankcastle: 192.168.64.139
 Kali: 192.168.64.129/24
@@ -52,5 +52,5 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 Firstly identify hosts without SMB signing, 
 
-      nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24
+      nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn 
 
