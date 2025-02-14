@@ -3,7 +3,7 @@ Setup Peterparker: 192.168.64.140
 Setup Frankcastle: 192.168.64.139  
 Kali: 192.168.64.129/24
 
-## LLMNR Poisoning - Link Local Multicast resolution  
+## 🚩LLMNR Poisoning - Link Local Multicast resolution
 
 **Requirements:**  
 * LLMNR attack can be performed if the LLMNR/NBT-NS is enabled and the attacker machine is in the same network as the target.
@@ -39,7 +39,7 @@ Hash cracked.
 2. Implement NAC on the internal network.
 3. Have strong password requirements for end users espicially admin or service accounts. This will also add to defense in depth.
 
-## SMB Relay Attack - Service Message Block
+## 🚩SMB Relay Attack - Service Message Block
 
 SMB (Server Message Block) is a protocol used for file shares, printers, and other resources on a network. This common protocol can be abused when an attacker on the same internal network (domain and or subdomain) is actively attempting to capture the NTLM hashes transmitted over the network. Which is then maliciously relayed to a service / server, granting access since the hash is authenticated.
 
