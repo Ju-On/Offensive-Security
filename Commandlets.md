@@ -97,6 +97,8 @@ python -m SimpleHTTPServer
 
 sudo responder -I eth0 -dwPv
 
+**Identify hosts without SMB signing:** nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24
+
 
 
 
