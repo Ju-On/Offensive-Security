@@ -17,7 +17,7 @@ Responder, Impacket, MITM6
 ### Capturing Hashes with Responder
 
 Kali responder IP: 192.168.64.129/24
-sudo responder -I eth0 -dwPv
+sudo responder -I eth0 -dwv
 
 ![image](https://github.com/user-attachments/assets/8de5ddb4-8956-4b4b-98f6-c2df1cb6ac99)  
 
