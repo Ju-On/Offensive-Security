@@ -48,7 +48,8 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 * Target machine should be admin, domain admin or service accounts for maximum effect.
 * Responder config files /etc/responsder/Responder.conf must have smb and https turned off, so that captured hashes are not stored but are instead 'relayed'.
 
-![image](https://github.com/user-attachments/assets/24c18c8f-2120-4dd1-84b1-d3d888702e53)
+![image](https://github.com/user-attachments/assets/d8f8f9fc-6393-4e74-877a-9a0a0731cc97)
+
 
 1. Firstly identify hosts without SMB signing. 
 
@@ -62,7 +63,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 3. Start responsder with the new edited config files.
 
-            responder -I eth0 -dwPv
+            responder -I eth0 -dPv
 
 5. Start ntlmrelayx.py or impacket-ntlmrelax
 
