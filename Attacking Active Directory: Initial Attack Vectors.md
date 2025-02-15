@@ -75,3 +75,9 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 We have succesfully captured the NTLM hash from frankcastle with Responder and also relayed it back to the server using impacket-ntlmrelayx 
 
+------- 
+**Reference:**  
+
+https://medium.com/@tayyabanoor1201/tcm-security-smb-relay-attack-writeup-dfc7cc113bb0
+
+https://medium.com/@rymak/smb-relay-attack-19192e1d158c
