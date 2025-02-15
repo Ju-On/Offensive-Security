@@ -54,7 +54,7 @@ The requirements to perform this attack requires LLMNR/NBT-NS protocol enabled a
 
 In order to perform this attack you need to use the Responder tool which is used to capture credentials and other sensitive information. It works by responding to certain network protocol requests, such as LLMNR/NBT-NS, and MDNS, which are typically broadcasted by devices on a local network. From the attacker machine run the below command and wait for traffic to be captured by Responder:
 
-    sudo responder -I eth0 -dwPV
+    sudo responder -I eth0 -dwv
     #d:enable answer for DHCP broadcast
     #w:Start the WPAD rogue proxy server
     #P: force the NTLM authentication for the the proxy  
@@ -84,7 +84,7 @@ To perform this, the attacker must identify the list of machines that meet the r
 
 Using Responder, disable SMB and HTTP in the configs file.
 
-    sudo responder -I eth0 -dwPv
+    sudo responder -I eth0 -dPv
 
 launch “Impacket-ntlmrelayx.py,” which will take the hashes captured by Responder and relay them to the list of victims specified in the victims.txt file:
 
