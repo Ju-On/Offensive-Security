@@ -69,4 +69,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
             impacket-ntlmrelax -tf targets.txt -smb2support
 
+![image](https://github.com/user-attachments/assets/ac597d69-e6d9-4da3-affa-ca352ce13850)
+
+We have succesfully captured the NTLM hash from frankcastle with Responder and also relayed it back to the server using impacket-ntlmrelayx 
 
