@@ -1,7 +1,7 @@
 Setup win2022 server: 192.168.64.138   
 Setup Peterparker: 192.168.64.140  
 Setup Frankcastle: 192.168.64.139  
-Kali: 192.168.64.129/24
+Kali: \\192.168.64.129/24
 
 ## 🚩LLMNR Poisoning - Link Local Multicast resolution
 
@@ -75,6 +75,20 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 We have succesfully captured the NTLM hash from frankcastle with Responder and also relayed it back to the server using impacket-ntlmrelayx 
 
+6. Gaining interactive shell with impacket
+
+            impacket-ntlmrelayx -tf targets.txt -smb2support -i  
+
+![image](https://github.com/user-attachments/assets/dff22fbf-f7e3-4415-bb76-c1f9a7c42541)
+
+Once interactive shell has been obtained as seen above, we can now bind this with netcat via the SMB shell TCP on 127.0.0.1:11000  
+Once netcat has been binded to list all the available arguments that is available to be used in this specific shell environment.  
+
+![image](https://github.com/user-attachments/assets/5ea73547-920d-4d1d-8ce7-085dadedbfc1)
+
+7. 
+
+   
 ------- 
 **Reference:**  
 
