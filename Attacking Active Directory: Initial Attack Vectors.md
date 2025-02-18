@@ -33,7 +33,7 @@ root@kali:/home/kali# hashcat -m 5600 ntlm.txt /usr/share/wordlists/rockyou.txt 
 
 Hash cracked.
 
-## LLMNR Poisoning Mitigation  
+## 🔵 LLMNR Poisoning Mitigation  
 
 1. Disable LLMNR / NBT-NS (NetBIOS) Broadcasts.  
 2. Implement NAC on the internal network.
@@ -93,6 +93,14 @@ Once netcat has been binded to list all the available arguments that is availabl
 ![image](https://github.com/user-attachments/assets/0bda36ba-980a-444a-ad6d-de4fa828981a)
 
 SMB relay attack with -c 'whoami' flag successful
+
+## 🔵 SMB Relay attack Mitigations
+
+1. Enable SMB Signing on all devices.
+2. Accounting Tiering (limiting specific accounts to defined tasks).
+3. Local admin restriction.
+4. Disable NTLM authentication (completely stops the attack however if Kerberos fails, it cannot default to NTLM authentication).
+
 
 ------- 
 **Reference:**  
