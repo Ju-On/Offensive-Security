@@ -88,7 +88,11 @@ Once netcat has been binded to list all the available arguments that is availabl
 
 7. Using command switch with impacket. 
 
-            impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"  
+            impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"
+
+![image](https://github.com/user-attachments/assets/0bda36ba-980a-444a-ad6d-de4fa828981a)
+
+SMB relay attack with -c 'whoami' flag successful
 
 ------- 
 **Reference:**  
