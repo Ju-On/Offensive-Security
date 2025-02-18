@@ -3,7 +3,7 @@ Setup Peterparker: \\192.168.64.140
 Setup Frankcastle: 192.168.64.139  
 Kali: \\192.168.64.129/24
 
-## 🚩LLMNR Poisoning - Link Local Multicast resolution
+## 🚩 LLMNR Poisoning - Link Local Multicast resolution
 
 **Requirements:**  
 * LLMNR attack can be performed if the LLMNR/NBT-NS is enabled and the attacker machine is in the same network as the target.
