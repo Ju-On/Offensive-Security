@@ -101,6 +101,13 @@ SMB relay attack with -c 'whoami' flag successful
 3. Local admin restriction.
 4. Disable NTLM authentication (completely stops the attack however if Kerberos fails, it cannot default to NTLM authentication).
 
+## 🚩 Gaining Shell Access
+
+### Metasploit module using psexec  
+
+
+
+### Manual mode using psexec.py    
 
 ------- 
 **Reference:**  
