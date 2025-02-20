@@ -107,7 +107,13 @@ SMB relay attack with -c 'whoami' flag successful
 
 
 
-### Manual mode using psexec.py    
+### Manual mode using psexec.py  
+
+### Other Remote command execution tools in Windows environments to attempt if one does not work.
+
+1. Psexec
+2. Wmiexec
+3. SMBexec
 
 ------- 
 **Reference:**  
