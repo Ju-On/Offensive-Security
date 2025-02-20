@@ -17,7 +17,8 @@ Responder, Impacket, MITM6
 ### Capturing Hashes with Responder
 
 Kali responder IP: 192.168.64.129/24
-sudo responder -I eth0 -dwv
+
+            sudo responder -I eth0 -dwv
 
 ![image](https://github.com/user-attachments/assets/8de5ddb4-8956-4b4b-98f6-c2df1cb6ac99)  
 
@@ -27,7 +28,7 @@ Ensure details such as nic, responder ip, is all correct. Once responder is on t
 
 ### Cracking NTLM hashes  
 
-root@kali:/home/kali# hashcat -m 5600 ntlm.txt /usr/share/wordlists/rockyou.txt --force
+            root@kali:/home/kali# hashcat -m 5600 ntlm.txt /usr/share/wordlists/rockyou.txt --force
 
 ![image](https://github.com/user-attachments/assets/7d5a47ce-1ef8-4cb6-9e7d-b8785a930da5)
 
@@ -104,10 +105,10 @@ SMB relay attack with -c 'whoami' flag successful
 ## 🚩 Gaining Shell Access
 
 ### Metasploit module using psexec  
-
-
+[prior to completing this secion, we will need to conduct another SMB relay attack using impacket-ntlmrelayx without any swithces. Capture the NT and LM hashes with the specific users captured. When these are obtained we can then direct them into the MSF modules or manual exploits]
 
 ### Manual mode using psexec.py  
+
 
 ### Other Remote command execution tools in Windows environments to attempt if one does not work.
 
