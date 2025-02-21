@@ -132,9 +132,11 @@ Tried to debug this issue by setting payload to non x64 version, setting exploit
 
 ![image](https://github.com/user-attachments/assets/e0567cb8-f6f3-4060-bcb4-81e7ad6cf4b6)  
 
-Not a big deal... we can try to manually exploit it. (My preferred way anyways ;]) 
+Not a big deal... we can try to manually exploit it via a hash attack... (My preferred way anyways ;]) 
 
 ### 🔴 Manual mode using psexec.py  
+
+
 
 
 ### Other Remote command execution tools in Windows environments to attempt if one does not work.
