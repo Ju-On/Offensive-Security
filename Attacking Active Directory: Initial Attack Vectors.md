@@ -134,7 +134,7 @@ Tried to debug this issue by setting payload to non x64 version, setting exploit
 
 Not a big deal... we can try to manually exploit it via a hash attack... (My preferred way anyways ;]) 
 
-### 🔴 Manual mode using psexec.py  
+### 🔴 Manual mode using psexec.py / wmiexec / atexec 
 Using impacket-psexec there seems to be a failure in popping a shell when using psexec.
 ![image](https://github.com/user-attachments/assets/b241e679-e193-444a-b7ef-4ff5e68e1a43)
 
@@ -149,6 +149,7 @@ attempted to use wmiexec instead, with no success. However after some trial and 
 1. Psexec
 2. Wmiexec
 3. SMBexec
+4. Atexec
 
 ------- 
 **Reference:**  
