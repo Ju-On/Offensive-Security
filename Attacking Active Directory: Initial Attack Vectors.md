@@ -127,6 +127,12 @@ configure the options with the information gathered in the LLMNR attack.
 
 ![image](https://github.com/user-attachments/assets/24e94831-edbe-47ec-b388-2287fe5ac5ba)
 
+After trying to run, the exploit was suggested to be succesful however no session was created.  
+Tried to debug this issue by setting payload to non x64 version, setting exploit targets to different settings, changing LPORT to 5555, setting up metasploit multi handler for connections and also nc -nlvp 4444. With no success.
+
+![image](https://github.com/user-attachments/assets/e0567cb8-f6f3-4060-bcb4-81e7ad6cf4b6)  
+
+Not a big deal... we can try to manually exploit it. (My preferred way anyways ;]) 
 
 ### Manual mode using psexec.py  
 
