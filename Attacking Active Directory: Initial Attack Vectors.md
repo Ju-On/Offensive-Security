@@ -135,7 +135,8 @@ Tried to debug this issue by setting payload to non x64 version, setting exploit
 Not a big deal... we can try to manually exploit it via a hash attack... (My preferred way anyways ;]) 
 
 ### 🔴 Manual mode using psexec.py  
-
+Using impacket-psexec there seems to be a failure in popping a shell.
+![image](https://github.com/user-attachments/assets/b241e679-e193-444a-b7ef-4ff5e68e1a43)
 
 
 
