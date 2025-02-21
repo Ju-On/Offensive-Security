@@ -83,6 +83,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
             [*] Done dumping SAM hashes for host: 192.168.64.140
             [*] Stopping service RemoteRegistry
             [*] Restoring the disabled state for service RemoteRegistry
+Above figure presents a SAM Dump  
 
 We have succesfully captured the NTLM hash from peterparker with Responder relaying the SAM authentication back to the server using impacket-ntlmrelayx. 
 
