@@ -115,7 +115,7 @@ SMB relay attack with -c 'whoami' flag successful
 
 ## 🚩 Gaining Shell Access
 
-### Metasploit module using psexec  
+### 🔴 Metasploit module using psexec  
 In metasploit we have chosen the windows/smb/psexec module  
 ![image](https://github.com/user-attachments/assets/5a95bb0b-2ef1-4559-9047-239d20571096)  
 
@@ -134,7 +134,7 @@ Tried to debug this issue by setting payload to non x64 version, setting exploit
 
 Not a big deal... we can try to manually exploit it. (My preferred way anyways ;]) 
 
-### Manual mode using psexec.py  
+### 🔴 Manual mode using psexec.py  
 
 
 ### Other Remote command execution tools in Windows environments to attempt if one does not work.
