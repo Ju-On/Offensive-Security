@@ -178,3 +178,5 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 https://medium.com/@tayyabanoor1201/tcm-security-smb-relay-attack-writeup-dfc7cc113bb0
 
 https://medium.com/@rymak/smb-relay-attack-19192e1d158c
+
+🥇https://ct-cyber.me/smb-relay-to-reverse-shells-initial-attack-vector-evading-av-bb8010097571
