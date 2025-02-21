@@ -79,10 +79,10 @@ Responder - LLMNR Poisoning attacks / Capturing Hashes.
 
 Relayx  
 
-Impacket  
+Impacket a collection of Python scripts and libraries used for network protocol manipulation, exploitation, and lateral movement. Widely used to interact with Windows systems over SMB, WMI, RPC, LDAP, and other protocols.
 
 MITM6 for IPv6 environments    
 
-Metasplout Auxilliary modules  
+Metasploit Auxilliary modules  
 
 
