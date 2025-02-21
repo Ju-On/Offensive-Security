@@ -135,9 +135,13 @@ Tried to debug this issue by setting payload to non x64 version, setting exploit
 Not a big deal... we can try to manually exploit it via a hash attack... (My preferred way anyways ;]) 
 
 ### 🔴 Manual mode using psexec.py  
-Using impacket-psexec there seems to be a failure in popping a shell.
+Using impacket-psexec there seems to be a failure in popping a shell when using psexec.
 ![image](https://github.com/user-attachments/assets/b241e679-e193-444a-b7ef-4ff5e68e1a43)
 
+attempted to use wmiexec instead, with no success. However after some trial and error atexec seemed like the one to go with. Unsure as to the reason why this one worked, but there seems to be some researcg suggesting the prior ones may be mitigated by Defender.  
+            
+            impacket-atexec MARVEL/fcastle:'Password1'@192.168.64.139 "whoami"
+![image](https://github.com/user-attachments/assets/3bdef2d4-e172-4b36-aaa0-c0927494f0d8)
 
 
 ### Other Remote command execution tools in Windows environments to attempt if one does not work.
