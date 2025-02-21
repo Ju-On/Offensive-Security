@@ -139,10 +139,21 @@ Using impacket-psexec there seems to be a failure in popping a shell when using 
 ![image](https://github.com/user-attachments/assets/b241e679-e193-444a-b7ef-4ff5e68e1a43)
 
 attempted to use wmiexec instead, with no success. However after some trial and error atexec seemed like the one to go with. Unsure as to the reason why this one worked, but there seems to be some researcg suggesting the prior ones may be mitigated by Defender.  
-            
-            impacket-atexec MARVEL/fcastle:'Password1'@192.168.64.139 "whoami"
-![image](https://github.com/user-attachments/assets/3bdef2d4-e172-4b36-aaa0-c0927494f0d8)
 
+Using atexec with domain/user and password
+
+            impacket-atexec MARVEL/fcastle:'Password1'@192.168.64.139 "whoami"
+![image](https://github.com/user-attachments/assets/3bdef2d4-e172-4b36-aaa0-c0927494f0d8)  
+
+Using atexec with administrator and hash
+
+            impacket-atexec administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc "whoami"
+![image](https://github.com/user-attachments/assets/36981884-3a94-4d8e-a8e9-d0c4508988ed)
+
+### 🟣 Findings  
+After some trial and error, not all 'execs' will work and this is normal in the real world. Through trial and error in this case the two that was discovered to work for both 'domain/user + password' and 'administrator + password' was **impackets**:
+* atexec
+* smbexec
 
 ### Other Remote command execution tools in Windows environments to attempt if one does not work.
 
