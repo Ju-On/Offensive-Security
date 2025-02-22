@@ -183,6 +183,8 @@ IPv6 can be used to conduct authentication via DNS to the Domain Controller via 
 
             mitm6 -d marvel.local
 
+![image](https://github.com/user-attachments/assets/a785249c-7700-46d4-b754-ab65689239ec)
+
 3. Now as we sit in the network we can already see traffic being captured across the network. In the ntlmrelayx instance, we can see succesfull relays from MARVEL/THEPUNISHER.
 
 ![image](https://github.com/user-attachments/assets/74060f44-2d49-46cf-a4a6-6058d8342c39)
@@ -191,9 +193,10 @@ IPv6 can be used to conduct authentication via DNS to the Domain Controller via 
 
 ![image](https://github.com/user-attachments/assets/584e547f-d928-4c74-b2c3-9f50e1b40add)
 
-5. As we continue to sit in the network with mitm6 running, we will eventually capture log in events. In this case, we will generate a login with MARVEL\administrator on THEPUNISHER machine.
+5. As we continue to sit in the network with mitm6 running, we will eventually capture log in events. In this case, we will generate a login with MARVEL\administrator on THEPUNISHER machine. And we eventually capture this event in addition it has generated a new account and password for us, allowing us to proceed with DCSYNC attack with secretsdump.py later.
 
-   
+![image](https://github.com/user-attachments/assets/db4f9e93-0527-4c16-92b9-65dc4d3a776b)
+
     
 ------- 
 **Reference:**  
