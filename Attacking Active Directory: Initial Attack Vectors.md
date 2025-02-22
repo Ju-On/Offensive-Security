@@ -191,6 +191,10 @@ IPv6 can be used to conduct authentication via DNS to the Domain Controller via 
 
 ![image](https://github.com/user-attachments/assets/584e547f-d928-4c74-b2c3-9f50e1b40add)
 
+5. As we continue to sit in the network with mitm6 running, we will eventually capture log in events. In this case, we will generate a login with MARVEL\administrator on THEPUNISHER machine.
+
+   
+    
 ------- 
 **Reference:**  
 
