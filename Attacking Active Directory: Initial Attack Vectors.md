@@ -138,7 +138,7 @@ Not a big deal... we can try to manually exploit it via a hash attack... (My pre
 Using impacket-psexec there seems to be a failure in popping a shell when using psexec.
 ![image](https://github.com/user-attachments/assets/b241e679-e193-444a-b7ef-4ff5e68e1a43)
 
-attempted to use wmiexec instead, with no success. However after some trial and error atexec seemed like the one to go with. Unsure as to the reason why this one worked, but there seems to be some researcg suggesting the prior ones may be mitigated by Defender.  
+attempted to use wmiexec instead, with no success. However after some trial and error atexec seemed like the one to go with. Unsure as to the reason why this one worked, but there seems to be some research suggesting the prior ones may be mitigated by Defender.  
 
 👍Using atexec with domain/user and password
 
