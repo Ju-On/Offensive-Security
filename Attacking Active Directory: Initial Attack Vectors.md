@@ -173,9 +173,23 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 4. Atexec
 
 ## 🚩 IPv6 Attacks - Another form of relaying.  
-IPv6 can be used to conduct authentication via DNS to the Domain Controller via LDAP or SMB.
+IPv6 can be used to conduct authentication via DNS to the Domain Controller via LDAP or SMB.  
 
+1.  We will use ntlmrelayx here with ipv6 -6 and the target -t pointing to ldaps of the DC. -wh (wpad) -l (gathered information)  
 
+            impacket-ntlmrelayx -6 -t ldaps://192.168.64.138 -wh fakepad.marvel.local -l lootme  
+            
+2. Using mitm6 we set the domain -d to marvel.local. By using mitm6 we are essentially placing us in the middle to intercept and relay ipv6 authentications.  
+
+            mitm6 -d marvel.local
+
+3. Now as we sit in the network we can already see traffic being captured across the network. In the ntlmrelayx instance, we can see succesfull relays from MARVEL/THEPUNISHER.
+
+![image](https://github.com/user-attachments/assets/74060f44-2d49-46cf-a4a6-6058d8342c39)
+
+4. Domain info has now been dumped to the lootme file, which contains a plethora of information.
+
+![image](https://github.com/user-attachments/assets/584e547f-d928-4c74-b2c3-9f50e1b40add)
 
 ------- 
 **Reference:**  
