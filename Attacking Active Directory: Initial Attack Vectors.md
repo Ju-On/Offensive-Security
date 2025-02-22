@@ -172,6 +172,9 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 3. SMBexec
 4. Atexec
 
+## 🚩 IPv6 Attacks - Another form of relaying.  
+We use IPv6 to conduct authentication via DNS to the Domain Controller via LDAP or SMB
+
 ------- 
 **Reference:**  
 
