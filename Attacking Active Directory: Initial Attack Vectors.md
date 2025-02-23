@@ -211,7 +211,7 @@ To identify if IPv6 exsists on a network or endpoint the following nmap command 
 1. If the network does not require the usage of IPv6 then proceed to blocking DHCPv6 traffic however this may have side affects.
 2. Disable WPAD if not used entirely.
 3. Relaying LDAP and LDAPS can be mitigated by enabling both LDAP signing and LDAP channel binding.
-4. Consider addingAdministrative users to the Protected Users Group or marking them as Account is sensitive and cannot be delegated, preventing impoersonation attacks.
+4. Consider adding Administrative users to the Protected Users Group or marking them as Account is sensitive and cannot be delegated, preventing impoersonation attacks.
 
 ------- 
 **Reference:**  
