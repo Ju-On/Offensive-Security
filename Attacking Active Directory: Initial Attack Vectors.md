@@ -173,6 +173,7 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 4. Atexec
 
 ## 🚩 IPv6 Attacks - Another form of relaying.  
+
 IPv6 can be used to conduct authentication via DNS to the Domain Controller via LDAP or SMB.  
 
 To identify if IPv6 exsists on a network or endpoint the following nmap command can be used:  
@@ -209,9 +210,13 @@ To identify if IPv6 exsists on a network or endpoint the following nmap command 
 ## 🔵 IPv6 Mitigations  
 
 1. If the network does not require the usage of IPv6 then proceed to blocking DHCPv6 traffic however this may have side affects.
-2. Disable WPAD if not used entirely.
+2. Disable Web Proxy Auto-Discovery (WPAD) if not used.
 3. Relaying LDAP and LDAPS can be mitigated by enabling both LDAP signing and LDAP channel binding.
 4. Consider adding Administrative users to the Protected Users Group or marking them as Account is sensitive and cannot be delegated, preventing impoersonation attacks.
+
+## 🚩 Pass-Back Attack  
+
+A Pass-Back Attack is a web-based attack where an attacker tricks a vulnerable web application into reflecting authentication credentials (such as NTLM hashes) back to the attacker, allowing them to capture and relay those credentials for further exploitation.
 
 ------- 
 **Reference:**  
