@@ -17,4 +17,14 @@ However if not, and the network does not have IPv6 DHCP enabled but we have user
 
 ## 🚩 Domain enumeration with Bloodhound
 
+1. Download and install Bloodhound if it is not already installed.
+2. When first configuring Bloodhound use the below command line:  
 
+        sudo neo4j console
+![image](https://github.com/user-attachments/assets/79d06ce1-3d4c-4ae2-979b-aefed4fa919b)
+
+4. Click on the link presented in the results to open the console and set a username / password.
+5. Once set, open Bloodhound via the command line with 'Bloodhound'
+6. Now we need to set an 'ingestor' back in terminal to capture the data.
+
+        
