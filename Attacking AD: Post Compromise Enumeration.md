@@ -18,7 +18,7 @@ However if not, and the network does not have IPv6 DHCP enabled but we have user
 ## 🚩 Domain enumeration with Bloodhound
 
 1. Download and install Bloodhound if it is not already installed.
-2. When first configuring Bloodhound use the below command line:  
+2. When first configuring Bloodhound use the below command line. This is also used to start the bloodhound console.
 
         sudo neo4j console
 ![image](https://github.com/user-attachments/assets/79d06ce1-3d4c-4ae2-979b-aefed4fa919b)
@@ -26,5 +26,11 @@ However if not, and the network does not have IPv6 DHCP enabled but we have user
 4. Click on the link presented in the results to open the console and set a username / password.
 5. Once set, open Bloodhound via the command line with 'Bloodhound'
 6. Now we need to set an 'ingestor' back in terminal to capture the data.
+
+        root@kali:/home/kali/bloodhound# bloodhound-python -d MARVEL.local -u fcastle -p Password1 -ns 192.168.64.138 -c all
+
+Here i created a directory specifically for this named bloodhound.
+
+![image](https://github.com/user-attachments/assets/877d6af9-3c85-4913-882d-31953ca84dc4)
 
         
