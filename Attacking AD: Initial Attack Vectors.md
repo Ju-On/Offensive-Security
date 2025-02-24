@@ -3,6 +3,8 @@ Setup Peterparker: \\192.168.64.140
 Setup Frankcastle: 192.168.64.139  
 Kali: \\192.168.64.129/24
 
+---
+
 ## 🚩 LLMNR Poisoning - Link Local Multicast resolution
 
 **Requirements:**  
@@ -39,6 +41,8 @@ Hash cracked.
 1. Disable LLMNR / NBT-NS (NetBIOS) Broadcasts.  
 2. Implement NAC on the internal network.
 3. Have strong password requirements for end users espicially admin or service accounts. This will also add to defense in depth.
+
+---
 
 ## 🚩SMB Relay Attack - Service Message Block
 
@@ -113,6 +117,8 @@ SMB relay attack with -c 'whoami' flag successful
 3. Local admin restriction.
 4. Disable NTLM authentication (completely stops the attack however if Kerberos fails, it cannot default to NTLM authentication).
 
+---
+
 ## 🚩 Gaining Shell Access
 
 ### 🔴 Metasploit module using psexec  
@@ -172,6 +178,8 @@ After some trial and error, not all 'execs' will work and this is normal in the 
 3. SMBexec
 4. Atexec
 
+---
+
 ## 🚩 IPv6 Attacks - Another form of relaying  
 
 IPv6 can be used to conduct authentication via DNS to the Domain Controller via LDAP or SMB.  
@@ -213,6 +221,8 @@ To identify if IPv6 exsists on a network or endpoint the following nmap command 
 2. Disable Web Proxy Auto-Discovery (WPAD) if not used.
 3. Relaying LDAP and LDAPS can be mitigated by enabling both LDAP signing and LDAP channel binding.
 4. Consider adding Administrative users to the Protected Users Group or marking them as Account is sensitive and cannot be delegated, preventing impoersonation attacks.
+
+---
 
 ## 🚩 Pass-Back Attacks  
 
