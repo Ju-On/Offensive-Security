@@ -1,4 +1,4 @@
-# Windows compatiable | Analysis tools | Web Analysis tools | Web reference and source 
+# Windows compatiable | Analysis tools | Web Analysis tools | Web reference with source | Debian changes
 
 ***********************
 
@@ -89,5 +89,26 @@ Metasploit Auxilliary modules
 
 Bloodhound
 
+***********************
+## Venv  
+(Virtual Environment) is a built-in Python module that creates an isolated environment for installing independant Python packages.
+* Keeps dependencies separate from the system Python (prevents breaking system tools).
+* Allows different Python projects to have different package versions.
+* Prevents conflicts between system packages (apt) and user-installed packages (pip).
+* Now required in Kali Linux due to PEP 668 (restricts global pip installs).
 
-
+Step 1: Create a Virtual Environment  
+    
+    python3 -m venv venv
+Step 2: Activate the Virtual Environment  
+    
+    source venv/bin/activate
+Step 3: Install Packages Inside the Virtual Environment  
+    
+    pip install -r requirements.txt
+Step 4: Deactivate the Virtual Environment  
+   
+    deactivate
+Step 5: Reactivate the Virtual Environment (Later Use and in the same terminal as it was activated)  
+    
+    source venv/bin/activate
