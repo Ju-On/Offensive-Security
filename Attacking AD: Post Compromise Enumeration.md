@@ -59,9 +59,23 @@ PlumHound is a post-processing tool designed for defenders and attackers to anal
         python3 -m venv venv        # Create a virtual environment
         source venv/bin/activate     # Activate the virtual environment
         pip install -r requirements.txt
-4. Ensure BloodHound console is still running with the uploaded data, previously collected from the injestor. And run the following command to for PlumHound to begin analysing the data.
+4. Ensure BloodHound console is still running with the uploaded data, previously collected from the injestor. And run the following command for PlumHound to begin analysing the data.
 
         (venv) root@kali:/opt/PlumHound# python3 PlumHound.py --easy -p neo4j1
 
 ![image](https://github.com/user-attachments/assets/f22f3300-9d94-432c-a8e7-cff4a7027c2d)
-       
+
+5. To run the 'default tasks' run the following query. It is recommended to read through the GitHub page manual for other types of actions it can do.
+
+       (venv) root@kali:/opt/PlumHound# python3 PlumHound.py -x tasks/default.tasks -p neo4j1
+
+![image](https://github.com/user-attachments/assets/193c73bf-8e3b-4076-8bf1-b50ed641a4d2)
+
+From this it has generated further tasks and presented it in the 'Reports.zip' folder for us to analyze.
+
+6. cd into the Reports folder and open **index.html** with firefox for information it has conveniently collected. It has also provided Reports.zip for us to potentially move off and analyze elsewhere.
+
+        kali@kali:/opt/PlumHound/reports$ firefox index.html
+note that i am not allowed to execute firefox in root.
+
+
