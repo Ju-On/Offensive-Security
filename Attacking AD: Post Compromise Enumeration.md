@@ -49,6 +49,14 @@ When all data has been loaded, we can now visualise the infomation by using the 
 ---
 
 ## 🚩 Domain enumeration PlumHound  
-PlunHound is a post-processing tool designed for defenders and attackers to analyze BloodHound data efficiently. By simplifing **attack path discovery** and prioritization for AD environments.
+PlumHound is a post-processing tool designed for defenders and attackers to analyze BloodHound data efficiently. By simplifing **attack path discovery** and prioritization for AD environments.
 
+1. Firstly download PlumHound from https://github.com/PlumHound/PlumHound.git.
+2. Install the downloaded PlumHound package, follow the installation guide in GitHub if required.
+3. Install PlumHound in 'venv' if required and run it from the Linux virtualisation.
 
+        cd /opt/PlumHound
+        python3 -m venv venv        # Create a virtual environment
+        source venv/bin/activate     # Activate the virtual environment
+        pip install -r requirements.txt
+4. 
