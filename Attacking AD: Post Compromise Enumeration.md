@@ -20,6 +20,7 @@ However if not, and the network does not have IPv6 DHCP enabled but we have user
 ---
 
 ## 🚩 Domain enumeration with Bloodhound
+BloodHound is an AD attack path mapping tool that helps attackers and defenders discovery privilige escalation paths, lateral movement opportunities and AD misconfigurations.  
 
 1. Download and install Bloodhound if it is not already installed.  
 2. When first configuring Bloodhound use the below command line. This is also used to start the bloodhound console.  
@@ -47,4 +48,7 @@ When all data has been loaded, we can now visualise the infomation by using the 
 
 ---
 
-## 🚩 Domain enumeration Plumhound
+## 🚩 Domain enumeration PlumHound  
+PlunHound is a post-processing tool designed for defenders and attackers to analyze BloodHound data efficiently. By simplifing **attack path discovery** and prioritization for AD environments.
+
+
