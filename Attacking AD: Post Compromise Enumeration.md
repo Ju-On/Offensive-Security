@@ -78,4 +78,5 @@ From this it has generated further tasks and presented it in the 'Reports.zip' f
         kali@kali:/opt/PlumHound/reports$ firefox index.html
 note that i am not allowed to execute firefox in root.
 
+![image](https://github.com/user-attachments/assets/e2de3f41-df99-4b2b-87db-4aedafc31051)
 
