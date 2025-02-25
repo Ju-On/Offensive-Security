@@ -59,4 +59,9 @@ PlumHound is a post-processing tool designed for defenders and attackers to anal
         python3 -m venv venv        # Create a virtual environment
         source venv/bin/activate     # Activate the virtual environment
         pip install -r requirements.txt
-4. 
+4. Ensure BloodHound console is still running with the uploaded data, previously collected from the injestor. And run the following command to for PlumHound to begin analysing the data.
+
+        (venv) root@kali:/opt/PlumHound# python3 PlumHound.py --easy -p neo4j1
+
+![image](https://github.com/user-attachments/assets/f22f3300-9d94-432c-a8e7-cff4a7027c2d)
+       
