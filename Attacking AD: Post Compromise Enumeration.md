@@ -85,4 +85,4 @@ note that i am not allowed to execute firefox in root.
 ## 🚩 Domain enumeration with PingCastle
 PingCastle is another AD enumeration tool that can be run directly on the target machine as an executable. If for any reason you cannot gain access, it can also be run remotely. It helps assess risks, detect vulnerabilities, and identify misconfigurations in AD environments. Presenting other low hanging fruits such as clear text passwords that may be left out and or te password policy (suggesting if it is weak or not).  
 
-Things it can present in it's report are NTLMv1 configurations or no usage of LAPS as an example.
+Things it can present within the reports are NTLMv1 configuration, no usage of LAPS (Local Administrator Password Solution).
