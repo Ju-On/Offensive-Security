@@ -10,7 +10,12 @@
   Step 3: Moving Laterally and Exploiting ⬅️➡️  
   Step 4: Persisting in AD 🔗
 
-Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.
+Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.  
+
+## 🗡️ Ultimate goal is to compromise Domain (DC/AD) from basic to no access:  
+* The Domain: The domain is a collection of computers and resources controlled by Active Directory, with the Domain Controller acting as the central authority for managing access, policies, and security.  
+* Goal: Compromising the domain gives an attacker control over all the resources and users within that network, including Domain Admin credentials, which unlocks full network control.  
+* How to Compromise: This is typically done through credential harvesting (e.g., Pass-the-Hash, Pass-the-Ticket), privilege escalation, lateral movement, exploiting misconfigurations, and leveraging attacks like Golden Ticket or Silver Ticket to gain full access to the domain.
 
 -------
 
