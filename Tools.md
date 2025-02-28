@@ -54,7 +54,7 @@ view memory > https > condition 7 and filter. Typcially viewable in the spawned 
 
 ***********************
 
-**Post Enumeration**  
+## Post Compromise Enumeration   
 
 LinPEAS
 
@@ -68,7 +68,9 @@ python -m SimpleHTTPServer automatic http hosting of the current directory via p
 
 Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-security/defense-evasion/downloading-file-with-certutil>
 
-***********************
+***********************  
+
+## Post Compromise Privilige Escalation   
 
 **Linux/Unix Privilege Escalation**
 GTFOBins <https://gtfobins.github.io/>
