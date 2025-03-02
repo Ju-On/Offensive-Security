@@ -49,7 +49,7 @@ Local admin account succesful for Spiderman and Thepunisher
 
     root@kali:/home/kali# cmedb
     cmedb (default)(smb) > help
-![image](https://github.com/user-attachments/assets/d758e9f9-056b-40b3-ac2e-262eac9cd2b6)
+![image](https://github.com/user-attachments/assets/d758e9f9-056b-40b3-ac2e-262eac9cd2b6)  
 
 ---
 
@@ -62,8 +62,9 @@ With impacket(secretsdump) we will now use a known account credentials to dump t
 SAM hashes to note: Admin, User accounts, DCC
 
 🚩 Dumping and Cracking Hashes (Secretsdump) with hash
-Secretsdump can also dump further information of a device in the event the passwords cannot be cracked. 
+Secretsdump can also provide further information of a device in the event the passwords cannot be cracked. 
 
     /home/kali# impacket-secretsdump administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
     
-![image](https://github.com/user-attachments/assets/5fda7394-bfb0-490e-b1c9-eff5dc3bcb52)
+![image](https://github.com/user-attachments/assets/a1c69bd3-1ac7-44be-8bc4-9a43d31fc827)  
+In this case we could see an accunt with username Administrator with the $DCC2$ which is usually the prefix for ntlmv2 hashing with the hash we could potentially attempt to crack.
