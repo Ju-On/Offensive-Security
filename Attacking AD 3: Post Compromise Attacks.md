@@ -51,6 +51,12 @@ Local admin account succesful for Spiderman and Thepunisher
     cmedb (default)(smb) > help
 ![image](https://github.com/user-attachments/assets/d758e9f9-056b-40b3-ac2e-262eac9cd2b6)
 
+---
 
+## 🚩 Dumping and Cracking Hashes (Secretsdump) with password
+With impacket(secretsdump) we will now use a known account credentials to dump the secrets of the machine to see further information. This can present further SAM dumps, domain admin passwords in clear texts and vulnerabile protocols such as wdigest existing on older machines which could be force / enabled for abuse.  
 
+    impacket-secretsdump MARVEL.local/fcastle:'Password1'@192.168.64.139
 
+![image](https://github.com/user-attachments/assets/8fc185f1-06ba-4f4f-bd89-968163496df4)  
+SAM hashes to note: Admin, User accounts, DCC
