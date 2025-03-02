@@ -67,4 +67,4 @@ Secretsdump can also provide further information of a device in the event the pa
     /home/kali# impacket-secretsdump administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
     
 ![image](https://github.com/user-attachments/assets/a1c69bd3-1ac7-44be-8bc4-9a43d31fc827)  
-In this case we could see an accunt with username Administrator with the $DCC2$ which is usually the prefix for ntlmv2 hashing with the hash we could potentially attempt to crack.
+In this case we could see an account with username Administrator with the "$DCC2$" which is usually the prefix for ntlmv2 hashing with the hash we could potentially attempt to crack and maybe attain a password for a domain administrator.  
