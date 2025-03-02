@@ -55,7 +55,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 ![image](https://github.com/user-attachments/assets/d8f8f9fc-6393-4e74-877a-9a0a0731cc97)  
 
-🔴 The reason why these are turned off is to prevent the authentication resposne from being captured, but rather we are attempting to 'relay' them to our targets lists.
+🔴 The reason why these are turned off is to prevent the authentication response from being captured, but rather we are attempting to 'relay' them to our targets lists.
 
 
 1. Firstly identify hosts without SMB signing. 
