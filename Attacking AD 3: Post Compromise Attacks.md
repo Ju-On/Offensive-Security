@@ -1,7 +1,7 @@
-Setup win2022 server: 192.168.64.138
-Setup Peterparker: \192.168.64.140
-Setup Frankcastle: 192.168.64.139
-Kali: \192.168.64.129/24
+Setup win2022 server: 192.168.64.138  
+Setup Peterparker: \192.168.64.140  
+Setup Frankcastle: 192.168.64.139  
+Kali: \192.168.64.129/24  
 
 ## 🚩 'Pass Attacks' - Pass the Password / Pass the Hash.  
 
