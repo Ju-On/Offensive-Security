@@ -71,4 +71,8 @@ In this case we could see an account with username Administrator with the "$DCC2
 
 whenever we come across new hashes through the Post Compromise lateral movement, we want to atleast attempt a password crack. The below example, will use hashcat to crack a ntlm hash.
 
-    hashcat -m 1000 ntlm.txt
+    hashcat -m 1000 ntlm11.txt /usr/share/wordlists/rockyou.txt
+![image](https://github.com/user-attachments/assets/116f014c-41f1-468b-a32d-0bec13b7c56f)
+
+### Note 1 Hashcat  
+When running hashcat, ensure the correct mode -m is selected for the hash type. Correct modes to hash types can be found online, and hash-identifier.
