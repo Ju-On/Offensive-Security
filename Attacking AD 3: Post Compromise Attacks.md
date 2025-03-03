@@ -77,6 +77,12 @@ whenever we come across new hashes through the Post Compromise lateral movement,
 ### Note 1 Hashcat  
 When running hashcat, ensure the correct mode -m is selected for the hash type. Correct modes to hash types can be found online, and hash-identifier.
 
-## 🔵 Pass Attack Mitigations
+---
+
+## 🔵 Pass Attack Mitigations  
+### Limit account re-use:  
+* Avoid re-using local admin passwords  
+* Disable Guest and Administrator accounts  
+* Limit who is a local administrator (least priviliege)  
 
 
