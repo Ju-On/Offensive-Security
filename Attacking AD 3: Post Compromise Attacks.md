@@ -5,7 +5,7 @@ Kali: \192.168.64.129/24
 
 ---
 
-## 🚩 'Pass Attacks' - Pass the Password / Pass the Hash.  
+## 🚩 'Pass Attacks' - Pass the Password  
 
 ### Pass the Password  
 With a SAM dump and cracked hash, we have the ability to push the credentials around with every device that has the ability to recieve and accept the login attempt.  
@@ -19,7 +19,7 @@ We can see that the username and password has been passed around the network and
 
 ---
 
-## 🚩 Pass the Hash  
+## 🚩 'Pass Attacks' - Pass the Hash  
 With a SAM dump containing local Admin credentials (likely gathered during the initial attack stage), we can also pass a local admin account username with hash around the network and observe which devices accept these credentials.
 
 crackmapexec SMB Hash abuse:
