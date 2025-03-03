@@ -85,4 +85,17 @@ When running hashcat, ensure the correct mode -m is selected for the hash type. 
 * Disable Guest and Administrator accounts  
 * Limit who is a local administrator (least priviliege)  
 
+### Utilize strong passwords (harder to crack):
+* Long passwords
+* Avoid using common words
+* Use long sentences
+
+### Privilige Access Management (PAM):
+* Check in / out sensitive accounts - CyberArk
+* Automatically rotate passwords on check out and check in
+* limits pass attacks as hash and password is strong and constantly rotated.
+
+### LAPS - Local Administrator Password Solution, MS tool used to manage local administrator passwords of computers in a domain environment
+* Enable the usage of LAPS (Local Administratot Password Solution) - Ensures unique passwords for local admin accounts on each machine.
+* prevents common and reused passwords across multiple machines.
 
