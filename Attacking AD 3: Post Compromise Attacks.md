@@ -61,10 +61,14 @@ With impacket(secretsdump) we will now use a known account credentials to dump t
 ![image](https://github.com/user-attachments/assets/8fc185f1-06ba-4f4f-bd89-968163496df4)  
 SAM hashes to note: Admin, User accounts, DCC
 
-🚩 Dumping and Cracking Hashes (Secretsdump) with hash
+## 🚩 Dumping and Cracking Hashes (Secretsdump) with hash
 Secretsdump can also provide further information of a device in the event the passwords cannot be cracked. 
 
     /home/kali# impacket-secretsdump administrator@192.168.64.139 -hashes aad3b435b51404eeaad3b435b51404ee:fbdcd5041c96ddbd82224270b57f11fc
     
 ![image](https://github.com/user-attachments/assets/a1c69bd3-1ac7-44be-8bc4-9a43d31fc827)  
 In this case we could see an account with username Administrator with the "$DCC2$" which is usually the prefix for ntlmv2 hashing with the hash we could potentially attempt to crack and maybe attain a password for a domain administrator.  
+
+whenever we come across new hashes through the Post Compromise lateral movement, we want to atleast attempt a password crack. The below example, will use hashcat to crack a ntlm hash.
+
+    hashcat -m 1000 ntlm.txt
