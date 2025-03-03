@@ -99,3 +99,8 @@ When running hashcat, ensure the correct mode -m is selected for the hash type. 
 * Enable the usage of LAPS (Local Administratot Password Solution) - Ensures unique passwords for local admin accounts on each machine.
 * prevents common and reused passwords across multiple machines.
 
+---
+
+## 🚩 Kerberoasting  
+Goal of Kerberoasting: Get Ticket Granting Service Ticket (TGS) and decrypt server's account hash.
+
