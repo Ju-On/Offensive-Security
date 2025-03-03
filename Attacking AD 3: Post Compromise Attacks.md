@@ -76,3 +76,7 @@ whenever we come across new hashes through the Post Compromise lateral movement,
 
 ### Note 1 Hashcat  
 When running hashcat, ensure the correct mode -m is selected for the hash type. Correct modes to hash types can be found online, and hash-identifier.
+
+## 🔵 Pass Attack Mitigations
+
+
