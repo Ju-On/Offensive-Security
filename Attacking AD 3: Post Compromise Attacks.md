@@ -20,6 +20,7 @@ We can see that the username and password has been passed around the network and
 ---
 
 ## 🚩 'Pass Attacks' - Pass the Hash  
+### Pass the Hash 
 With a SAM dump containing local Admin credentials (likely gathered during the initial attack stage), we can also pass a local admin account username with hash around the network and observe which devices accept these credentials.
 
 crackmapexec SMB Hash abuse:
@@ -126,3 +127,17 @@ Service Accounts should not be running as Domain Admin priviliges, as this is a 
 * Strong Passwords - makes it harder to crack  
 * Least Privilege model  
 * Do not place passwords in any descriptions of the AD account
+
+---
+
+## 🚩 Token Impersonation Attacks
+Temporary keys that allow you access to a system/network without having to provide credentials each time you access a file. Similar to a cookie. Typically these tokens with good practices should only be temporary and stored in memory or a token store fur the duration / until they expire. If users have logged into a device for example since last reboot, in theory the device may contain these tokens that can be exploited to impersonate the user.
+
+### 🚩 Delegate Token
+### Delegate Token  
+Created whenever logging into a machine or using Remote Desktop.
+
+### 🚩 Impersonate Token  
+### Impersonation Token  
+"non-interactive" such as attaching a network drive or a domain logon script
+
