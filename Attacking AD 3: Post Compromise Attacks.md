@@ -115,5 +115,11 @@ Now that we have obtained a hash from the TGS, we can now proceed to crack it.
 
     root@kali:/home/kali/tempdeletelater# hashcat -m 13100 krbhash.txt /usr/share/wordlists/rockyou.txt
 
-![image](https://github.com/user-attachments/assets/51b91c22-77f8-4e61-93d7-4ac65d5eec1b)
+![image](https://github.com/user-attachments/assets/51b91c22-77f8-4e61-93d7-4ac65d5eec1b)  
+
+Now that we have obtained the Service / Domain Admin credentials, we can go back to using tools such as PsExec, *exec, RDP etc to gain shell access and officially compromise the account.
+
+---
+
+## 🔵 Kerberoasting Mitigation  
 
