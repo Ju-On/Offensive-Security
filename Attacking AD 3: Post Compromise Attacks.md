@@ -122,4 +122,7 @@ Now that we have obtained the Service / Domain Admin credentials, we can go back
 ---
 
 ## 🔵 Kerberoasting Mitigation  
-
+Service Accounts should not be running as Domain Admin priviliges, as this is a common fault in many engagements.  
+* Strong Passwords - makes it harder to crack  
+* Least Privilege model  
+* Do not place passwords in any descriptions of the AD account
