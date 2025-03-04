@@ -102,5 +102,6 @@ When running hashcat, ensure the correct mode -m is selected for the hash type. 
 ---
 
 ## 🚩 Kerberoasting  
-Goal of Kerberoasting: Get Ticket Granting Service Ticket (TGS) and decrypt server's account hash.
+Goal of Kerberoasting: With an account on the network, get ticket Granting Service Ticket (TGS) from the KDC and decrypt server's account hash that is presented back (step 4 of diagram).
+![image](https://github.com/user-attachments/assets/1109a3ee-1433-44e6-9caf-a04e757129fb)
 
