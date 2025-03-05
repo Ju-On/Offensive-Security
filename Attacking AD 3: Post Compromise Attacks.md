@@ -137,6 +137,8 @@ Temporary keys that allow you access to a system/network without having to provi
 ### Delegate Token  
 Created whenever logging into a machine or using Remote Desktop.
 
+1. First getting access onto a target machine (fcastle) 
+
 ### 🚩 Impersonate Token  
 ### Impersonation Token  
 "non-interactive" such as attaching a network drive or a domain logon script
