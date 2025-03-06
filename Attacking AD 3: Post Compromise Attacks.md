@@ -134,16 +134,24 @@ Service Accounts should not be running as Domain Admin priviliges, as this is a 
 Temporary keys that allow you access to a system/network without having to provide credentials each time you access a file. Similar to a cookie. Typically these tokens with good practices should only be temporary and stored in memory or a token store fur the duration / until they expire. If users have logged into a device for example since last reboot, in theory the device may contain these tokens that can be exploited to impersonate the user.
 
 ### :atom: Delegate Token
-### Delegate Token  
 Created whenever logging into a machine or using Remote Desktop.
 
 1. First getting access onto a target machine (fcastle) 
 
-### :atom: Impersonate Token  
-### Impersonation Token  
+### :atom: Impersonate Token   
 "non-interactive" such as attaching a network drive or a domain logon script
 
-### 🗡️ MSFCONSOLE
+---
+### 🗡️ MSFCONSOLE  
+
+#### 1.Gaining access
+Exploit selected: windows/smb/psexec_psh  
+Payload: windows/x64/meterpreter/reverse_tcp
+
+![image](https://github.com/user-attachments/assets/e2ddd1fc-b118-45b7-8926-7acb1f3d5137)
+![image](https://github.com/user-attachments/assets/25820d7e-e931-4966-8c8b-0aa2fdd434f8)
+
+#### 2.Executing Incognito
 
 ---
 
