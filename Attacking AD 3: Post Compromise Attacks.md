@@ -143,6 +143,11 @@ Created whenever logging into a machine or using Remote Desktop.
 ### Impersonation Token  
 "non-interactive" such as attaching a network drive or a domain logon script
 
+---
+
+### MANUAL MODE (UPDATED)  
+Managed to work msfconsole with a slightly different exploit (windows/smb/psexec_psh) and same payload of windows/x64/meterpreter/reverse_tcp. Also increased virtual machine memory to 4GB.
+
 #### 1.Gaining access
 Since attaining a reverse shell back to our attacker machine via metasploit to conduct an 'incognito' attack is not working, we will attempt to manually exploit fcastles user login with impacket-smbexec and fetch a custom PowerShell Rev Shell.  
 
