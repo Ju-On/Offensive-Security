@@ -143,3 +143,4 @@ Created whenever logging into a machine or using Remote Desktop.
 ### Impersonation Token  
 "non-interactive" such as attaching a network drive or a domain logon script
 
+Since attaining a reverse shell back to our attacker machine to launch metasploit to conduct an 'incognito' is not working, we will attempt to manually exploit fcastles user login with smbexec and fetch a custon PowerShell Rev Shell.  
