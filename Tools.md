@@ -122,3 +122,9 @@ Step 4: Deactivate the Virtual Environment
 Step 5: Reactivate the Virtual Environment (Later Use and in the same terminal as it was activated)  
     
     source venv/bin/activate
+
+---
+
+## Shell generator
+
+Shell generator for different OS platforms - <https://www.revshells.com/>
