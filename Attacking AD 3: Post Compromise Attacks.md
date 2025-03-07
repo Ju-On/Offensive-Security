@@ -152,11 +152,16 @@ Payload: windows/x64/meterpreter/reverse_tcp
 ![image](https://github.com/user-attachments/assets/25820d7e-e931-4966-8c8b-0aa2fdd434f8)
 
 #### 2.Executing Incognito  
-Load incognito.  
-Confirm shell access has been achieved with shell.  
+'Load incognito'.  
+Confirm shell access has been achieved with 'shell'.  
 ![image](https://github.com/user-attachments/assets/8660a23d-ca3f-46d6-bef6-84c0c276d272)
 
+List tokens of users that had logged in to the machine using list_tokens -u
+![image](https://github.com/user-attachments/assets/721a908f-38fc-4e29-94c5-638359fcc335)
 
+use token by using impersonate-token <domain\\user>
+in the below example impersonate fcastle, terminate and rev2self (revert back to original user token) and then proceed to impersonate marvel\administrator.  
+![image](https://github.com/user-attachments/assets/51f0b4b7-c0db-4ec7-a292-1320c638934d)
 
 ---
 
