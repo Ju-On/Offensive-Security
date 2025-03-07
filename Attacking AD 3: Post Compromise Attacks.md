@@ -157,6 +157,7 @@ Confirm shell access has been achieved with shell.
 ![image](https://github.com/user-attachments/assets/8660a23d-ca3f-46d6-bef6-84c0c276d272)
 
 
+
 ---
 
 ### 🗡️ MANUAL MODE (UPDATED)  
