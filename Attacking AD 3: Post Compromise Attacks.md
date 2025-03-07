@@ -131,7 +131,7 @@ Service Accounts should not be running as Domain Admin priviliges, as this is a 
 ---
 
 ## 🚩 Token Impersonation Attacks
-Temporary keys that allow you access to a system/network without having to provide credentials each time you access a file. Similar to a cookie. Typically these tokens with good practices should only be temporary and stored in memory or a token store fur the duration / until they expire. If users have logged into a device for example since last reboot, in theory the device may contain these tokens that can be exploited to impersonate the user.
+Temporary keys that allow you access to a system/network without having to provide credentials each time you access a file. Similar to a cookie. Typically these tokens with good practices should only be temporary and stored in memory or a token store for the duration / until they expire. If users have logged into a device for example since last reboot, in theory the device may contain these tokens that can be exploited to impersonate the user.
 
 ### :atom: Delegate Token
 Created whenever logging into a machine or using Remote Desktop.
