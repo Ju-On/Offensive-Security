@@ -151,7 +151,11 @@ Payload: windows/x64/meterpreter/reverse_tcp
 ![image](https://github.com/user-attachments/assets/e2ddd1fc-b118-45b7-8926-7acb1f3d5137)
 ![image](https://github.com/user-attachments/assets/25820d7e-e931-4966-8c8b-0aa2fdd434f8)
 
-#### 2.Executing Incognito
+#### 2.Executing Incognito  
+Load incognito.  
+Confirm shell access has been achieved with shell.  
+![image](https://github.com/user-attachments/assets/8660a23d-ca3f-46d6-bef6-84c0c276d272)
+
 
 ---
 
