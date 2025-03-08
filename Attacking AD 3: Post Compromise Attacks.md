@@ -221,7 +221,7 @@ Gaining semi-reverse shell connection with custom .ps1 script.
 
 #### 2. Gaining Fully interactive reverse shell into Powershell using 'PowerCat'.  
 
-1. host another SimpleHttp instance with the custom PS reverse shell script on attacking machine.
+1. host another SimpleHTTPServer instance with the custom PS reverse shell script on attacking machine.
 2. from the original netcat instance, grab the script <https://github.com/rexpository/powercat-v2.0> and load a secondary netcat instance.
 3. launch the new custom script, type 'powershell' to gain powershell access.
 4. from here, we now have powershell access to further our post compromise. With the local account fcastle, attempt to create a new account with administrative rights.
