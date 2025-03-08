@@ -236,3 +236,15 @@ Gaining semi-reverse shell connection with custom .ps1 script.
         * Create a Malicious Scheduled Task: Use schtasks to run a task with elevated privileges.
         * Use PowerShell to Interact with the System: Leverage WMI, scheduled tasks, or other local escalation techniques via PowerShell.
         * Abuse External Vulnerabilities: Check for EternalBlue, PrintNightmare, or similar exploits.
+
+---
+
+## 🔵 Token Impersonation Mitigation  
+1. Limit the creation of user / group token creation permiessions.
+2. Restrict usage of local administrators.
+3. Use LAPS - Local Administrative Password Solutions so that it randommizes Local Admin passwords everytime it is used.
+4. Separation of sensitive accounts from non sensitive ones. Accounts used for day to day functions should be ahered to, and only use an admin account when usage is required.
+
+---
+
+## 🚩 LNK File Attacks
