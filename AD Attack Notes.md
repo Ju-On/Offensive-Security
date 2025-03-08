@@ -12,6 +12,11 @@
 
 Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.  
 
+#### Legends ####  
+🚩 Topic  
+🔵 Mitigations  
+🗡️ Attack dificulty  
+
 ## 🗡️ Ultimate goal is to compromise Domain (DC/AD) from basic to no access:  
 * The Domain: The domain is a collection of computers and resources controlled by Active Directory, with the Domain Controller acting as the central authority for managing access, policies, and security.  
 * Goal: Compromising the domain gives an attacker control over all the resources and users within that network, including Domain Admin credentials, which unlocks full network control.  
@@ -51,7 +56,7 @@ Active Directory is a directory service created by MS for Windows Domain network
 
 **Obtaining initiall credentials**
 
-🔴 **LLMNR Attack:** 
+🚩 **LLMNR Attack:** 
 
 Link Local Multicast Resolution previously called NBT-NS is a network protocol that is still in use for Windows environments for name    resolution. Operating on port 137 it is used as a fallback mechanism when DNS is not available or fails to resolve names.
 
@@ -72,7 +77,7 @@ Once the NTLM hashes are acquired, you can now use multiple ways to crack the ha
 
     hashcat -m 5600 llmnr_hash.txt /usr/share/wordlists/rockyou.txt 
 
-🔴**SMBRelay Attack:**
+🚩 **SMBRelay Attack:**
 
 A type of network attack where authentication requests and responses are intercepted between client and a server.  
 It can act as a secondary attempt fall back when hash cracking has failed, as the intercepted hash can be directly relayed to authenticate with a server, removing the requirement for hash cracking.
@@ -99,7 +104,7 @@ When network traffic is generated, we will get hashes corresponding to the victi
 
 ![image](https://github.com/user-attachments/assets/092903a7-6f48-4b9e-a9b0-ca82570b4759)
 
-🔴 **IPV6 DNS Takeover Attack**  
+🚩 **IPV6 DNS Takeover Attack**  
 
 An IPv6 DNS takeover attack involves an attacker exploiting vulnerabilities in a network’s IPv6 configuration to intercept and manipulate DNS queries. By introducing a rogue IPv6 address, the attacker can redirect DNS requests to malicious servers, enabling them to eavesdrop on, alter, or redirect network traffic.
 
@@ -123,13 +128,13 @@ Once the NTLM challenge/response pair is captured, it will be relayed to the LDA
 ## Step 2: Enumerating Active Directory.  
 Once initial credentials have been obtained, enumeration of AD can begin. Numerous tools available for this puropose include Bloodhound, Microsoft Management Consol (MMC), PowerShell, PingCastle and more.
 
-🔵 **Bloodhound:** A security tool used to map and analyze Active Directory environments. It helps identify relationships, permissions, and potential attack paths within an AD domain by visually displaying how users, groups, and computers are interconnected.  
+🚩 **Bloodhound:** A security tool used to map and analyze Active Directory environments. It helps identify relationships, permissions, and potential attack paths within an AD domain by visually displaying how users, groups, and computers are interconnected.  
 
 To gather data from AD, BloodHound requires the use of a collector. Several tools are available for this purpose, including SharpHound and bloodhound-python.  
 
 Bloodhound uses Neo4j’s graph-based data structure a to efficiently store, query, and visualize AD relationships, making it easier to identify potential attack paths and security weaknesses within an AD domain.  
 
-🔵 **Microsoft Management Console (MMC):** MMC is is a framework that provides a graphical user interface and a programming interface for managing and configuring Windows-based systems. It hosts various administrative tools, called snap-ins, which are used to manage hardware, software, and network components on a Windows operating system.
+🚩 **Microsoft Management Console (MMC):** MMC is is a framework that provides a graphical user interface and a programming interface for managing and configuring Windows-based systems. It hosts various administrative tools, called snap-ins, which are used to manage hardware, software, and network components on a Windows operating system.
 
 To use MMC for AD enumeration, we first need to install the Remote Server Administration Tools (RSAT) AD Snap-Ins.
 
