@@ -186,7 +186,7 @@ Mission success.
 
 ---
 
-### 🗡️ MANUAL MODE (UPDATED)  
+### 🗡️🗡️ MANUAL MODE (UPDATED)  
 Managed to work msfconsole with a slightly different exploit (windows/smb/psexec_psh) and same payload of windows/x64/meterpreter/reverse_tcp. Also increased virtual machine memory to 4GB.
 
 #### 1.Gaining access
