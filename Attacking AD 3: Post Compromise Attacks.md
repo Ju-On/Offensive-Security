@@ -264,4 +264,4 @@ This can be used in the event when we are having trouble gaining further access 
         $lnk.HotKey = "Ctrl+Alt+T"
         $lnk.Save()
 
-
+Crackmapexec / netexec module -M Slinky [do more research here]
