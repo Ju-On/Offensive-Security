@@ -11,7 +11,7 @@
   Step 4: Persisting in AD 🔗
 
 Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.  
-
+ 
 #### Legends ####  
 🚩 Topic  
 🔵 Mitigations  
