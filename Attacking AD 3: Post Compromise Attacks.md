@@ -298,4 +298,4 @@ A post exploitation tool
 2. Dump credentials stored in memory.
 3. Pass the hash, over pass the hash, pass the ticket, silver ticket and golden ticket and more.
 
-
+### Credential dumping with Mimikatz  
