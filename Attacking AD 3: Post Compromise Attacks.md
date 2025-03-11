@@ -289,3 +289,13 @@ Metasploit example with valid credentials, logs in with any valid credentials an
 ## 🔵 GPP AKA cPassword mitigations  
 1. Patch #KB2962486.
 2. Delete old GPP xml files stored in SYSVOL.
+
+---
+
+## 🚩 Mimikatz  
+A post exploitation tool
+1. Tool used to view, steal credentials, generate kerberos tickets and leverage attacks.
+2. Dump credentials stored in memory.
+3. Pass the hash, over pass the hash, pass the ticket, silver ticket and golden ticket and more.
+
+
