@@ -9,6 +9,7 @@
   Step 2: Enumerating AD 🔍  
   Step 3: Moving Laterally and Exploiting ⬅️➡️  
   Step 4: Persisting in AD 🔗
+  Step 5: (Additional) - Privilige Escalation checklists / methodology
 
 Active Directory is a directory service created by MS for Windows Domain networks. Included in most Windows Server Operating systems and can even operate in some non-Window based OS.  
  
@@ -49,6 +50,12 @@ Active Directory is a directory service created by MS for Windows Domain network
 * Ticket Granting Ticket (TGT) Issued
 * Requesting Service Ticket
 * Accessing the Service
+
+-------
+
+## AD Privilige Escalation Checklists / Methodology  
+
+[study here]
 
 -------
 
