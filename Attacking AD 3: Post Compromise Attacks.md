@@ -292,10 +292,25 @@ Metasploit example with valid credentials, logs in with any valid credentials an
 
 ---
 
-## 🚩 Mimikatz  
+## 🚩 Mimikatz - High Level Overview  
 A post exploitation tool
 1. Tool used to view, steal credentials, generate kerberos tickets and leverage attacks.
 2. Dump credentials stored in memory.
 3. Pass the hash, over pass the hash, pass the ticket, silver ticket and golden ticket and more.
 
 ### Credential dumping with Mimikatz  
+1. We have gained access to peterparkers machine, and downloaded the mimikatz files from GentleKiwis Github <https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919> or <https://github.com/gentilkiwi/mimikatz> directly into our peterparkers downloads folder.  
+
+2. or from our hosted attacker machine within the x64 folder of mimikatz, we navigate to the file via peterparkers browser.
+
+![image](https://github.com/user-attachments/assets/156dc105-dd12-46a6-b1a8-62f84a9dcfff)
+![image](https://github.com/user-attachments/assets/91b4a3fe-8a31-4557-ad68-3de5173196af)
+
+3. navigate to the containing folder, Run cmd.exe as administrator.
+4. checkout 'privilege' and set 'privilege::debug'.
+5. run 'sekurlsa::' to checkout the modules.
+6. run 'sekurlsa::logonPasswords' to checkout all available credentials.
+
+![image](https://github.com/user-attachments/assets/2aa3234f-a645-4b68-80d5-54eab59c58f0)
+
+Just like a secretsdump, mimikatz in this instance has dumped a list of credentials it has found. Due to poor configurations with the shared drive. Peterparkers machine being connected to this network hosted on the HYDRA-DC at MARVEL\administrator has inadvertenly presented CredMan (credential management) plain text credentials. Which was not picked up in the other post compromise attacks, such as LSASSY or secretsdump.
