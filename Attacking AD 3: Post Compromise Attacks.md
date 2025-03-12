@@ -314,3 +314,17 @@ A post exploitation tool
 ![image](https://github.com/user-attachments/assets/2aa3234f-a645-4b68-80d5-54eab59c58f0)
 
 Just like a secretsdump, mimikatz in this instance has dumped a list of credentials it has found. Due to poor configurations with the shared drive. Peterparkers machine being connected to this network hosted on the HYDRA-DC at MARVEL\administrator has inadvertenly presented CredMan (credential management) plain text credentials. Which was not picked up in the other post compromise attacks, such as LSASSY or secretsdump.
+
+---
+
+## 🗡️ Post-Compromise Attack Strategy  
+1. We have a valid account.
+2. Search for quick wins whilst also focusing on multi-tasking other activities:
+    * Kerberoasting - Start cracking hashes asap
+    * Secretsdump - View findings, crack hashes asap
+    * Pass the hash / Pass the password
+3. No quick wins:
+    * Enumerate using post compromise techniques like bloodhound, sharphound, plumhound, pingcastle etc
+    * look at what the account has access to, files, shared network drives, overly permissive allowances, emails, tickets, folders, applications, miss-configured scheduled tasks
+    * search and research vulnerabilities  
+### **🗡️🗡️🗡️Try harder.**
