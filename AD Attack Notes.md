@@ -51,6 +51,16 @@ Active Directory is a directory service created by MS for Windows Domain network
 * Requesting Service Ticket
 * Accessing the Service
 
+**NTDS.dit:** (typically a focus post compromise and Active Directory / Domain access has been achieved.  
+* The NTDS.dit file contains the actual data for Active Directory, including:
+* User accounts and passwords (in hashed form).
+* Group memberships.
+* Security principals (user, group, computer accounts).
+* Active Directory schema.  
+* Configuration and domain data.  
+* Replication information between Domain Controllers.  
+* It essentially acts as the database for Active Directory Domain Services (AD DS).  
+
 -------
 
 ## AD Privilige Escalation Checklists / Methodology  
