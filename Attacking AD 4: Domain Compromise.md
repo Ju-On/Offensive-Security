@@ -8,4 +8,4 @@ In the event we manage to compromise Domain and there is still time in the engag
 
 ---
 
-## Dumping the NTDS.dit
+## 🚩 Dumping the NTDS.dit
