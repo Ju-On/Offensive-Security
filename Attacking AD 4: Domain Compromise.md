@@ -10,3 +10,10 @@ In the event we manage to compromise Domain and there is still time in the engag
 ---
 
 ## 🚩 Dumping the NTDS.dit
+
+### What is NTDS.dit?  
+An extremely critical and highly sensitive database used to store AD data:
+* user information
+* gorup information
+* security dscriptors
+* password hashes
