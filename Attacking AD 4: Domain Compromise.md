@@ -12,8 +12,12 @@ In the event we manage to compromise Domain and there is still time in the engag
 ## 🚩 Dumping the NTDS.dit
 
 ### What is NTDS.dit?  
-An extremely critical and highly sensitive database used to store AD data:
+An extremely critical and highly sensitive database used to store AD data within Active Director / Domain Controllers:
 * user information
 * gorup information
 * security dscriptors
 * password hashes
+
+Using a known domain admin account we could use secretsdump and its switch of -just-dc-ntlm to dump out the DCs NTDS file.
+
+impackets-secretsdump / secretsdump 'impacket-secretsdump MARVEL.local/.....' continue here
