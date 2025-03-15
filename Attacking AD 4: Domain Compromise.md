@@ -18,6 +18,7 @@ An extremely critical and highly sensitive database used to store AD data within
 * security dscriptors
 * password hashes
 
-Using a known domain admin account we could use secretsdump and its switch of -just-dc-ntlm to dump out the DCs NTDS file.
+Using a known domain admin account we could use secretsdump and its switch of -just-dc-ntlm to dump out the DCs NTDS file. A successful 
+Domain dump will contain a range of information: from SAM, credentials, domains, krbtgt, hashes, local account users, pc logins, other accounts that may off been created from the ipv6 relay attack.  
 
 impackets-secretsdump / secretsdump 'impacket-secretsdump MARVEL.local/.....' continue here
