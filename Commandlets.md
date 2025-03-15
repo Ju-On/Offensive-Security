@@ -46,7 +46,9 @@ Zip files: fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt [target.zip]
 NTLM# hash: hashcat -m 5600 file.txt /usr/share/wordlists/rockyou.txt --force
 
     ntlm# will dictate the specific module -m required to be set for the cracking.  
-    in virtual machine intances --force may be required.
+    in virtual machine intances --force may be required.  
+
+hash-identifier
 
 ## Brute forcing
 Hydra
