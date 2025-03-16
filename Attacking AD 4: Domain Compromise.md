@@ -67,3 +67,9 @@ We can now apply the cracked passwords back to the excel and match the cracked p
 ### Note:  
 ignore PC passwords, they are typically not going to be cracked and have low value in this scenario.
 
+---
+
+## 🚩 Golden Ticket Attacks  
+
+### What is Golden Ticket Attacks?  
+
