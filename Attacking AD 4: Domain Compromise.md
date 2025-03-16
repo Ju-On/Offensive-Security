@@ -81,7 +81,7 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 * authenticate into accoutns without needing a password.
 * if our domain account is removed, we can still gain access with a Golden Ticket creation, maintaining persistance.
 
-Using mimikatz.exe to generate Golden Tickets.
+**Using mimikatz.exe to generate Golden Tickets.** 
 1. priv debug
 2. lsadump for krbtgt account: to obtain sid, krbtgt ntlm hash
 3. with the krbtgt hash we can use it to generate a Golden Ticket
