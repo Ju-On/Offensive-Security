@@ -74,6 +74,18 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 ### What is Golden Ticket Attacks?  
 * when we compromise the krbtgt (kerboros ticket granting ticket) we essentially own the domains.
 * we can request access to any resource or system on the domain.
-* golden tickets == comlete access to every machine.
+* golden tickets == complete access to every machine.
+
+### Why exploit Golden Tickets even when we own the Domain?
+* laterally move into accounts that we may not be able to access using forged tickets.
+* authenticate into accoutns without needing a password.
+* if our domain account is removed, we can still gain access with a Golden Ticket creation, maintaining persistance.
+
+mimikatz.exe
+1. priv debug
+2. lsadump for krbtgt account: to obtain sid, krbtgt ntlm hash
+3. with the krbtgt hash we can use it to generate a Golden Ticket
+4. use Golden Ticket to 'Pass the Ticket' to now access any machine within the domain
+5. when in any account, we could enumerate files and even spawn new shells. 
 
 
