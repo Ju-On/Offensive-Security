@@ -72,4 +72,8 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 ## 🚩 Golden Ticket Attacks  
 
 ### What is Golden Ticket Attacks?  
+* when we compromise the krbtgt (kerboros ticket granting ticket) we essentially own the domains.
+* we can request access to any resource or system on the domain.
+* golden tickets == comlete access to every machine.
+
 
