@@ -30,7 +30,7 @@ using our malicious domain admin account hawkeye against the DC, we succesfully 
 
 ![image](https://github.com/user-attachments/assets/dfe18c4b-7172-4012-8155-1c74bbd42f97)
 
-Using -just-dc-ntlm with secretsdump will only dump out the NTDS.dit, filtering out the other data as the name implies.
+Using -just-dc-ntlm with secretsdump will only dump out the NTDS.dit, filtering out the other data as the name implies.  
 
     root@kali:/home/kali# impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
     Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
@@ -52,6 +52,18 @@ Using -just-dc-ntlm with secretsdump will only dump out the NTDS.dit, filtering 
     [*] Cleaning up... 
     root@kali:/home/kali# 
 
-Now that we have the NTLM hashes dumped out from the NTDS.dit, we should filter out the NT portions of the hashes in excel, place it in a .txt file and have it cracked with -M of 1000 (given they are just ntlm) using hashcat. With all the cracked passwords, we can place them back into excel to see the passwords to accounts and also for final reporting.  
+Now that we have the NTLM hashes dumped out from the NTDS.dit, we should filter out the NT portions of the hashes in excel, place it in a .txt file and have it cracked with -m of 1000 (given they are just ntlm) using hashcat. With all the cracked passwords, we can place them back into excel to see the passwords to accounts and also for final reporting.  
 
+![image](https://github.com/user-attachments/assets/bd6014ac-0ea6-472c-b1fb-27290f32b313)
+
+    hashcat -m 1000 ntds111.txt 
+    once finished
+    hashcat -m 1000 ntds111.txt --show
+
+![image](https://github.com/user-attachments/assets/8b8b4bfb-821c-449f-9edc-f909ce359101)
+
+We can now apply the cracked passwords back to the excel and match the cracked passwords with the hashes through using =vlookup magic or bash script.   
+
+### Note:  
+ignore PC passwords, they are typically not going to be cracked and have low value in this scenario.
 
