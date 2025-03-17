@@ -127,7 +127,7 @@ pull up cmd with the newly created Golden Ticket session.
 
 ![image](https://github.com/user-attachments/assets/76543f30-69a5-4391-8f87-4b2ea17357d1)
 
-We have gained access into THEPUNISHER machine. For further compromise of this user, we could install psexec.exe orr other a sysinternals tool on our attacker machine for remote code execution. Once downloaded, from the terminal we can use 'psexec.exe \\THEPUNISHER\c$' to gain a reverse shell and functional interaction.  
+We have gained access into THEPUNISHER machine. For further compromise of this user, we could install psexec.exe orr other a sysinternals tool on our attacker machine for remote code execution. Once downloaded, from the terminal we can use 'psexec.exe \\THEPUNISHER cmd.exe' to gain a reverse shell and functional interaction.  
 
 ---
 
