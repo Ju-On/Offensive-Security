@@ -97,7 +97,11 @@ PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound
 
 ## AD Post Compromise Attacks 
 
+Secretsdump
+
 Crackmapexec  
+
+Mimikatz.exe  
 
 ***********************
 ## Venv  
