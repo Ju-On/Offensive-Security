@@ -89,5 +89,8 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 5. Golden Ticket can launch tools at machines or users in the same network without username / passwords - Gticket bypasses this requirement
 6. when in any account, we could enumerate files and even spawn new shells
 
+---
+### Performing a Golden Ticket Attack
+On the DC we have installed mimikatz.exe by GentleKiwi.
 
 
