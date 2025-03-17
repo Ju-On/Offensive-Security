@@ -90,7 +90,7 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 6. when in any account, we could enumerate files and even spawn new shells
 
 ---
-### Performing a Golden Ticket Attack
-On the DC we have installed mimikatz.exe by GentleKiwi.
+### Performing a Golden Ticket Attack with a Pass the Ticket attack
+On the DC we have obtained mimikatz.exe by GentleKiwi.
 
 
