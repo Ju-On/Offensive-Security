@@ -1,6 +1,6 @@
 # Windows compatiable | Analysis tools | Web Analysis tools | Web reference with source | Debian changes
 
-***********************
+---
 
 File Graber <Initialise and set newly created files, folders and droppers during dynamic analysis>
 
@@ -14,12 +14,16 @@ QR Code Scanner <https://qrcodescan.in/>
 
 Burp Suite web and trafflic analysis tooling. Prior to any traffic captures, specific configurations is required in order for Burpe to efficiently capture any data for analysis. <https://thecybersecguru.com/tutorials/intercepting-web-traffic-with-burp-suite/>
 
-***********************
+---
 
+## Vulnerabilities
 Exploit database designed for Pentesting use cases and vulnerability researchers <Exploit-db.com>
 It is CVE compliant archive of publicly available exploits.
 
 NVD database of known exploits with ratings and links to advisories / githubs. <https://nvd.nist.gov/vuln/detail/CVE-2021-28169>
+
+--- 
+## Analysis
 
 Global Malware Hunting <https://app.any.run/>
 
@@ -33,15 +37,17 @@ CentraOps online toolset for network troubleshooting and reconnaissance, includi
 
 MalwareBazaar <Malware sample repository https://bazaar.abuse.ch/>
 
-***********************
+---
 
 Proxylife <https://twitter.com/search?q=xxe%20file&src=typed_query>
 
-***********************
+---
 
 pdfstreamdumper to view hex and run scripts
 
-***********************
+---
+
+## OSINT
 
 Peekyou.com <Why do people use PeekYou?
 PeekYou is a data broker website that advertises itself as a search engine for people, allowing users to look up anyone they want. The website functions by indexing individuals 
@@ -52,7 +58,7 @@ dehashed.com
 Pisieve to output and exfiltrate .dll packages specfically usefull to pull Qakbot C2s (Static C2s) - to view live without using PiSieve use
 view memory > https > condition 7 and filter. Typcially viewable in the spawned wegmr.exe maybe also [regsvr32.exe / calc.exe]?
 
-***********************
+---
 
 ## Post Compromise Enumeration   
 
@@ -70,14 +76,14 @@ python -m SimpleHTTPServer automatic http hosting of the current directory via p
 
 Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-security/defense-evasion/downloading-file-with-certutil>
 
-***********************  
+---  
 
 ## Post Compromise Privilige Escalation   
 
 **Linux/Unix Privilege Escalation**
 GTFOBins <https://gtfobins.github.io/>
 
-***********************
+---
 
 ## Active Directory  
 
@@ -109,7 +115,7 @@ Psexec
 
 Mimikatz.exe  
 
-***********************
+---
 ## Venv  
 (Virtual Environment) is a built-in Python module that creates an isolated environment for installing independant Python packages.
 * Keeps dependencies separate from the system Python (prevents breaking system tools).
