@@ -24,31 +24,25 @@ NVD database of known exploits with ratings and links to advisories / githubs. <
 
 --- 
 ## Analysis
-
 Global Malware Hunting <https://app.any.run/>
 
-Virus Total <https://www.virustotal.com>
+Virus Total <https://www.virustotal.com>  
 
-URL Void <URL reputation https://www.urlvoid.com/>
+URL Void <URL reputation https://www.urlvoid.com/>  
 
-abuseipdb cursory checker of IPs and websites <https://www.abuseipdb.com>
+abuseipdb cursory checker of IPs and websites <https://www.abuseipdb.com>  
 
-CentraOps online toolset for network troubleshooting and reconnaissance, including WHOIS lookups, DNS queries, and traceroute. <https://centralops.net/co/)> 
+CentraOps online toolset for network troubleshooting and reconnaissance, including WHOIS lookups, DNS queries, and traceroute. <https://centralops.net/co/)>  
 
-MalwareBazaar <Malware sample repository https://bazaar.abuse.ch/>
+MalwareBazaar <Malware sample repository https://bazaar.abuse.ch/>  
 
----
+Proxylife <https://twitter.com/search?q=xxe%20file&src=typed_query>  
 
-Proxylife <https://twitter.com/search?q=xxe%20file&src=typed_query>
-
----
-
-pdfstreamdumper to view hex and run scripts
+pdfstreamdumper to view hex and run scripts  
 
 ---
 
 ## OSINT
-
 Peekyou.com <Why do people use PeekYou?
 PeekYou is a data broker website that advertises itself as a search engine for people, allowing users to look up anyone they want. The website functions by indexing individuals 
 through easily accessible background information and combines it with active social media accounts.>
@@ -60,8 +54,7 @@ view memory > https > condition 7 and filter. Typcially viewable in the spawned 
 
 ---
 
-## Post Compromise Enumeration   
-
+## Linux Post Compromise Enumeration   
 LinPEAS
 
 WinPEAS
@@ -78,15 +71,13 @@ Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-se
 
 ---  
 
-## Post Compromise Privilige Escalation   
-
+## Linux Post Compromise Privilige Escalation   
 **Linux/Unix Privilege Escalation**
 GTFOBins <https://gtfobins.github.io/>
 
 ---
 
 ## Active Directory  
-
 Responder - LLMNR Poisoning attacks / Capturing Hashes.  
 
 Relayx  
@@ -97,16 +88,14 @@ MITM6 for IPv6 environments
 
 Metasploit Auxilliary modules  
 
-## AD Post Compromise Enumeration
-
+## Windows Post Compromise Enumeration
 Bloodhound
 
 PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound/blob/master/README.md#installation-requirements>
 
 PingCastle
 
-## AD Post Compromise Attacks 
-
+## Windows Post Compromise Attacks 
 Secretsdump
 
 Crackmapexec  
@@ -116,6 +105,7 @@ Psexec
 Mimikatz.exe  
 
 ---
+
 ## Venv  
 (Virtual Environment) is a built-in Python module that creates an isolated environment for installing independant Python packages.
 * Keeps dependencies separate from the system Python (prevents breaking system tools).
@@ -142,5 +132,4 @@ Step 5: Reactivate the Virtual Environment (Later Use and in the same terminal a
 ---
 
 ## Shell generator
-
 Shell generator for different OS platforms - <https://www.revshells.com/>
