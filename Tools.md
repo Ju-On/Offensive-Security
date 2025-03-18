@@ -95,11 +95,15 @@ Bloodhound
 
 PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound/blob/master/README.md#installation-requirements>
 
+PingCastle
+
 ## AD Post Compromise Attacks 
 
 Secretsdump
 
 Crackmapexec  
+
+Psexec
 
 Mimikatz.exe  
 
