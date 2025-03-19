@@ -82,7 +82,7 @@ nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn / other modes can be 
 
 Responder - LLMNR Poisoning attacks / Capturing Hashes.  
 
-Relayx  
+Relayx - Tool used with Responder to act as a man in the middle, capturing hashes from sender to service (relay) 
 
 Impacket a collection of Python scripts and libraries used for network protocol manipulation, exploitation, and lateral movement. Widely used to interact with Windows systems over SMB, WMI, RPC, LDAP, and other protocols.
 
