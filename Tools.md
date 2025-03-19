@@ -90,7 +90,9 @@ MITM6 for IPv6 environments
 
 Metasploit Auxilliary modules  
 
-## Windows Post Compromise Enumeration
+## Windows Post Compromise Enumeration  
+ldapdomaindump - identify high-pri accounts (such as Domain Admins), weak settings, service accounts, or vulnerable trust relationships
+
 Bloodhound
 
 PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound/blob/master/README.md#installation-requirements>
