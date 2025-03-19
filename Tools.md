@@ -96,9 +96,9 @@ PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound
 PingCastle
 
 ## Windows Post Compromise Attacks 
-Secretsdump
+Secretsdump - use different modules such as smb, ldap etc 
 
-Crackmapexec  
+Crackmapexec - use for pass attacks / handy to enumerate entire networks with credentials / hashes found and identify the type of services it is running. Crackmapexec also has a range of other functionalities not only just domain enumeration.
 
 Psexec
 
