@@ -91,7 +91,7 @@ MITM6 for IPv6 environments
 Metasploit Auxilliary modules  
 
 ## Windows Post Compromise Enumeration  
-ldapdomaindump - identify high-pri accounts (such as Domain Admins), weak settings, service accounts, or vulnerable trust relationships
+ldapdomaindump - identify high-priv accounts (such as Domain Admins), weak settings, service accounts, or vulnerable trust relationships. Only applicable when IPv6 is turned, can also act as an alternative if mitm6 fails to dump information due to no IPv6 DHCP or misconfig.
 
 Bloodhound
 
