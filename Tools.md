@@ -77,7 +77,9 @@ GTFOBins <https://gtfobins.github.io/>
 
 ---
 
-## Active Directory  
+## Windows Initial Compromise Active Directory  
+nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn / other modes can be used for other forms of vuln / service type scanning 
+
 Responder - LLMNR Poisoning attacks / Capturing Hashes.  
 
 Relayx  
