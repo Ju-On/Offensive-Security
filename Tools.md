@@ -1,4 +1,4 @@
-# Windows compatiable | Analysis tools | Web Analysis tools | Web reference with source | Debian changes
+# Linux | Active Directory | Analysis tools | Web Analysis tools | Web reference with source | Debian changes
 
 ---
 
