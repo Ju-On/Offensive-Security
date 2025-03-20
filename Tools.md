@@ -104,6 +104,8 @@ Secretsdump - use different modules such as smb, ldap etc
 
 Crackmapexec - use for pass attacks / handy to enumerate entire networks with credentials / hashes found and identify the type of services it is running. Crackmapexec also has a range of other functionalities not only just domain enumeration.
 
+impacket-GetUsersSPNs - use for kerberoasting attacks, where we attain a TGS from the DC, crack the krbtgt hash and use the Service Principle name with the password to access to the service account.
+
 Psexec
 
 Mimikatz.exe  
