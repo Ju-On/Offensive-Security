@@ -65,7 +65,9 @@ Msfvenom Payload generator and packer.
 
 Msfconsole multi handler 'use explot/multi/handler' 
 
-python -m SimpleHTTPServer automatic http hosting of the current directory via port 8000.
+python -m SimpleHTTPServer - automatic http hosting of the current directory via port 8000.
+
+python -m pyftpdlib - automatic hosting of the current dirrectory via port 2121.
 
 Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-security/defense-evasion/downloading-file-with-certutil>
 
