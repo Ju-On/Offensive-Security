@@ -12,7 +12,8 @@ directory busting use:
     or
     assetfinder tesla.com --subs-only
 
-custom bash script to parse only the subdomains related to the target:
+custom bash script to parse only the subdomains related to the target:  
+chmod +x when created. This script parses out only domains related to the target in the newly created recon dir as assets.txt
 
     #!/bin/bash
     
@@ -30,3 +31,4 @@ custom bash script to parse only the subdomains related to the target:
     assetfinder $url >> $url/recon/assets.txt
     cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
     rm $url/recon/assets.txt
+
