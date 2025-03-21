@@ -1,4 +1,4 @@
-## Web Applicaiton Enumeration - Revisisted
+## Web Applicaiton Enumeration - Revisited
 This revisted section will primiarly focus on tools written in GoLang. Providing other enumeration methodes as relying on a single tool can either not work in instances or miss important sub-domains.
 
 #### 🔴 Assetfinder
