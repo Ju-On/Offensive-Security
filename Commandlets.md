@@ -22,6 +22,10 @@ gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-l
 
 gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error
 
+assetfinder example.com
+
+assetfinder --subs-only example.com
+
 python -V 
 
 ## Web Enumeration
