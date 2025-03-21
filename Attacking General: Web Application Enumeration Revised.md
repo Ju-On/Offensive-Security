@@ -17,7 +17,7 @@ chmod +x when created. This script parses out only domains related to the target
 
     #!/bin/bash
     
-    $url="example.com"
+    $url="$1"
     
     if [ ! -d "$url" ]; then
         mkdir $url
@@ -27,7 +27,7 @@ chmod +x when created. This script parses out only domains related to the target
         mkdir $url/recon
     fi
     
-    echo "Harvesting subdomains with assetfinder"
+    echo "[+] Harvesting subdomains with assetfinder..."
     assetfinder $url >> $url/recon/assets.txt
     cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
     rm $url/recon/assets.txt
