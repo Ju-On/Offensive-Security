@@ -2,6 +2,7 @@
 
 ---
 
+## General Analysis
 File Graber <Initialise and set newly created files, folders and droppers during dynamic analysis>
 
 Apache OpenOffice <View hidden XLS files without needing Excel Licensing work https://openoffice.org>
@@ -16,9 +17,14 @@ Burp Suite web and trafflic analysis tooling. Prior to any traffic captures, spe
 
 ---
 
+## Web Enumeration
+Gobuster - great for directorry busting
+
+---
+
 ## Vulnerabilities
 Exploit database designed for Pentesting use cases and vulnerability researchers <Exploit-db.com>
-It is CVE compliant archive of publicly available exploits.
+It is CVE compliant archive of publicly available exploits
 
 NVD database of known exploits with ratings and links to advisories / githubs. <https://nvd.nist.gov/vuln/detail/CVE-2021-28169>
 
