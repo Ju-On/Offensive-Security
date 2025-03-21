@@ -1,3 +1,7 @@
+## General
+
+rm -rf /path/to/directory
+
 ## Enumeration  
 
 ip a  
