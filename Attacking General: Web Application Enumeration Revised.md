@@ -1,7 +1,7 @@
 ## Web Applicaiton Enumeration - Revisisted
-This revisted section will primiarly focus on tools written in GoLang.
+This revisted section will primiarly focus on tools written in GoLang. Providing other enumeration methodes as relying on a single tool can either not work in instances or miss important sub-domains.
 
-#### Assetfinder
+#### 🔴 Assetfinder
 A more modern directory busting tool. Requires GoLang to be installed on machine and downnloaded from git 
 
 directory busting use:
@@ -13,7 +13,7 @@ directory busting use:
     assetfinder tesla.com --subs-only
 
 custom bash script to parse only the subdomains related to the target:  
-chmod +x when created. This script parses out only domains related to the target in the newly created recon dir as assets.txt
+chmod +x when created. This script parses out only domains related to the target in the newly **created recon dir as assets.txt**
 
     #!/bin/bash
     
@@ -32,3 +32,4 @@ chmod +x when created. This script parses out only domains related to the target
     cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
     rm $url/recon/assets.txt
 
+#### 🔴 Amass
