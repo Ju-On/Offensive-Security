@@ -90,8 +90,14 @@ to remove https:// and :443 add '| sed 's/https\?:\/\///' | sed 's/:443//'
     lax32-gpgw1.tesla.com
     iad05-gpgw1.tesla.com
 
-**Note**: when conducting any engagement, best to check all ports unless we need to specifically narrow it down. For example above we are only looking for responsive https:443. Best to list out all live domains, clean the results and feed it throguh nmap scanner.  
+**🔵 Note**: when conducting any engagement, best to check all ports unless we need to specifically narrow it down. For example above we are only looking for responsive https:443. Best to list out all live domains, clean the results and feed it throguh nmap scanner.  
 
+Example for more general scan for all default ports wiht removal of http/s:
+
+    root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe | sed 's/https\?:\/\///'
+
+Combining the resppnsive (http:443) probe to our script:  
+[to be continued 3:55]
 
     
 
