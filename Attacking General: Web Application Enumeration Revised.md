@@ -90,15 +90,21 @@ to remove https:// and :443 add '| sed 's/https\?:\/\///' | sed 's/:443//'
     lax32-gpgw1.tesla.com
     iad05-gpgw1.tesla.com
 
-**🔵 Note**: when conducting any engagement, it's best to check all ports unless we need to specifically narrow it down. For example above we are only looking for any domains responsive to https:443. Therefore we should list out all live domains, clean the results and feed it through a nmap scanner.  
+**🔵 Note**: when conducting any engagement, it's best to check all ports of the domains found, unless we need to specifically narrow it down. For example above we are only looking for any domains responsive to only https:443. Therefore we should list out all live domains, clean the results and feed it through a nmap scanner.  
 
 Example for more general scan for all default ports wiht removal of http/s:
 
     root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe | sed 's/https\?:\/\///'
 
 Combining the resppnsive (http:443) probe to our script:  
-[to be continued 3:55]
 
+    echo "[+] Probing for alive domains..."
+    cat $url/recon/final.txt | sort -u | httprobe -s -p https:443 | sed 's/https\?:\/\///' | sed 's/:443//' >> $url/recon/alive.txt
+
+![image](https://github.com/user-attachments/assets/f9d893fb-40ff-47fc-bad3-b0bcc9b6aab2)
+
+Now this script will execute domain enumeration either through assetfinder or amass and output into the 'final.txt'.  
+The domains in 'final.txt' will be httpprobed with the current condition to only look for responsive http:443 domains, with http/s, :443 and duplicates removed and placed into 'alive.txt' for further use. 
     
 
     
