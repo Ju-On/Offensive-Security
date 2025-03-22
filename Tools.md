@@ -20,7 +20,7 @@ Burp Suite web and trafflic analysis tooling. Prior to any traffic captures, spe
 ## Web Enumeration
 Gobuster - great for directorry busting
 
-assetfinder
+assetfinder <github.com/tomnomnom/assetfinder@latest>
 
 ---
 
