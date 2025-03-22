@@ -90,7 +90,7 @@ to remove https:// and :443 add '| sed 's/https\?:\/\///' | sed 's/:443//'
     lax32-gpgw1.tesla.com
     iad05-gpgw1.tesla.com
 
-**🔵 Note**: when conducting any engagement, best to check all ports unless we need to specifically narrow it down. For example above we are only looking for responsive https:443. Best to list out all live domains, clean the results and feed it throguh nmap scanner.  
+**🔵 Note**: when conducting any engagement, it's best to check all ports unless we need to specifically narrow it down. For example above we are only looking for any domains responsive to https:443. Therefore we should list out all live domains, clean the results and feed it through a nmap scanner.  
 
 Example for more general scan for all default ports wiht removal of http/s:
 
