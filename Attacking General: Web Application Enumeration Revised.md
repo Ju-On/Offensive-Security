@@ -33,3 +33,4 @@ chmod +x when created. This script parses out only domains related to the target
     rm $url/recon/assets.txt
 
 #### 🔴 Amass by OWASP
+Owasp version of 
