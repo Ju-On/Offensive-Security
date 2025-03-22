@@ -46,4 +46,27 @@ Adding Amass into the above existing parser
     sort -u $url/recon/f.txt >> $url/recon/final.txt
     rm $url/recon/f.txt
 
+assetfinder script with amass commented out:
+![image](https://github.com/user-attachments/assets/302fe96d-6599-4663-8040-565d4dc11103)
 
+---
+
+#### 🔴 Httprobe - Finding live domains  
+More modern GoLang tool to test list of domains and probe for working HTTP and HTTPS servers. <https://github.com/tomnomnom/httprobe?tab=readme-ov-file#prefer-https> 
+
+To install and run:
+
+    root@kali:go install github.com/tomnomnom/httprobe@latest
+    or
+    root@kali:apt install httprobe
+
+once installed httprobe can be run on the command line with exising list of domains:
+
+    root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe
+
+to remove default port 80 / 443 scans use the '| httprove -s -p https:443' -p is to specify what to scan, here i have specified https:443 agains after excluding 80 with -s.
+
+
+    
+
+    
