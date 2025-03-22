@@ -54,17 +54,43 @@ assetfinder script with amass commented out:
 #### 🔴 Httprobe - Finding live domains  
 More modern GoLang tool to test list of domains and probe for working HTTP and HTTPS servers. <https://github.com/tomnomnom/httprobe?tab=readme-ov-file#prefer-https> 
 
-To install and run:
+To install and run:  
 
     root@kali:go install github.com/tomnomnom/httprobe@latest
     or
     root@kali:apt install httprobe
 
-once installed httprobe can be run on the command line with exising list of domains:
+once installed httprobe can run on the command line with an exising list of domains to present the subdomains that are live:  
 
     root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe
+    https://dal11-gpgw1.tesla.com
+    https://ams13-gpgw1.tesla.com
+    https://hnd13-gpgw1.tesla.com
+    https://lax32-gpgw1.tesla.com
+    https://iad05-gpgw1.tesla.com
+    http://itanswers.tesla.com
 
-to remove default port 80 / 443 scans use the '| httprove -s -p https:443' -p is to specify what to scan, here i have specified https:443 agains after excluding 80 with -s.
+to surpress non responsive default ports such as 80 / 443 use the '| httprobe -s -p https:443' -p is to specify what to scan, here i have specified https:443 again after excluding 80 with -s, and return successful HTTP or HTTPS responses.  
+
+    root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe -s -p https:443
+    https://ams13-gpgw1.tesla.com:443
+    https://hnd13-gpgw1.tesla.com:443
+    https://lax32-gpgw1.tesla.com:443
+    https://iad05-gpgw1.tesla.com:443
+    https://sin05-gpgw1.tesla.com:443
+    http://engage.tesla.com:443
+    http://trumpstesla.com:443
+    
+to remove https:// and :443 add '| sed 's/https\?:\/\///' | sed 's/:443//'  
+
+    root@kali:/home/kali/fire/tesla.com/recon# cat final.txt | httprobe -s -p https:443 | sed 's/https\?:\/\///' | sed 's/:443//'
+    dal11-gpgw1.tesla.com
+    ams13-gpgw1.tesla.com
+    hnd13-gpgw1.tesla.com
+    lax32-gpgw1.tesla.com
+    iad05-gpgw1.tesla.com
+
+**Note**: when conducting any engagement, best to check all ports unless we need to specifically narrow it down. For example above we are only looking for responsive https:443. Best to list out all live domains, clean the results and feed it throguh nmap scanner.  
 
 
     
