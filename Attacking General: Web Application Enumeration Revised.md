@@ -6,11 +6,11 @@ A more modern directory busting tool. Requires GoLang to be installed on machine
 
 directory busting use:
 
-    go install github.com/tomnomnom/assetfinder@latest
+    root@kali:go install github.com/tomnomnom/assetfinder@latest
 
-    assetfinder tesla.com 
+    root@kali:assetfinder tesla.com 
     or
-    assetfinder tesla.com --subs-only
+    root@kali:assetfinder tesla.com --subs-only
 
 custom bash script to parse only the subdomains related to the target:  
 chmod +x when created. This script parses out only domains related to the target in the newly **created recon dir as assets.txt**
@@ -32,4 +32,4 @@ chmod +x when created. This script parses out only domains related to the target
     cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
     rm $url/recon/assets.txt
 
-#### 🔴 Amass
+#### 🔴 Amass by OWASP
