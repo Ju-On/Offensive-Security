@@ -104,7 +104,7 @@ Combining the resppnsive (http:443) probe to our script:
 ![image](https://github.com/user-attachments/assets/f9d893fb-40ff-47fc-bad3-b0bcc9b6aab2)
 
 Now this script will execute domain enumeration either through assetfinder or amass and output into the 'final.txt'.  
-The domains in 'final.txt' will be httpprobed with the current condition to only look for responsive http:443 domains, with http/s, :443 and duplicates removed and placed into 'alive.txt' for further use. 
+The domains in 'final.txt' will be httprobed with the current condition to only look for responsive http:443 domains with http/s, :443, duplicates removed and placed into 'alive.txt' for further use. Such as an expanded search in nmap.  
     
 
     
