@@ -114,12 +114,18 @@ installation:
     kali@kali:~$ go install github.com/sensepost/gowitness@latest
     kali@kali:~$ gowitness
 
-current flage usage (as it changes frequently):  
+current flage usage (as it changes frequently). Screenshots will be saved in the directory gowitness is executed in:  
 
     gowitness scan single -u https://tesla.com
-navigate to screenshots files.  
+    or
+    gowitness scan file -f test.txt
+    
+navigate to the screenshot files, saved in the same directory from execution.  
 
 ![image](https://github.com/user-attachments/assets/c02bffbc-d08f-4e10-976c-21b425e25e09)
 
 **Automating gowitness to scan a provided list of domains**
 
+(we can extend the above domain enumeration script to include a file scan of the domains or we can just do this section manually, as not all domain-enums will require a screen. However, in future as real world scenarios it is probably advisable to just hover it up combined with the other unique flags gowitness may provide i.e xml, json etc data that it could potentially pull out automatically)
+
+Heath Adams domain enumeration script: <https://pastebin.com/MhE6zXVt>
