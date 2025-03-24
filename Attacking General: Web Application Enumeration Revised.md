@@ -121,3 +121,5 @@ navigate to screenshots files.
 
 ![image](https://github.com/user-attachments/assets/c02bffbc-d08f-4e10-976c-21b425e25e09)
 
+**Automating gowitness to scan a provided list of domains**
+
