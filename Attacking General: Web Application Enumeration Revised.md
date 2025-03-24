@@ -105,6 +105,19 @@ Combining the resppnsive (http:443) probe to our script:
 
 Now this script will execute domain enumeration either through assetfinder or amass and output into the 'final.txt'.  
 The domains in 'final.txt' will be httprobed with the current condition to only look for responsive http:443 domains with http/s, :443, duplicates removed and placed into 'alive.txt' for further use. Such as an expanded search in nmap.  
-    
 
-    
+#### 🔴 Gowitness - Automated GoLang tool 
+automated tool that uses Chrome Headless to generate screenshots of web interfaces. Useful in situations for when there are multiple domains or subdomains that requires screenshots.
+
+installation:
+
+    kali@kali:~$ go install github.com/sensepost/gowitness@latest
+    kali@kali:~$ gowitness
+
+current flage usage (as it changes frequently):  
+
+    gowitness scan single -u https://tesla.com https://tesla.com
+navigate to screenshots files.  
+
+![image](https://github.com/user-attachments/assets/c02bffbc-d08f-4e10-976c-21b425e25e09)
+
