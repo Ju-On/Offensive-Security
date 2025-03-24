@@ -116,7 +116,7 @@ installation:
 
 current flage usage (as it changes frequently):  
 
-    gowitness scan single -u https://tesla.com https://tesla.com
+    gowitness scan single -u https://tesla.com
 navigate to screenshots files.  
 
 ![image](https://github.com/user-attachments/assets/c02bffbc-d08f-4e10-976c-21b425e25e09)
