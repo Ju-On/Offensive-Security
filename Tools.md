@@ -18,9 +18,14 @@ Burp Suite web and trafflic analysis tooling. Prior to any traffic captures, spe
 ---
 
 ## Web Enumeration
-Gobuster - great for directorry busting
+Gobuster - great for directory busting
 
 assetfinder <github.com/tomnomnom/assetfinder@latest>
+
+---
+
+## Web App Attacks  
+Alex Olsen Collection of Web Attacks - <https://appsecexplained.gitbook.io/appsecexplained>
 
 ---
 
@@ -148,4 +153,6 @@ Step 5: Reactivate the Virtual Environment (Later Use and in the same terminal a
 ---
 
 ## Shell generator
-Shell generator for different OS platforms - <https://www.revshells.com/>
+Shell generator for different OS platforms - <https://www.revshells.com/>  
+
+Reverse shell cheat sheet - <https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md>  
