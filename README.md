@@ -11,5 +11,5 @@ Walkthrough usage only when all brain cells have ceased to exists or only learni
 
 -----
 
-**Referances:**  
+**References:**  
 The Journey Preperation - https://jacobcyber.medium.com/preparing-for-the-oscp-on-a-budget-982f67a2b8e0
