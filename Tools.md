@@ -78,9 +78,9 @@ Msfvenom Payload generator and packer.
 
 Msfconsole multi handler 'use explot/multi/handler' 
 
-[old] python -m SimpleHTTPServer - automatic http hosting of the current directory via port 8000.
+[python2] python -m SimpleHTTPServer - automatic http hosting of the current directory via port 8000.
 
-[new] python3 - python3 -m http.server 8080
+[python3] python3 - python3 -m http.server 8080
 
 python -m pyftpdlib - automatic hosting of the current dirrectory via port 2121.
 
