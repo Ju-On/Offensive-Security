@@ -22,6 +22,8 @@ Gobuster - great for directory busting
 
 assetfinder <github.com/tomnomnom/assetfinder@latest>
 
+ffuf - directory busting
+
 ---
 
 ## Web App Attacks  
