@@ -1,5 +1,9 @@
 # Linux | Active Directory | Analysis tools | Web Analysis tools | Web reference with source | Debian changes
 
+## General file resources
+
+python3 -c 'for i in range (1,2001): print(i)' > range.txt | create a range txt file from 1-2000
+
 ---
 
 ## General Analysis
