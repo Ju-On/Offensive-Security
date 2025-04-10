@@ -26,7 +26,9 @@ Gobuster - great for directory busting
 
 assetfinder <github.com/tomnomnom/assetfinder@latest>
 
-ffuf - directory busting
+ffuf - directory and subdomain busting
+
+dnsrecon -r - good for enumerating an IP address for it's PTR records to see reverse mappings of IPs to domains.
 
 ---
 
