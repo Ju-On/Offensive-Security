@@ -30,6 +30,8 @@ assetfinder example.com
 
 assetfinder --subs-only example.com
 
+(Sub Domain hunting) ffuf -u http://localhost/capstone/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php -v | grep FUZZ 
+
 python -V 
 
 ## Web Enumeration
