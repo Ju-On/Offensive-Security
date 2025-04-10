@@ -33,7 +33,7 @@ chmod +x when created. This script parses out only domains related to the target
     rm $url/recon/assets.txt
 
 #### 🔴 Amass by OWASP
-Owasp open soruce tool designed to gather subdomain information and other DNS-related data, which can be crucial for network mapping, vulnerability identification, and attack surface analysis. amass should alreayd be installed on Kali by default, if not install to machine with the following:
+Owasp open soruce tool designed to gather subdomain information and other DNS-related data, which can be crucial for network mapping, vulnerability identification, and attack surface analysis. amass should already be installed on Kali by default, if not install to machine with the following:
 
     root@kali:go install -v github.com/owasp-amass/amass/v4/...@master
 
