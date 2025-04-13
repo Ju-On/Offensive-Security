@@ -21,7 +21,9 @@ online Identity that is not who you are, aka fake account, fake person, syntheti
 4. https://www.fakenamegenerator.com/
 
 **Image creation**  
-5. https://www.thispersondoesnotexist.com/
+1. https://www.thispersondoesnotexist.com/
 
 **Layered CCs**  
-6. https://privacy.com/join/LADFC 
+1. https://privacy.com/join/LADFC 
+
+### Search Engine Operators
