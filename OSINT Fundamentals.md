@@ -26,6 +26,8 @@ online Identity that is not who you are, aka fake account, fake person, syntheti
 **Layered CCs**  
 1. https://privacy.com/join/LADFC 
 
+---
+
 ### Search Engine Operators
 1. google  
     * google advanced search https://www.google.com/advanced_search
@@ -41,6 +43,7 @@ Others:
 3. Baidu - Asian based
 
 **Examples of advanced google searching:**  
+
 site:Tesla.com password filetype:pdf [parse through different file types i.e xlsx, docx, doc,]  
 "tesla.com" filetype:xlsx pwd  
 site:tesla.com filetype:pdf pass  
@@ -49,5 +52,23 @@ site:tesla.com -www [removes www and looks for subdomains]
 "bobby" intitle:password site:newgrounds.com  
 "bobby" inurl:password site:newgrounds.com  
 
+---
+
 ### Image OSINT
+
+**Reverse Image Searching:**  
+Google Image Search - https://images.google.com  
+Yandex - https://yandex.com  
+TinEye - https://tineye.com  
+Pimeyes - https://pimeyes.com
+
+**Viewing EXIF Data**  
+Essentially meta data that may reside in the background of an image  
+Jimpl - https://jimpl.com/  
+
+**Physical Location OSINT**  
+
+
+
+
 
