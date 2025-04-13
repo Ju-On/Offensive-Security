@@ -20,8 +20,8 @@ online Identity that is not who you are, aka fake account, fake person, syntheti
 3. https://www.secjuice.com/the-art-of-the-sock-osint-humint/
 4. https://www.fakenamegenerator.com/
 
-**Image creation**
+**Image creation**  
 5. https://www.thispersondoesnotexist.com/
 
-**Layered CCs**
+**Layered CCs**  
 6. https://privacy.com/join/LADFC 
