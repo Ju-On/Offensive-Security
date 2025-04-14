@@ -104,3 +104,12 @@ Gaining access to a building
 * SnusBase - https://snusbase.com/
 * Scylla.sh - https://scylla.sh/
 * HaveIBeenPwned - https://haveibeenpwned.com/
+
+---
+
+### Username OSINT
+
+**Hunting Usernames and Accounts**
+* NameChk - https://namechk.com/
+* WhatsMyName - https://whatsmyname.app/
+* NameCheckup - https://namecheckup.com/
