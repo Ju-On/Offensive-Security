@@ -113,3 +113,17 @@ Gaining access to a building
 * NameChk - https://namechk.com/
 * WhatsMyName - https://whatsmyname.app/
 * NameCheckup - https://namecheckup.com/
+
+---
+
+### Username OSINT
+[study later]
+
+---
+
+### Social Media OSINT
+[study later]
+
+---
+
+### Website OSINT
