@@ -55,7 +55,6 @@ site:tesla.com -www [removes www and looks for subdomains]
 ---
 
 ### Image OSINT
-
 **Reverse Image Searching:**  
 Google Image Search - https://images.google.com  
 Yandex - https://yandex.com  
@@ -78,7 +77,6 @@ Gaining access to a building
 ---
 
 ### Email OSINT
-
 **Discovering Email Addresses**
 1. Hunter.io - https://hunter.io/
 2. Phonebook.cz - https://phonebook.cz/
@@ -92,7 +90,6 @@ Gaining access to a building
 ---
 
 ### Password OSINT
-
 **Hunting Breacked PW 1**
 * Dehashed.com
 * hashes.org - could help identify valid hashes
@@ -108,7 +105,6 @@ Gaining access to a building
 ---
 
 ### Username OSINT
-
 **Hunting Usernames and Accounts**
 * NameChk - https://namechk.com/
 * WhatsMyName - https://whatsmyname.app/
@@ -144,3 +140,8 @@ Gaining access to a building
 * Wayback Machine - https://web.archive.org/
 * google = check through cached data 
   
+---
+
+### Business OSINT
+* Open Corporates - https://opencorporates.com/
+* AI HIT - https://www.aihitdata.com/
