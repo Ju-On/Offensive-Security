@@ -75,9 +75,9 @@ Gaining access to a building
 1. https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/
 2. https://www.geoguessr.com
 
-### Email OSINT
-
 ---
+
+### Email OSINT
 
 **Discovering Email Addresses**
 1. Hunter.io - https://hunter.io/
@@ -87,5 +87,20 @@ Gaining access to a building
 5. Email Checker - https://email-checker.net/validate
 6. Clearbit Connect - https://chrome.google.com/webstore/detail/clearbit-connect-supercha/pmnhcgfcafcnkbengdcanjablaabjplo?hl=en
 
+'Forgot password' could help validate an email along with Email hippo and Email checker.
 
+---
 
+### Password OSINT
+
+**Hunting Breacked PW 1**
+* Dehashed.com
+* hashes.org - could help identify valid hashes
+* https://www.tunnelsup.com/hash-analyzer/ - could help identify valid hashes
+
+**Hunting Breacked PW 2**
+* WeLeakInfo - https://weleakinfo.to/v2/
+* LeakCheck - https://leakcheck.io/
+* SnusBase - https://snusbase.com/
+* Scylla.sh - https://scylla.sh/
+* HaveIBeenPwned - https://haveibeenpwned.com/
