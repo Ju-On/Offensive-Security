@@ -162,9 +162,9 @@ Gaining access to a building
 
 ### Working with OSINT Tools
 
-**Image Location - exiftool**
-`exiftool image.jpg` 
-`exiftool image.jpg > image.txt`
+**Image Location - exiftool**  
+`exiftool image.jpg`   
+`exiftool image.jpg > image.txt`  
 
 **Hunting Emails and Breached Data - DeHashed API Tool**
 
