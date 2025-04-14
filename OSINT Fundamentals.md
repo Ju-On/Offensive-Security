@@ -127,4 +127,20 @@ Gaining access to a building
 ---
 
 ### Website OSINT
+* BuiltWith - https://builtwith.com/
+* Domain Dossier - https://centralops.net/co/
+* DNSlytics - https://dnslytics.com/reverse-ip
+* SpyOnWeb - https://spyonweb.com/
+* Virus Total - https://www.virustotal.com/
+* Visual Ping - https://visualping.io/
+* Back Link Watch - http://backlinkwatch.com/index.php
+* View DNS - https://viewdns.info/
+* urlscan.io - https://urlscan.io/
+* DNSdumpster - https://dnsdumpster.com/
+* Web Check - https://web-check.as93.net/
+* crt.sh - https://crt.sh/ - Example to search for subdomains %.tesla.com
 
+* Shodan - https://shodan.io
+* Wayback Machine - https://web.archive.org/
+* google = check through cached data 
+  
