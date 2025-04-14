@@ -79,7 +79,13 @@ Gaining access to a building
 
 ---
 
-**text**
+**Discovering Email Addresses**
+1. Hunter.io - https://hunter.io/
+2. Phonebook.cz - https://phonebook.cz/
+3. VoilaNorbert - https://www.voilanorbert.com/
+4. Email Hippo - https://tools.verifyemailaddress.io/
+5. Email Checker - https://email-checker.net/validate
+6. Clearbit Connect - https://chrome.google.com/webstore/detail/clearbit-connect-supercha/pmnhcgfcafcnkbengdcanjablaabjplo?hl=en
 
 
 
