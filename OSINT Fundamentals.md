@@ -11,7 +11,9 @@
 * Greenshot
 * Obsidian
 
-## Sock Puppets
+---
+
+### Sock Puppets
 online Identity that is not who you are, aka fake account, fake person, synthetic account.
 
 **Creating an account**  
@@ -145,3 +147,24 @@ Gaining access to a building
 ### Business OSINT
 * Open Corporates - https://opencorporates.com/
 * AI HIT - https://www.aihitdata.com/
+
+---
+
+### Wireless OSINT
+[study later]
+
+---
+
+### Building an OSINT Lab
+[study later]
+
+---
+
+### Working with OSINT Tools
+
+**Image Location - exiftool**
+`exiftool image.jpg` 
+`exiftool image.jpg > image.txt`
+
+**Hunting Emails and Breached Data - DeHashed API Tool**
+
