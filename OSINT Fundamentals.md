@@ -67,8 +67,19 @@ Essentially meta data that may reside in the background of an image
 Jimpl - https://jimpl.com/  
 
 **Physical Location OSINT**  
+Gaining access to a building  
+1. google maps
+2. drones
 
+**Identifying Geograpgical Locations**
+1. https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/
+2. https://www.geoguessr.com
 
+### Email OSINT
+
+---
+
+**text**
 
 
 
