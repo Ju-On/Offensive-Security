@@ -167,4 +167,7 @@ Gaining access to a building
 `exiftool image.jpg > image.txt`  
 
 **Hunting Emails and Breached Data - DeHashed API Tool**
+TCM H.A personal .py api script to pull dehashed creds.
 
+**Username and Account OSINT**
+`sherlock juon`
