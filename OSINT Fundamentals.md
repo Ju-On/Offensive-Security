@@ -169,5 +169,18 @@ Gaining access to a building
 **Hunting Emails and Breached Data - DeHashed API Tool**
 TCM H.A personal .py api script to pull dehashed creds.
 
-**Username and Account OSINT**
+**Username and Account**
 `sherlock juon`
+
+**Phone number**
+[study later]
+
+**Social Media
+Suspected API key has changed - InstagramOSINT script https://github.com/sc1341/InstagramOSINT
+navigate to /opt/instagramOSINT
+`./main.py --username 21savage`
+`python3 --username 21savage`
+
+**OSINT Frameworks**
+**[DEFINITELY STUDY THIS LATER]**
+
