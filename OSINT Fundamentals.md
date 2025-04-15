@@ -194,3 +194,11 @@ Hunchly - https://hunch.ly [very good tool espicially for investigative work]
 **Website OSINT Tools**
 1. whois
 2. subfinder
+
+**Automated tools**  
+Simple single scanner with live check  
+https://github.com/Ju-On/Tools/blob/main/subdomainhunterV1.sh
+
+Aggresive multi scanner with live check and screenshot [can cause rate limiting, so comment out specific scanners]  
+https://github.com/Ju-On/Tools/blob/main/subdomainhunterV2.sh
+
