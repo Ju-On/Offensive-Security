@@ -144,23 +144,23 @@ Gaining access to a building
   
 ---
 
-### Business OSINT
-* Open Corporates - https://opencorporates.com/
+### Business OSINT  
+* Open Corporates - https://opencorporates.com/  
 * AI HIT - https://www.aihitdata.com/
 
 ---
 
-### Wireless OSINT
-[study later]
+### Wireless OSINT  
+[study later]  
 
 ---
 
-### Building an OSINT Lab
-[study later]
+### Building an OSINT Lab  
+[study later]  
 
 ---
 
-### Working with OSINT Tools
+### Working with OSINT Tools  
 
 **Image Location - exiftool**  
 `exiftool image.jpg`   
@@ -169,18 +169,28 @@ Gaining access to a building
 **Hunting Emails and Breached Data - DeHashed API Tool**
 TCM H.A personal .py api script to pull dehashed creds.
 
-**Username and Account**
+**Username and Account**  
 `sherlock juon`
 
-**Phone number**
+**Phone number**  
 [study later]
 
-**Social Media
-Suspected API key has changed - InstagramOSINT script https://github.com/sc1341/InstagramOSINT
-navigate to /opt/instagramOSINT
-`./main.py --username 21savage`
-`python3 --username 21savage`
+**Social Media**  
+InstagramOSINT script https://github.com/sc1341/InstagramOSINT - Suspected API key has changed  
+navigate to /opt/instagramOSINT  
+`./main.py --username 21savage`  
+`python3 --username 21savage`  
 
-**OSINT Frameworks**
-**[DEFINITELY STUDY THIS LATER]**
+**OSINT Frameworks**  
+[DEFINITELY STUDY THIS LATER]  
 
+**Other Tools**  
+Hunchly - https://hunch.ly [very good tool espicially for investigative work]  
+
+---
+
+### Automation Foundations
+
+**Website OSINT Tools**
+1. whois
+2. subfinder
