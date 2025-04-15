@@ -30,6 +30,8 @@ ffuf - directory and subdomain busting
 
 dnsrecon -r - good for enumerating an IP address for it's PTR records to see reverse mappings of IPs to domains.
 
+subfinder -d - good for subdomain hunting
+
 ---
 
 ## Web App Attacks  
