@@ -126,6 +126,6 @@ navigate to the screenshot files, saved in the same directory from execution.
 
 **Automating gowitness to scan a provided list of domains**
 
-(we can extend the above domain enumeration script to include a file scan of the domains or we can just do this section manually, as not all domain-enums will require a screen. However, in future as real world scenarios it is probably advisable to just hover it up combined with the other unique flags gowitness may provide i.e xml, json etc data that it could potentially pull out automatically)
+(we can extend the above domain enumeration script to include a file scan of the domains or we can just do this section manually, as not all domain-enums will require a screenshot. However, in future as real world scenarios it is probably advisable to just hoover it up combined with the other unique flags gowitness may provide i.e xml, json etc data that it could potentially pull out automatically)
 
 Heath Adams domain enumeration script: <https://pastebin.com/MhE6zXVt>
