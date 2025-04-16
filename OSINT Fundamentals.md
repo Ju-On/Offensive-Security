@@ -202,3 +202,15 @@ https://github.com/Ju-On/Tools/blob/main/subdomainhunterV1.sh
 Aggresive multi scanner with live check and screenshot [can cause rate limiting, so comment out specific scanners]  
 https://github.com/Ju-On/Tools/blob/main/subdomainhunterV2.sh
 
+---
+
+**Report Writing**
+
+Front page
+Table of content
+Summary
+Technical Evidence
+   * OSINT
+   * Link
+   * Notes
+
