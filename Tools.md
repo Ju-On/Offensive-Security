@@ -72,8 +72,13 @@ through easily accessible background information and combines it with active soc
 
 dehashed.com 
 
-Pisieve to output and exfiltrate .dll packages specfically usefull to pull Qakbot C2s (Static C2s) - to view live without using PiSieve use
-view memory > https > condition 7 and filter. Typcially viewable in the spawned wegmr.exe maybe also [regsvr32.exe / calc.exe]?
+Pisieve to output and exfiltrate .dll packages specfically usefull to pull Qakbot C2s (Static C2s) - to view live without using PiSieve use view memory > https > condition 7 and filter. Typcially viewable in the spawned wegmr.exe maybe also [regsvr32.exe / calc.exe]?
+
+phonebook.cz
+
+hunter.io
+
+hunch.ly
 
 ---
 
