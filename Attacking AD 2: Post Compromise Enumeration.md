@@ -28,7 +28,7 @@ BloodHound is an AD attack path mapping tool that helps attackers and defenders 
         sudo neo4j console
 ![image](https://github.com/user-attachments/assets/79d06ce1-3d4c-4ae2-979b-aefed4fa919b)
 
-4. Click on the link presented in the results to open the console and set a username / password.
+4. Click on the link presented in the results to open the console and set a username / password. [neo4j/neo4j1]
 5. Once set, open Bloodhound via the command line with 'Bloodhound'
 6. Now we need to set an 'ingestor' back in terminal to capture the data.
 
