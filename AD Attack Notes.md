@@ -94,7 +94,7 @@ Once the NTLM hashes are acquired, you can now use multiple ways to crack the ha
 
     hashcat -m 5600 llmnr_hash.txt /usr/share/wordlists/rockyou.txt 
 
-🚩 **SMBRelay Attack:**
+🚩 **SMB Relay Attack:**
 
 A type of network attack where authentication requests and responses are intercepted between client and a server.  
 It can act as a secondary attempt fall back when hash cracking has failed, as the intercepted hash can be directly relayed to authenticate with a server, removing the requirement for hash cracking.
