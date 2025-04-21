@@ -32,7 +32,7 @@ Local admin account succesful for Spiderman and Thepunisher
 
 ### Note 1 Information gathering  
 **Adding the below flags behind --local-auth:**  
---local-auth (attempting to local authenticate on a device with local credentials i.e accessing a machine or accessing workgroups. Not DC. 
+--local-auth (attempting to local authenticate on a device with local credentials i.e accessing a machine or accessing workgroups. Not DC.  
 --sam (dumps all local SAM files found)  
 --shares (shows all accessbile shares)  
 --lsa (local security authority)  
