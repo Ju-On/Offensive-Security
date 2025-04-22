@@ -67,7 +67,7 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 ![image](https://github.com/user-attachments/assets/52f6904d-f256-467c-9b40-414b011f57c2)
 
-1a. Not necessary but good practice to try identify which machine the initial compromised uesr is a local admin on also on the network. If this step is taken, we can just grab the IPs of the verified admin machines and place it in the targets.txt below.
+1a. Not necessary but good practice to try identify which machine the initial compromised uesr is a local admin on also on the network. If this step is taken, we can just grab the IPs of the verified admin machines and place it in the targets.txt below.  
 
             cme smb 10.10.10.0/24 -u relayeduser -H <netntlmv2hash> --admin-check
 
