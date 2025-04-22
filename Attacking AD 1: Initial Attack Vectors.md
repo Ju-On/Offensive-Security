@@ -22,6 +22,10 @@ Kali responder IP: 192.168.64.129/24
 
             sudo responder -I eth0 -dwv
 
+For events when we are tunneling through a vpn:
+
+            sudo responsder -I tun0 -dwv
+
 ![image](https://github.com/user-attachments/assets/8de5ddb4-8956-4b4b-98f6-c2df1cb6ac99)  
 
 Ensure details such as nic, responder ip, is all correct. Once responder is on the network and listening for traffic, an example of captured NTLMv2 hashes can be seen like this:
