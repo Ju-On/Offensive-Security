@@ -61,12 +61,15 @@ SMB (Server Message Block) is a protocol used for file shares, printers, and oth
 
 🔴 The reason why these are turned off is to prevent the authentication response from being captured, but rather we are attempting to 'relay' them to our targets lists.
 
-
 1. Firstly identify hosts without SMB signing. 
 
             nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn 
-      
+
 ![image](https://github.com/user-attachments/assets/52f6904d-f256-467c-9b40-414b011f57c2)
+
+1a. Not necessary but good practice to try identify which machine the initial compromised uesr is a local admin on also on the network. If this step is taken, we can just grab the IPs of the verified admin machines and place it in the targets.txt below.
+
+            cme smb 10.10.10.0/24 -u relayeduser -H <netntlmv2hash> --admin-check
 
 2. Once we have discovered our targets (have SMB signing disabled and not required). Create a targets.txt detailing the targets.
 
