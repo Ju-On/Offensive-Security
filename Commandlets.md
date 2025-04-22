@@ -57,6 +57,7 @@ NTLM# hash: hashcat -m 5600 file.txt /usr/share/wordlists/rockyou.txt --force
 
     ntlm# will dictate the specific module -m required to be set for the cracking.  
     in virtual machine intances --force may be required.  
+    if a password has already been cracked it may reside in the potfile on --show
 
 hash-identifier
 
