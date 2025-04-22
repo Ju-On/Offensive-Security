@@ -109,6 +109,8 @@ python3 - python3 -m http.server 8080
 
 ## Active Directory Attacks  
 
+sudo responder -I tun0 -dwp | tun0 here is used when we are getting access via VPN
+
 (Captures) LLMNR attacks  
 sudo responder -I eth0 -dwv
 
