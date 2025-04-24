@@ -30,7 +30,7 @@ BloodHound is an AD attack path mapping tool that helps attackers and defenders 
 
 4. Click on the link presented in the results to open the console and set a username / password. [neo4j/neo4j1]
 5. Once set, open Bloodhound via the command line with 'Bloodhound'
-6. Now we need to set an 'ingestor' back in terminal to capture the data.
+6. Now we need to set an 'ingestor' back in terminal to capture the data. The ingestor will now use the captured creds pointed at the DC.
 
         root@kali:/home/kali/bloodhound# bloodhound-python -d MARVEL.local -u fcastle -p Password1 -ns 192.168.64.138 -c all
 
