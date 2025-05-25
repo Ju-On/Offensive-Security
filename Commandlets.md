@@ -152,6 +152,16 @@ for ip in 10.10.10.1 10.10.10.2 10.10.10.3; do for in user Admin Administrator U
 (Example using .txt files within 'for' loops of crackmap SMB auth) - note: when using files for crackmapexec -P must be used instead of -p  
 for user in Admin Administrator Username; do crackmapexec smb 10.10.10.1 -u $user -P passwordfile.txt --local-auth; done  
 
+## RDP  
 
+xfreerdp - xfreerdp /u:Administrator /p:'Password' /v:10.10.10.1
+
+## Pivoting  
+
+proxychains  
+
+shuttle  
+
+chisell  
 
 
