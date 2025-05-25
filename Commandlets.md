@@ -22,6 +22,9 @@ nmap -p- --script vuln [target]
 
 nmap --top-ports 500 --script vuln [target]
 
+(Example when providing a txt based file to scan -iL 'inlist' must be used)
+nmap -p 445 -iL targets.txt
+
 gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error -v | grep "Status: 200"
 
 gobuster dir -u http://[IPaddress] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --no-error
@@ -133,7 +136,21 @@ Impacket-GetUserSPNs -dc-ip <10.10.10.0> domain/username:password -request
 **Identify hosts without SMB signing:** nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn  
 In the event initial scanning of a known target presents no results adding -Pn will still scan the target and provide information regardless. 
 
+## Bash; 'for' loops 
 
+for in X variable varibale varibale; do COMMAND_LINE_ACTION $X; done
+
+(Example IP scan without text file list - ideal for small list, any large lists just use a .txt file)
+for ip in 10.10.10.1 10.10.10.2 10.10.10.3; do nmap -T4 -sV -A --top-ports 500 $ip; done
+
+(Example crackmap SMB enumeration - ideal for small list, any large lists just use a .txt file for username and passwords)
+for ip in 10.10.10.1 10.10.10.2 10.10.10.3; do crackmapexec smb $ip -u username -p 'password'; done
+
+(Example crackmap SMB credential 'sniper' stuffing password - small list)
+for ip in 10.10.10.1 10.10.10.2 10.10.10.3; do for in user Admin Administrator Username; do crackmapexec smb $ip -u $user -p password --local-auth; done; done
+
+(Example using .txt files within 'for' loops of crackmap SMB auth) - note: when using files for crackmapexec -P must be used instead of -p 
+for user in Admin Administrator Username; do crackmapexec smb 10.10.10.1 -u $user -P passwordfile.txt --local-auth; done
 
 
 
