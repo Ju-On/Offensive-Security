@@ -158,7 +158,7 @@ xfreerdp - xfreerdp /u:Administrator /p:'Password' /v:10.10.10.1
 
 ## Pivoting  
 
-proxychains  
+proxychains / conf files located at /etc/proxychains.conf  
 ssh tunnel throuhg 155.5, with connectioned dropped in the background.
 ssh -f -N -D 9050 -i encrypted_rsa1.key adminuser@10.10.155.5
 
