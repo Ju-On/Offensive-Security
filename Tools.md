@@ -140,7 +140,7 @@ impacket-GetUsersSPNs - use for kerberoasting attacks, where we attain a TGS fro
 
 Psexec  
 
-Mimikatz.exe  
+Mimikatz.exe <https://github.com/gentilkiwi/mimikatz>  
 
 ---
 
