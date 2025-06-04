@@ -1,6 +1,6 @@
 ## Gaining a Foothold
 
-### Devel  
+### Devel (Using MSF conditions)  
 
 **Initial Enum / RevShell Payload**
 Nmap scan > iis server and ftp anonymous login identified > login ftp server and `PUT` test file sucessful > use msfvenom to generate a reverse tcp shell in aspx (since target is hosting iis)
