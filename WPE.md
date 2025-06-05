@@ -21,6 +21,5 @@ now that we are a low level user, we repeat the cycle of information gathering, 
 meterpreter: shell  
 `systeminfo`  
 `hostname`  
-`hostname`  
 patching checks (windows management instrumentation command line + quick fix engineering) : `wmic qfe` or `wmic qfe get Caption,Description,HotFixID,InstalledOn` for a cleaner view  
 driver enumeration: `wmic logicaldisk get caption,description,providername`
