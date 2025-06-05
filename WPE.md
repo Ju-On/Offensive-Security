@@ -23,3 +23,15 @@ meterpreter: shell
 `hostname`  
 patching checks (windows management instrumentation command line + quick fix engineering) : `wmic qfe` or `wmic qfe get Caption,Description,HotFixID,InstalledOn` for a cleaner view  
 driver enumeration: `wmic logicaldisk get caption,description,providername`
+
+#### User Enumeration  
+check hostname and user logged in`whoami`  
+check current priviliges `whoami /priv`  
+groups you belong to `whoami /groups`
+users on the host `net user`  
+enum found users `net user exampleuser`  
+list all local group memberships `net localgroup`  
+list all users in the administrator group `net localgroup administrators`  
+
+#### Network Enumeration  
+
