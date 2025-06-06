@@ -44,6 +44,9 @@ list all users in the administrator group `net localgroup administrators`
 
 #### Password Hunting  
 (finds string of 'password' in the listed file types WITHIN the current directory) `findstr /si password *.txt *.ini *.config *.xml`  
+<https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md>
+
+#### AV Enumeration
 
 ---
 
