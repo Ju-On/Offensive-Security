@@ -34,4 +34,10 @@ list all local group memberships `net localgroup`
 list all users in the administrator group `net localgroup administrators`  
 
 #### Network Enumeration  
+`ipconfig`  
+`ipconfig /all`  
+`arp -a`  
+(check where else the host is connecting to) `route print`  
+(where is the host connecting to and what ports are open, if new connections / ports are found only internally and not frem an external scan it could provide ideas such as the potential port forward,) `netstat -ano`  
 
+#### Password Hunting
