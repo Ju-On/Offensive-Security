@@ -40,4 +40,7 @@ list all users in the administrator group `net localgroup administrators`
 (check where else the host is connecting to) `route print`  
 (where is the host connecting to and what ports are open, if new connections / ports are found only internally and not frem an external scan it could provide ideas such as the potential port forward,) `netstat -ano`  
 
-#### Password Hunting
+#### Password Hunting  
+(finds string of 'password' in the listed file types WITHIN the current directory) `findstr /si password *.txt *.ini *.config *.xml`  
+
+### Automated Tools
