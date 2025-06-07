@@ -59,19 +59,19 @@ checks for firewall configurations for spcific ports / things that are open / co
 ### Automated Tools
 
 #### Executables:  
-winPEAS.exe
-Seatbelt.exe
-Watson.exe
-SharpUp.exe
+* winPEAS.exe
+* Seatbelt.exe
+* Watson.exe
+* SharpUp.exe
 
 #### PowerShell:  
-Sherlock.ps1  
-PowerUp.ps1  
-jaws-enum.ps1  
+* Sherlock.ps1  
+* PowerUp.ps1  
+* jaws-enum.ps1  
 
 #### Other:  
-(ran from attacker machine by providing system info of target machine) windows-exploit-suggester.py  
-(Metasploit) Exploit Suggester  
+* (ran from attacker machine by providing system info of target machine) windows-exploit-suggester.py  
+* (Metasploit) Exploit Suggester  
 
 
 
