@@ -46,7 +46,13 @@ list all users in the administrator group `net localgroup administrators`
 (finds string of 'password' in the listed file types WITHIN the current directory) `findstr /si password *.txt *.ini *.config *.xml`  
 <https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md>
 
-#### AV Enumeration
+#### Firewalls / AV Enumeration  
+service check for windows defender `sc query windefend`  
+service check for all services running on host `sc queryex type= service`  
+
+may not work - check state of firewall `netsh advfirewall firewall dump`  
+newer command - check state of firewall `netsh firewall show state`  
+checks for firewall configurations for spcific ports / things that are open / configuration that may stand out - `netsh firewall show config`  
 
 ---
 
