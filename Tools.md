@@ -122,8 +122,6 @@ Metasploit Auxilliary modules
 
 ## Windows Post Compromise Enumeration  
 
-WinPEAS  
-
 ldapdomaindump - identify high-priv accounts (such as Domain Admins), weak settings, service accounts, or vulnerable trust relationships. Only applicable when IPv6 is turned, can also act as an alternative if mitm6 fails to dump information due to no IPv6 DHCP or misconfig. ldapdomain dump can be used to attempt a dump using both IPv6 and IPv4.
 
 Bloodhound
@@ -132,7 +130,22 @@ PlumHound - Post domain enumeration tool <https://github.com/PlumHound/PlumHound
 
 PingCastle
 
-## Windows Post Compromise Attacks 
+Executables:  
+* WinPEAS <https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS>  
+* Seatbelt.exe <https://github.com/GhostPack/Seatbelt>  
+* Watson.exe <https://github.com/rasta-mouse/Watson>  
+* SharpUp.exe <https://github.com/GhostPack/SharpUp>  
+
+PowerShell:  
+* Sherlock.ps1 <https://github.com/rasta-mouse/Sherlock>  
+* PowerUp.ps1 <https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc>  
+* jaws-enum.ps1 <https://github.com/411Hall/JAWS>  
+
+Other:  
+* (ran on attacker by providing sysinfo of target) windows-exploit-suggester.py <https://github.com/AonCyberLabs/Windows-Exploit-Suggester>  
+* (Metasploit) Exploit Suggester <https://blog.rapid7.com/2015/08/11/metasploit-local-exploit-suggester-do-less-get-more/>  
+
+## Windows AD Post Compromise Attacks 
 Secretsdump - use different modules such as smb, ldap etc  
 
 Crackmapexec - use for pass attacks / handy to enumerate entire networks with credentials / hashes found and identify the type of services it is running. Crackmapexec also has a range of other functionalities not only just domain enumeration. <https://github.com/byt3bl33d3r/CrackMapExec/tree/master>  
