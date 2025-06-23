@@ -190,6 +190,6 @@ ssh -f -N -D 9050 -i encrypted_rsa1.key adminuser@10.10.155.5
 
 shuttle  
 
-chisell  
+chisel  
 
 
