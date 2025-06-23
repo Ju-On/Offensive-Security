@@ -16,7 +16,7 @@ nmap -sV -A -T4 -p-
 
 nmap -sV -A -T4 --top-ports 500 [target]
 
-nmap --sC ? 
+nmap -sC [vuln scan of the default, light weight and safe NSE built in category of script]
 
 nmap -p- --script vuln [target]
 
