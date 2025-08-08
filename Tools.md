@@ -105,6 +105,11 @@ Certutil basic CLI commandlet to grab files. <https://www.ired.team/offensive-se
 **Linux/Unix Privilege Escalation**
 GTFOBins <https://gtfobins.github.io/>
 
+--
+
+## VMware ESXi Living of The Land (LOLESXi)  
+LOLESXi features a comprehensive list of binaries/scripts natively available in VMware ESXi <https://lolesxi-project.github.io/LOLESXi/>  
+
 ---
 
 ## Windows Initial Compromise Active Directory  
