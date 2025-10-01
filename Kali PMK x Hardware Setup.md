@@ -19,7 +19,7 @@ config VMware to virtual intel x v-intel settings
 
 -----
     
-## To Reinstate Original Memory Isolaation and Hyper-V on Win11
+## To Reinstate Original Memory Isolation and Hyper-V on Win11
 Checklist to Return to Normal State (Windows 11 Default)
 1. Re-enable Hyper-V features
 
